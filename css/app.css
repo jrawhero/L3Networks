@@ -84,3 +84,67 @@
   top: 135px;
   transition: 0.2s all ease-in-out;
 }
+
+/* Home Slider Styles */
+
+.home-slide-1 {
+  background: url('../img/slideshow/home/med-overlay/slideScooterTrickOverlay.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+.home-slide-2 {
+  background: url('../img/slideshow/home/med-overlay/slideConcertOverlay.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+.home-slide-3 {
+  background: url('../img/slideshow/home/med-overlay/slideBuildingOverlay.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+.home-slide-4 {
+  background: url('../img/slideshow/home/med-overlay/slideFanOverlay.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+.home-slide-1 h1,
+.home-slide-2 h1,
+.home-slide-3 h1,
+.home-slide-4 h1 {
+  text-transform: uppercase;
+  color: #fff;
+  margin: -10px 0;
+}
+
+.home-slide-1 p,
+.home-slide-2 p,
+.home-slide-3 p,
+.home-slide-4 p {
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.slider-content {
+  margin-top: 4rem;
+}
+
+.gallery {
+  position: relative;
+  z-index: -10;
+}
+
+.gallery-cell {
+  width: 100%;
+}

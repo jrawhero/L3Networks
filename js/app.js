@@ -31,6 +31,17 @@
     };
 
     interactive.init();
+
+    $('.gallery').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      freeScroll: true,
+      autoPlay: 4000,
+      prevNextButtons: false,
+      pageDots: false
+    });
   });
 
 })();
