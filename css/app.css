@@ -28,6 +28,7 @@
 
 .nav-container nav ul li a {
   color: #000;
+  font-weight: 300;
   font-size: .9rem;
   transition: 0.2s all ease-in-out;
 }
@@ -126,6 +127,7 @@
   text-transform: uppercase;
   color: #fff;
   margin: -10px 0;
+  font-size: 2.6rem;
 }
 
 .home-slide-1 p,
@@ -137,7 +139,7 @@
 }
 
 .slider-content {
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 
 .gallery {
@@ -147,4 +149,17 @@
 
 .gallery-cell {
   width: 100%;
+}
+
+.main-content-block {
+  padding: 5rem 0;
+}
+
+.main-content-block p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.blue-line {
+  margin-top: 2rem;
 }
