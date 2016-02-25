@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
 
@@ -8,325 +9,96 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript">
-</script><!-- CSS-->
-    <link rel="stylesheet" type="text/css" href="css/masterResponsive.css">
-    <script src="js/script.js" type="text/javascript">
-</script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'><!-- Javascript-->
-    <!--        Lightbox -->
-    <link rel="stylesheet" type="text/css" href="js/lightbox/themes/default/jquery.lightbox.css">
-    <script type="text/javascript" src="js/lightbox/jquery.lightbox.min.js">
-</script><!-- LayerSlider stylesheet -->
-    <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
-    <script src="layerslider/js/jquery.js" type="text/javascript">
-</script>
-    <script src="layerslider/js/greensock.js" type="text/javascript">
-</script>
-    <script src="layerslider/js/layerslider.transitions.js" type="text/javascript">
-</script>
-    <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript">
-</script><!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
-  	<script src="js/scroll/management.js"></script>
-<!--
-<script type="text/javascript">
-  
-  if (screen.width <= 800) {
-    window.location = "mobile/";
-  }
-  
-</script>
--->
+    </script>
 </head>
 
 <body>
-	<div class="wrapper" id="headerNav">
-	    <div class="wrapper2" style="margin: 0 auto; padding: 10px 0px;">
-	        <div class="section group">
-	            <div class="col span_1_of_5 left">
-	                <br>
-	                <a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_01.png"></a>
-	            </div>
-	
-	            <div class="col span_3_of_5">
-	                <div id="cssmenu" class="cssmenu">
-	                    <ul>
-	                        <li class="itManNav" onmouseover="show('itManDrop')">
-	                            <a href="it-management.html" class="active">IT Management</a>
-	
-	                            <ul>
-	                                <li><a href="it-management.html#managed">IT Managed Services</a></li>
-	
-	                                <li><a href="it-management.html#serviceOp">Service Operations</a></li>
-	                            </ul>
-	                        </li>
-	
-	                        <li class="itCloudNav" onmouseover="show('itCloudDrop')">
-	                            <a href="cloud-solutions.html">Cloud Solutions</a>
-	
-	                            <ul>
-	                                <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
-	
-	                                <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
-	                            </ul>
-	                        </li>
-	
-	                        <li class="itSecurityNav" onmouseover="show('itSecurityDrop')">
-	                            <a href="security.html">Security</a>
-	
-	                            <ul>
-	                                <li><a href="security.html#sas">Security Assessments</a></li>
-	
-	                                <li><a href="security.html#tm">Threat Management</a></li>
-	
-	                                <li><a href="security.html#eps">End Point Security</a></li>
-	
-	                                <li><a href="security.html#va">Vulnerability Assessments</a></li>
-	                            </ul>
-	                        </li>
-	
-	                        <li class="itDataNav" onmouseover="show('itDataDrop')">
-	                            <a href="data-protection.html">Data Protection</a>
-	
-	                            <ul>
-	                                <li><a href="data-protection.html#rb">Remote Backup</a></li>
-	
-	                                <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
-	                            </ul>
-	                        </li>
-	
-	                        <li class="itCompanyNav" onmouseover="show('itCompanyDrop')">
-	                            <a href="company.html">Company</a>
-	
-	                            <ul>
-	                                <li><a href="company.html#au">About Us</a></li>
-	
-	                                <li><a href="company.html#cu">Contact Us</a></li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	
-	            <div class="col span_1_of_5 center break800 ">
-	                <div class="phoneNumber">
-	                    <p style="margin-bottom: 3px;"><i class="fa fa-phone"></i> 888-282-5353</p><a href="login.html" class="clientLoginButton2" onmouseover="show('itLoginDrop')"><img src="img/clientLoginButton.png"></a>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	
-		<div id="stickyNav">
-	    <div id="itManDrop" class="show">
-	        <div class="wrapper2" style="margin: 0; padding: 0;">
-	            <div class="section group">
-	                <div class="col span_1_of_5 left break1000">
-		                &nbsp;
-		            </div>
-		            <div class="col span_4_of_5 left break1000">
-		                <div class="cssmenu">
+    <div>
+        <a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_01.png"></a>
 
-	                        <ul>
-	                            <li><a href="it-management.html#managed" id="itManNav1" onclick="stickTheNav('itManNav1')">IT Managed Services</a></li>
-	
-	                            <li><a href="it-management.html#serviceOp" id="itManNav2" onclick="stickTheNav('itManNav2')">Service Operations</a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-		</div>
-	
-	    <div id="itCloudDrop" class="hide">
-	        <div class="wrapper2" style="margin: 0; padding: 0;">
-	            <div class="section group">
-	                <div class="col span_1_of_5 left break1000">
-		                &nbsp;
-		            </div>
-		            <div class="col span_4_of_5 left break1000">
-		                <div class="cssmenu">
+        <ul>
+            <li>
+                <a href="it-management.html">IT Management</a>
+                <ul>
+                    <li><a href="it-management.html">IT Managed Services</a></li>
+                    <li><a href="it-management.html">Service Operations</a></li>
+                </ul>
+            </li>
 
-	                        <ul>
-	                            <!--                            <li style="visibility: hidden;"><a href="it-management.html">IT Management</a></li> -->
-	
-	                            <li><a href="cloud-solutions.html#privateCloud" id="itCloudNav1">Private Cloud</a></li>
-	
-	                            <li><a href="cloud-solutions.html#cloudIntegration" id="itCloudNav2">Cloud Integration</a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	
-	    <div id="itSecurityDrop" class="hide">
-	        <div class="wrapper2" style="margin: 0; padding: 0;">
-	            <div class="section group">
-		            <div class="col span_5_of_5 left break1000">
-		                <div class="cssmenu align-center">
+            <li>
+                <a href="cloud-solutions.html" class="active">Cloud Solutions</a>
+                <ul>
+                    <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
+                    <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="security.html">Security</a>
 
-	                        <ul>
-	                            <!--                            <li style="visibility: hidden;"><a href="it-management.html">IT Management</a></li> -->
-	
-	                            <li><a href="security.html#sas" id="itSecurityNav1">Security Assessments</a></li>
-	
-	                            <li><a href="security.html#tm" id="itSecurityNav2">Threat Management</a></li>
-	
-	                            <li><a href="security.html#eps" id="itSecurityNav3">End Point Security</a></li>
-	
-	                            <li><a href="security.html#va" id="itSecurityNav4">Vulnerability Assessments</a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	
-	    <div id="itDataDrop" class="hide">
-	        <div class="wrapper2" style="margin: 0; padding: 0;">
-	            <div class="section group">
-	                <div class="col span_1_of_5 left break1000">
-		                &nbsp;
-		            </div>
-		            <div class="col span_4_of_5 left break1000">
-		                <div class="cssmenu">
+                <ul>
+                    <li><a href="security.html#sas">Security Assessments</a></li>
+                    <li><a href="security.html#tm">Threat Management</a></li>
+                    <li><a href="security.html#eps">End Point Security</a></li>
+                    <li><a href="security.html#va">Vulnerability Assessments</a></li>
+                </ul>
+            </li>
+            <li> <a href="data-protection.html">Data Protection</a>
+                <ul>
+                    <li><a href="data-protection.html#rb">Remote Backup</a></li>
+                    <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
+                </ul>
+            </li>
 
-	                        <ul>
-	                            <li><a href="data-protection.html#rb" id="itDataNav1">Remote Backup</a></li>
-	
-	                            <li><a href="data-protection.html#dr" id="itDataNav2">Disaster Recovery</a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	
-	    <div id="itCompanyDrop" class="hide">
-	        <div class="wrapper2" style="margin: 0; padding: 0;">
-	            <div class="section group">
-	                <div class="col span_1_of_5 left break1000">
-		                &nbsp;
-		            </div>
-		            <div class="col span_4_of_5 left break1000">
-		                <div class="cssmenu">
+            <li> <a href="company.html">Company</a>
 
-	                        <ul>
-	                            <li><a href="company.html#au" id="itCompanyNav1">About Us</a></li>
-	
-	                            <li><a href="company.html#cu" id="itCompanyNav2">Contact Us</a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	    
-	    <div id="itLoginDrop" class="hide">
-		    <div class="wrapper2" style="margin: 0; padding: 0;">
-		        <div class="section group">
-		            <div class="col span_1_of_5 left break1000">
-		                &nbsp;
-		            </div>
-		
-		            <div class="col span_4_of_5 left break1000">
-		                <div class="cssmenu">
-		                    <ul>
-		                        <li><a href="login.html" id="loginNav1">Client Login</a></li>
-		                    </ul>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-	    </div>
-	</div>
+                <ul>
+                    <li><a href="company.html#au">About Us</a></li>
+                    <li><a href="company.html#cu">Contact Us</a></li>
+                </ul>
+            </li>
 
-    <div id="layerslider" style="width:100%;height:597px;">
-        <div class="ls-slide">
-            <img class="ls-bg" src="img/slideshow/itManagement/med-overlay/racecarOverlay.png"> <!--
-            <div class="ls-l" style="position:absolute; top:0px; left:0px; width: 50%; height: 100%; background-color: #000; opacity:0.4;">
-                &nbsp;
-            </div>
-    -->
-
-            <p class="ls-l" style="position:absolute; top:225px; left:20px; text-align:left; line-height:50px; text-transform:none; font-size:40px; color:#FFF;">IT Management</p>
-
-            <p class="ls-l" style="position:absolute; top:275px; left:20px; text-align:left; font-size:22px; color:#FFF;">Constant Coverage | Enhanced Performance</p>
-
-            <p class="ls-l" style="position:absolute; top:325px; left:20px; text-align:left; font-size:18px; color:#FFF;">We’re experts in our industry<br>
-            so you can be leaders in yours</p>
-        </div>
+            <li>
+                <p>888-282-5353</p><img src="img/clientLoginButton.png" alt=""></li>
+        </ul>
     </div>
 
-    <div class="wrapper">
-        <div class="wrapper2">
-            <div class="section group three">
-                <div class="col span_1_of_2 break800">
-                    <p class="blue1 larger">IT Managed Services</p>
 
-                    <p>L3 offers companies a full-service worry-free way to implement a technology infrastructure that optimizes business needs with proactive support that ensures your systems are always up and running.</p>
-
-                    <div class="learn">
-                        <a href="#managed">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
-                    </div>
-                </div>
-
-                <div class="col span_1_of_2 break800">
-                    <p class="blue1 larger">Service Operations</p>
-
-                    <p>Free up time and resources for your IT team by utilizing L3 Networks for tasks that are tedious and time-consuming or complex and outside the scope of your existing capabilities.</p>
-
-                    <div class="learn">
-                        <a href="#serviceOp">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
-                    </div>
-                </div>
-            </div><!-- section group -->
-
-            <div class="section group learn2">
-                <div class="col span_1_of_2">
-                    <a href="#managed">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
-                </div>
-
-                <div class="col span_1_of_2">
-                    <a href="#serviceOp">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
-                </div>
-            </div><!-- section group -->
-        </div>
+    <div>
+        <p>IT Management</p>
+        <p>Constant Coverage | Enhanced Performance</p>
+        <p>We’re experts in our industry so you can be leaders in yours</p>
     </div>
 
-	<div id="managed" class="anchor"></div>
 
-    <div class="wrapper bgDark1">
-        <div class="wrapper2">
-            <table class="section group" style="width: 100%;">
-                <tr>
-                    <td class="span_1_of_2 break800">
-                        <p class="larger light1 yellowArrowHeader" ><img src="img/tri15.png" alt="tri30">&nbsp;&nbsp;&nbsp;IT Managed Services</p>
+    <div>
+        <p>IT Managed Services</p>
+        <p>L3 offers companies a full-service worry-free way to implement a technology infrastructure that optimizes business needs with proactive support that ensures your systems are always up and running.</p>
+        <a href="#managed">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
 
-                        <p class="light3" style="width: 475px;">The cornerstone of L3 Networks IT Managed Services advantage is our ability to align your business with best practice technology. We look at your entire infrastructure, identify potential problems, and provide best-ﬁt solutions to ensure every aspect of your IT Infrastructure is supporting your business needs.</p>
-
-                        <p class="light3" style="width: 475px;">Our strategically designed solutions and reliable 24/7 support optimize the performance of your operation, and through diligent monitoring and response checks, incidents are remediated before impacting end-user experience.</p>
-                    </td>
-
-                    <td class="span_1_of_2 center break800"><img src="img/it-management-graphics_01.png" alt="it-management-graphics_01" class="firefoxImageFix"></td>
-                </tr>
-            </table>
-        </div>
+        <p>Service Operations</p>
+        <p>Free up time and resources for your IT team by utilizing L3 Networks for tasks that are tedious and time-consuming or complex and outside the scope of your existing capabilities.</p>
+        <a href="#serviceOp">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
     </div>
 
+
+    <div>
+        <p>IT Managed Services</p>
+        <p>The cornerstone of L3 Networks IT Managed Services advantage is our ability to align your business with best practice technology. We look at your entire infrastructure, identify potential problems, and provide best-ﬁt solutions to ensure every aspect of your IT Infrastructure is supporting your business needs.</p>
+        <p>Our strategically designed solutions and reliable 24/7 support optimize the performance of your operation, and through diligent monitoring and response checks, incidents are remediated before impacting end-user experience.</p><img src="img/it-management-graphics_01.png" alt="it-management-graphics_01">
+    </div>
+
+   
+   
     <table class="wrapper bgLight2 min350">
         <tr>
             <td style="vertical-align: middle;">
-                <p class="center larger" style="font-size: 34px;">Why choose L3 Networks’<br>
-                IT Managed Services over the competition?</p>
+                <p class="center larger" style="font-size: 34px;">Why choose L3 Networks’
+                    <br> IT Managed Services over the competition?</p>
             </td>
         </tr>
     </table>
 
+   
     <div class="wrapper bgLight1">
         <div class="wrapper2">
             <table class="section group">
@@ -334,7 +106,9 @@
                     <td class="span_1_of_2 break800">
                         <table>
                             <tr>
-                                <td width="155px"><center><img src="img/it-management-graphics_06.png" alt="it-management-graphics_06" width="105px"></center></td>
+                                <td width="155px">
+                                    <center><img src="img/it-management-graphics_06.png" alt="it-management-graphics_06" width="105px"></center>
+                                </td>
 
                                 <td style="padding-left: 20px;">
                                     <p class="larger dark4">Rapidly Resolve Problems</p>
@@ -350,7 +124,9 @@
                     <td class="span_1_of_2 break800">
                         <table>
                             <tr>
-                                <td width="155px"><center><img src="img/it-management-graphics_07.png" alt="it-management-graphics_07" width="105px"></center></td>
+                                <td width="155px">
+                                    <center><img src="img/it-management-graphics_07.png" alt="it-management-graphics_07" width="105px"></center>
+                                </td>
 
                                 <td style="padding-left: 20px;">
                                     <p class="larger dark4">Constant Coverage</p>
@@ -408,13 +184,14 @@
             </div>
         </div>
 
-            <center>
-                <img src="img/blue-line.png">
-            </center><br>
-            <br>
-            <br>
+        <center>
+            <img src="img/blue-line.png">
+        </center>
+        <br>
+        <br>
+        <br>
 
-        
+
     </div>
 
     <div class="wrapper bgBlue1">
@@ -432,11 +209,11 @@
             <p class="larger">Want to learn more?</p><a href="company.html" class="buttonBlueLong">Talk with our Team</a>
             <br>
 
-            <p class="largerLineHeight">Contact us: <i class="fa fa-phone"></i> 888-282-5353<br>
-            Email us: <span class="blue1"><i class="fa fa-envelope-o"></i> <a href="mailto:info@l3networks.com">info@l3networks.com</a></b></span>
+            <p class="largerLineHeight">Contact us: <i class="fa fa-phone"></i> 888-282-5353
+                <br> Email us: <span class="blue1"><i class="fa fa-envelope-o"></i> <a href="mailto:info@l3networks.com">info@l3networks.com</a></b></span>
         </div>
     </div>
-    
+
     <div id="serviceOp" class="anchor"></div>
 
     <div class="wrapper bgDark1">
@@ -444,7 +221,7 @@
             <table style="height: 100%;">
                 <tr>
                     <td class="span_3_of_7 break800">
-                        <p class="larger light1 yellowArrowHeader" ><img src="img/tri15.png" alt="tri30">&nbsp;&nbsp;&nbsp;Service Operations</p>
+                        <p class="larger light1 yellowArrowHeader"><img src="img/tri15.png" alt="tri30">&nbsp;&nbsp;&nbsp;Service Operations</p>
 
                         <p class="light3">Free up time and resources for your IT team by utilizing L3 Networks for tasks that are tedious and time-consuming or complex and outside the scope of your existing capabilities. Our fixed cost service operations save companies money by mitigating overtime costs your IT team would incur from off-hours activities or the training required for out of the ordinary tasks.</p>
                     </td>
@@ -490,24 +267,24 @@
     </div>
 
     <div class="wrapper" style="background-image: url('img/it-management-graphics_13.png')!important; background-repeat: no-repeat; background-size: cover; background-position: center right;">
-	<div class="wrapper" style="background: #fff; background: -webkit-linear-gradient(90deg, transparent, transparent, transparent, #fff); background: -o-linear-gradient(90deg, transparent, transparent, transparent, #fff); background: -moz-linear-gradient(90deg, transparent, transparent, transparent, #fff); background: linear-gradient(90deg, transparent, transparent, transparent, #fff);">
-        <div class="wrapper2" style="margin-top: 0px; margin-bottom: 0px;">
-            <table style="min-height: 400px;">
-                <tr>
-                    <td style="width: 50%;">
-                        <p class="larger dark2">Complementary Capabilities</p>
+        <div class="wrapper" style="background: #fff; background: -webkit-linear-gradient(90deg, transparent, transparent, transparent, #fff); background: -o-linear-gradient(90deg, transparent, transparent, transparent, #fff); background: -moz-linear-gradient(90deg, transparent, transparent, transparent, #fff); background: linear-gradient(90deg, transparent, transparent, transparent, #fff);">
+            <div class="wrapper2" style="margin-top: 0px; margin-bottom: 0px;">
+                <table style="min-height: 400px;">
+                    <tr>
+                        <td style="width: 50%;">
+                            <p class="larger dark2">Complementary Capabilities</p>
 
-                        <p class="largerLineHeight dark3">One of L3 Networks’ greatest advantages is the versatility it offers businesses. Some companies prefer that their IT staff deal only with network and infrastructure management and therefore need a partner to handle help desk and user support. For others it’s just the opposite. L3 technology specialists have the skills needed to handle simple and advanced levels of service, plus they have strong people skills for employee or customer interaction.</p>
-                    </td>
+                            <p class="largerLineHeight dark3">One of L3 Networks’ greatest advantages is the versatility it offers businesses. Some companies prefer that their IT staff deal only with network and infrastructure management and therefore need a partner to handle help desk and user support. For others it’s just the opposite. L3 technology specialists have the skills needed to handle simple and advanced levels of service, plus they have strong people skills for employee or customer interaction.</p>
+                        </td>
 
-                    <td class="span_1_of_2">&nbsp;</td>
-                </tr>
-            </table>
+                        <td class="span_1_of_2">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-	</div>
-	
-	<div class="wrapper bgLight1">
+
+    <div class="wrapper bgLight1">
         <div class="wrapper2 center">
             <p class="larger">Get Started Today</p><a href="company.html" class="buttonBlueLong">Talk with our Team</a>
             <br>
@@ -520,48 +297,97 @@
     <footer>
         <div class="wrapper bgDark1">
             <div class="wrapper2">
-	            <div class="wrapper3">
-                <table class="section group" style="text-align: left;"><tr>
-                        <td class="span_1_of_6 center">
-                            <table style="margin: auto;"><tr><td><a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_02.png" style="width: 100px;"></a></td></tr></table>
-                        </td>
+                <div class="wrapper3">
+                    <table class="section group" style="text-align: left;">
+                        <tr>
+                            <td class="span_1_of_6 center">
+                                <table style="margin: auto;">
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_02.png" style="width: 100px;"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
 
-                        <td class="span_1_of_6">
-                            <table style="margin: auto;"><tr><td><h4><a href="it-management.html">IT Management</a></h4><a class="footer" href="it-management.html#managed">Managed Services</a><br>
-                            <a class="footer" href="it-management.html#serviceOp">Service Operations</a><br></td></tr></table>
-                        </td>
+                            <td class="span_1_of_6">
+                                <table style="margin: auto;">
+                                    <tr>
+                                        <td>
+                                            <h4><a href="it-management.html">IT Management</a></h4><a class="footer" href="it-management.html#managed">Managed Services</a>
+                                            <br>
+                                            <a class="footer" href="it-management.html#serviceOp">Service Operations</a>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
 
-                        <td class="span_1_of_6">
-                            <table style="margin: auto;"><tr><td><h4><a href="cloud-solutions.html">Cloud Services</a></h4><a class="footer" href="cloud-solutions.html#privateCloud">Private Cloud</a><br>
-                            <a class="footer" href="cloud-solutions.html#cloudIntegration">Cloud Integration</a><br></td></tr></table>
-                        </td>
-                        <td class="span_1_of_6">
-                            <table style="margin: auto; margin-left: 20px;"><tr><td><h4><a href="security.html">Security</a></h4><a class="footer" href="security.html#sas">Security Assessments</a><br>
-                            <a class="footer" href="security.html#tm">Threat Management</a><br>
-                            <a class="footer" href="security.html#eps">End Point Security</a><br>
-                            <a class="footer" href="security.html#va">Vulnerability&nbsp;Assessments</a></td></tr></table>
-                        </td>
+                            <td class="span_1_of_6">
+                                <table style="margin: auto;">
+                                    <tr>
+                                        <td>
+                                            <h4><a href="cloud-solutions.html">Cloud Services</a></h4><a class="footer" href="cloud-solutions.html#privateCloud">Private Cloud</a>
+                                            <br>
+                                            <a class="footer" href="cloud-solutions.html#cloudIntegration">Cloud Integration</a>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="span_1_of_6">
+                                <table style="margin: auto; margin-left: 20px;">
+                                    <tr>
+                                        <td>
+                                            <h4><a href="security.html">Security</a></h4><a class="footer" href="security.html#sas">Security Assessments</a>
+                                            <br>
+                                            <a class="footer" href="security.html#tm">Threat Management</a>
+                                            <br>
+                                            <a class="footer" href="security.html#eps">End Point Security</a>
+                                            <br>
+                                            <a class="footer" href="security.html#va">Vulnerability&nbsp;Assessments</a></td>
+                                    </tr>
+                                </table>
+                            </td>
 
-                        <td class="span_1_of_6">
-                            <table style="margin: auto;"><tr><td><h4><a href="data-protection.html">Data Protection</a></h4><a class="footer" href="data-protection.html#rb">Remote Backup</a><br>
-                            <a class="footer" href="data-protection.html#dr">Disaster Recovery</a><br></td></tr></table>
-                        </td>
+                            <td class="span_1_of_6">
+                                <table style="margin: auto;">
+                                    <tr>
+                                        <td>
+                                            <h4><a href="data-protection.html">Data Protection</a></h4><a class="footer" href="data-protection.html#rb">Remote Backup</a>
+                                            <br>
+                                            <a class="footer" href="data-protection.html#dr">Disaster Recovery</a>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
 
-                        <td class="span_1_of_6">
-                            <table style="margin: auto;"><tr><td><h4><a class="footer" href="company.html">Company</a></h4><a class="footer" href="company.html#cu">About Us</a><br><a class="footer" href="company.html#cu">Contact Us</a><br></td></tr></table>
-                        </td>
-                </tr></table>
+                            <td class="span_1_of_6">
+                                <table style="margin: auto;">
+                                    <tr>
+                                        <td>
+                                            <h4><a class="footer" href="company.html">Company</a></h4><a class="footer" href="company.html#cu">About Us</a>
+                                            <br><a class="footer" href="company.html#cu">Contact Us</a>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <hr>
 
                 <div class="copyRight">
-			    	&copy; 2016 L3Networks Inc. All Rights Reserved &reg; Privacy Policy &nbsp;&nbsp;|&nbsp;&nbsp; 17777 Center Court Dr. Suite 715 Cerritos, CA 90703</span> &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fa fa-phone"></i> 1&nbsp;(888)&nbsp;282-5353 &nbsp;&nbsp; <i class="fa fa-envelope-o"></i> <a href="mailto:info@l3networks.com">info@l3networks.com</a>
+                    &copy; 2016 L3Networks Inc. All Rights Reserved &reg; Privacy Policy &nbsp;&nbsp;|&nbsp;&nbsp; 17777 Center Court Dr. Suite 715 Cerritos, CA 90703</span> &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fa fa-phone"></i> 1&nbsp;(888)&nbsp;282-5353 &nbsp;&nbsp; <i class="fa fa-envelope-o"></i> <a href="mailto:info@l3networks.com">info@l3networks.com</a>
                 </div>
             </div>
-        </div><!-- wrapper -->
+        </div>
+        <!-- wrapper -->
     </footer>
     <script type="text/javascript">
-jQuery("#layerslider").layerSlider({
+        jQuery("#layerslider").layerSlider({
             responsive: true,
             responsiveUnder: 1000,
             layersContainer: 1000,
@@ -575,4 +401,5 @@ jQuery("#layerslider").layerSlider({
         });
     </script>
 </body>
+
 </html>
