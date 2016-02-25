@@ -1,0 +1,44 @@
+/* Styles for the website */
+
+
+/* Header Styles */
+.logo-container {
+  margin-top: 2.5rem;
+}
+
+.nav-container {
+  margin-top: 6rem;
+}
+
+.nav-container nav ul {
+  list-style: none;
+}
+
+.nav-container nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.nav-container nav ul li a {
+  color: #000;
+  font-size: .9rem;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav-container nav ul li a:hover {
+  color: #009cde;
+  transition: 0.2s all ease-in-out;
+}
+
+.client-login-btn-container {
+  margin-top: 2rem;
+}
+
+.client-login-btn {
+  text-transform: uppercase;
+  padding: .8rem 1.2rem;
+  border-radius: .8rem;
+  border: 2px solid #000;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+}
