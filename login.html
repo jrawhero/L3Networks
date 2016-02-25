@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Login | L3 Networks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript">
+</script><!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="css/masterResponsive.css">
+    <script src="js/script.js" type="text/javascript">
+</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'><!-- Javascript-->
+    <!--        Lightbox -->
+    <link rel="stylesheet" type="text/css" href="js/lightbox/themes/default/jquery.lightbox.css">
+    <script type="text/javascript" src="js/lightbox/jquery.lightbox.min.js">
+</script><!-- LayerSlider stylesheet -->
+<!--
+    <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
+    <script src="layerslider/js/jquery.js" type="text/javascript">
+</script>
+    <script src="layerslider/js/greensock.js" type="text/javascript">
+</script>
+    <script src="layerslider/js/layerslider.transitions.js" type="text/javascript">
+</script>
+    <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript">
+</script>
+--><!--[if lt IE 9]>  
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+  <![endif]-->
+  	<!-- CSS -->
+<!-- 	<link href="css/structure.css" rel="stylesheet"> -->
+	<link href="css/form.css" rel="stylesheet">
+	<link href="css/theme2.css" rel="stylesheet">
+	<!-- JavaScript -->
+	<script src="js/wufoo.js"></script>
+    <script type="text/javascript">
+function reset_fields_ticket()
+{
+	var user = document.getElementById('text_clientAccessUserLogin_UserName').value;
+	var pass = document.getElementById('text_clientAccessUserLogin_Password').value;
+	document.getElementById('text_clientAccessUserLogin_UserName').value='';
+	document.getElementById('text_clientAccessUserLogin_Password').value='';
+
+	var form_action = document.getElementById('open-a-ticket').action;
+
+	document.getElementById('open-a-ticket').action = form_action + "&username="+user+"&password="+pass;
+
+	//alert(document.getElementById('open-a-ticket').action);
+
+}
+
+function reset_fields_portal()
+{
+	document.getElementById('ctl00_ContentPlaceHolder1_Username').value=document.getElementById('text_ctl00_ContentPlaceHolder1_Username').value;
+	document.getElementById('ctl00_ContentPlaceHolder1_Password').value=document.getElementById('text_ctl00_ContentPlaceHolder1_Password').value;
+	document.getElementById('text_ctl00_ContentPlaceHolder1_Username').value='';
+	document.getElementById('text_ctl00_ContentPlaceHolder1_Password').value='';
+}
+</script>
+<!--
+<script type="text/javascript">
+  
+  if (screen.width <= 800) {
+    dydow.location = "mobile/";
+  }
+  
+</script>
+-->
+</head>
+
+<body>
+	<div class="wrapper" id="headerNav">
+	    <div class="wrapper2" style="margin: 0 auto; padding: 10px 0px;">
+	        <div class="section group">
+	            <div class="col span_1_of_5 left">
+	                <br>
+	                <a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_01.png"></a>
+	            </div>
+	
+	            <div class="col span_3_of_5">
+	                <div id="cssmenu" class="cssmenu">
+	                    <ul>
+	                        <li class="itManNav" onmouseover="show('itManDrop')">
+	                            <a href="it-management.html" >IT Management</a>
+	
+	                            <ul>
+	                                <li><a href="it-management.html#managed" class="itManNav1">IT Managed Services</a></li>
+	
+	                                <li><a href="it-management.html#serviceOp" class="itManNav2">Service Operations</a></li>
+	                            </ul>
+	                        </li>
+	
+	                        <li class="itCloudNav" onmouseover="show('itCloudDrop')">
+	                            <a href="cloud-solutions.html">Cloud Solutions</a>
+	
+	                            <ul>
+	                                <li><a href="cloud-solutions.html#privateCloud" class="itCloudDNav1">Private Cloud</a></li>
+	
+	                                <li><a href="cloud-solutions.html#cloudIntegration" class="itCloudNav2">Cloud Integration</a></li>
+	                            </ul>
+	                        </li>
+	
+	                        <li class="itSecurityNav" onmouseover="show('itSecurityDrop')">
+	                            <a href="security.html">Security</a>
+	
+	                            <ul>
+	                                <li><a href="security.html#sas" class="itSecurityNav1">Security Assessments</a></li>
+	
+	                                <li><a href="security.html#tm" class="itSecurityNav2">Threat Management</a></li>
+	
+	                                <li><a href="security.html#eps" class="itSecurityNav3">End Point Security</a></li>
+	
+	                                <li><a href="security.html#va" class="itSecurityNav4">Vulnerability Assessments</a></li>
+	                            </ul>
+	                        </li>
+	
+	                        <li class="itDataNav" onmouseover="show('itDataDrop')">
+	                            <a href="data-protection.html">Data Protection</a>
+	
+	                            <ul>
+	                                <li><a href="data-protection.html#rb" class="itDataNav1">Remote Backup</a></li>
+	
+	                                <li><a href="data-protection.html#dr" class="itDataNav2">Disaster Recovery</a></li>
+	                            </ul>
+	                        </li>
+	
+	                        <li class="itCompanyNav" onmouseover="show('itCompanyDrop')">
+	                            <a href="company.html">Company</a>
+	
+	                            <ul>
+	                                <li><a href="company.html#au" class="itCompanyNav1">About Us</a></li>
+	
+	                                <li><a href="company.html#cu" class="itCompanyNav2">Contact Us</a></li>
+	                            </ul>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	
+	            <div class="col span_1_of_5 center break800 ">
+	                <div class="phoneNumber">
+	                    <p style="margin-bottom: 3px;"><i class="fa fa-phone"></i> 888-282-5353</p><a href="login.html" class="clientLoginButton2" onmouseover="show('itLoginDrop')"><img src="img/clientLoginButton.png"></a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	    <div id="itManDrop" class="hide">
+		    <div class="wrapper2" style="margin: 0; padding: 0;">
+		        <div class="section group">
+		            <div class="col span_1_of_5 left break1000">
+		                &nbsp;
+		            </div>
+		
+		            <div class="col span_4_of_5 left break1000">
+		                <div class="cssmenu">
+		                    <ul>
+		                        <li><a href="it-management.html#managed" id="itManNav1">IT Managed Services</a></li>
+		
+		                        <li><a href="it-management.html#serviceOp" id="itManNav2">Service Operations</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		
+		<div id="itCloudDrop" class="hide">
+		    <div class="wrapper2" style="margin: 0; padding: 0;">
+		        <div class="section group">
+		            <div class="col span_1_of_5 left break1000">
+		                &nbsp;
+		            </div>
+		
+		            <div class="col span_4_of_5 left break1000">
+		                <div class="cssmenu">
+		                    <ul>
+		                        <!--                            <li style="visibility: hidden;"><a href="it-management.html">IT Management</a></li> -->
+		
+		                        <li><a href="cloud-solutions.html#privateCloud" id="itCloudNav1">Private Cloud</a></li>
+		
+		                        <li><a href="cloud-solutions.html#cloudIntegration" id="itCloudNav2">Cloud Integration</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		
+		<div id="itSecurityDrop" class="hide">
+		    <div class="wrapper2" style="margin: 0; padding: 0;">
+		        <div class="section group">
+		            <div class="col span_5_of_5 left break1000">		                
+			            <div class="cssmenu align-center">
+		                    <ul>
+		                        <!--                            <li style="visibility: hidden;"><a href="it-management.html">IT Management</a></li> -->
+		
+		                        <li><a href="security.html#sas" id="itSecurityNav1">Security Assessments</a></li>
+		
+		                        <li><a href="security.html#tm" id="itSecurityNav2">Threat Management</a></li>
+		
+		                        <li><a href="security.html#eps" id="itSecurityNav3">End Point Security</a></li>
+		
+		                        <li><a href="security.html#va" id="itSecurityNav4">Vulnerability Assessments</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		
+		<div id="itDataDrop" class="hide">
+		    <div class="wrapper2" style="margin: 0; padding: 0;">
+		        <div class="section group">
+		            <div class="col span_1_of_5 left break1000">
+		                &nbsp;
+		            </div>
+		
+		            <div class="col span_4_of_5 left break1000">
+		                <div class="cssmenu">
+		                    <ul>
+		                        <li><a href="data-protection.html#rb" id="itDataNav1">Remote Backup</a></li>
+		
+		                        <li><a href="data-protection.html#dr" id="itDataNav2">Disaster Recovery</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		
+		
+		<div id="itCompanyDrop" class="hide">
+		    <div class="wrapper2" style="margin: 0; padding: 0;">
+		        <div class="section group">
+		            <div class="col span_1_of_5 left break1000">
+		                &nbsp;
+		            </div>
+		
+		            <div class="col span_4_of_5 left break1000">
+		                <div class="cssmenu">
+		                    <ul>
+		                        <li><a href="#au" id="itCompanyNav1" onclick="stickTheNav()">About Us</a></li>
+		
+		                        <li><a href="#cu" id="itCompanyNav2" onclick="stickTheNav()">Contact Us</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+	    </div>
+	    
+	    <div id="stickyNav">
+	    <div id="itLoginDrop" class="show">
+		    <div class="wrapper2" style="margin: 0; padding: 0;">
+		        <div class="section group">
+		            <div class="col span_1_of_5 left break1000">
+		                &nbsp;
+		            </div>
+		
+		            <div class="col span_4_of_5 left break1000">
+		                <div class="cssmenu">
+		                    <ul>
+		                        <li><a href="#" id="loginNav1">Client Login</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+	    </div>
+	    </div>
+	</div>
+
+    <div class="wrapper" onmouseover="show('itLoginDrop')">
+        <div class="wrapper2">
+	        <div class="section group">
+		        <div class="col span_1_of_2 left bgLight1 roundedCorners break800">
+			        <div class="padding45">
+				        <p class="larger">Manage Account</p>
+						<form method="post" action="http://monitor.l3networks.com/Orion/Login.aspx?ReturnUrl=%2fDefault.aspx" id="Constan-Coverage-Portal" name="Constant-Coverage-Portal" class="wufoo topLabel page sw-app-region sw-pg-login">			
+			            <ul>
+			                <li class="notranslate      ">
+<!-- 			                    <label class="desc" id="title1" for="Field1">Username</label> -->
+			
+			                    <div>
+<input  type="text" placeholder="  Username" class="field text large" name="text_clientAccessUserLogin$UserName" id="text_clientAccessUserLogin_UserName" maxlength="255"  onkeyup="" onClick="this.value='';">
+                                    
+									<input type="hidden" name="username" id="clientAccessUserLogin_UserName">
+			                    </div>
+			                </li>
+			
+			                <li class="notranslate      ">
+<!-- 			                    <label class="desc" id="title2" for="Field2">Password</label> -->
+			
+			                    <div>
+			                        <input  type="password" placeholder="  Password" class="field text large" name="text_clientAccessUserLogin$Password" maxlength="255"  onkeyup="" onClick="this.value='';">
+									<input type="hidden" name="password" id="clientAccessUserLogin_Password">
+			                    </div>
+			                </li>
+			
+			                <li class="buttons center">
+			                <div>
+			                    <input name="saveForm" class="btTxt submit"
+			    type="submit" value="Log In" />
+			 				</div>
+			                </li>
+			                
+			                 <li class="notranslate center">
+			                 	<a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">Forgot your email or password?</a>
+			                 </li>
+			
+			                <li class="hide"><label for="comment">Do Not Fill This Out</label> 
+			                <textarea name="comment" id="comment" rows="1" cols="1">
+			</textarea> <input type="hidden" id="idstamp" name="idstamp" value="twggnanrrVyQeu9Z/Q7gf9BLK4oyn/NDKxeT7ZMLuXk="></li>
+			            </ul>
+			        </form>
+
+			        </div>
+			    </div>
+		        <div class="col span_1_of_2 left bgLight1 roundedCorners break800">
+			        <div class="padding45">
+				        <p class="larger">Open a Service Ticket</p>
+				        <form name="form1" method="post" action="https://ww5.autotask.net/ClientPortal/Login.aspx?ci=3336" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" style="height: 100%;" _lpchecked="1" class="wufoo topLabel page sw-app-region sw-pg-login">			
+			            <ul>
+			                <li class="notranslate      ">
+<!-- 			                    <label class="desc" id="title1" for="Field1">Username</label> -->
+			
+			                    <div>
+			                        <input  type="text" placeholder="  Username" class="field text large" name="text_clientAccessUserLogin$UserName" id="text_clientAccessUserLogin_UserName" maxlength="255"  onkeyup="" onClick="this.value='';">
+                                    
+									<input type="hidden" name="username" id="clientAccessUserLogin_UserName">
+                                    
+                                    
+			                    </div>
+			                </li>
+			
+			                <li class="notranslate      ">
+<!-- 			                    <label class="desc" id="title2" for="Field2">Password</label> -->
+			
+			                    <div>
+			                        <input  type="password" placeholder="  Password" class="field text large" name="text_clientAccessUserLogin$Password" maxlength="255" onkeyup="" onClick="this.value='';">
+									<input type="hidden" name="password" id="clientAccessUserLogin_Password">
+                                    
+			                    </div>
+			                </li>
+			
+			                <li class="buttons center">
+			                <div>
+			                    <input name="saveForm" class="btTxt submit"
+			    type="submit" value="Log In" />
+			 				</div>
+			                </li>
+			                
+			                <li class="notranslate center">
+				            	<a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">
+				                 	Forgot your email or password?</a>
+			                 </li>
+			
+			                <li class="hide"><label for="comment">Do Not Fill This Out</label> 
+			                <textarea name="comment" id="comment" rows="1" cols="1">
+			</textarea> <input type="hidden" id="idstamp" name="idstamp" value="twggnanrrVyQeu9Z/Q7gf9BLK4oyn/NDKxeT7ZMLuXk="></li>
+			            </ul>
+			        </form>
+			        </div>
+		        </div>
+	        </div> 
+	        <div class="section group">
+		        <div class="col span_1_of_2 center break800">
+			        <span class="smaller dark2 largerLineHeight hideMobile" style="text-decoration: none;">Contact Us:&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i>&nbsp;1&nbsp;(888)&nbsp;282-5353&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o"></i> <a href="mailto:info@l3networks.com" class="smaller dark2" style="text-decoration: none;">info@l3networks.com</a></span>
+		        </div>
+		        
+		        <div class="col span_1_of_2 center break800">
+			        <span class="smaller dark2 largerLineHeight hideMobile" style="text-decoration: none;">Contact Us:&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i>&nbsp;1&nbsp;(888)&nbsp;282-5353&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o"></i> <a href="mailto:info@l3networks.com" class="smaller dark2" style="text-decoration: none;">info@l3networks.com</a></span>
+		        </div>
+	        </div>           
+        </div>
+		<center><img src="img/clouds.png"></center>
+		
+    </div>
+
+    <footer>
+        <div class="wrapper bgDark1">
+            <div class="wrapper2">
+	            <div class="wrapper3">
+                <table class="section group" style="text-align: left;"><tr>
+                        <td class="span_1_of_6 center">
+                            <table style="margin: auto;"><tr><td><a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_02.png" style="width: 100px;"></a></td></tr></table>
+                        </td>
+
+                        <td class="span_1_of_6">
+                            <table style="margin: auto;"><tr><td><h4><a href="it-management.html">IT Management</a></h4><a class="footer" href="it-management.html#managed">Managed Services</a><br>
+                            <a class="footer" href="it-management.html#serviceOp">Service Operations</a><br></td></tr></table>
+                        </td>
+
+                        <td class="span_1_of_6">
+                            <table style="margin: auto;"><tr><td><h4><a href="cloud-solutions.html">Cloud Services</a></h4><a class="footer" href="cloud-solutions.html#privateCloud">Private Cloud</a><br>
+                            <a class="footer" href="cloud-solutions.html#cloudIntegration">Cloud Integration</a><br></td></tr></table>
+                        </td>
+                        <td class="span_1_of_6">
+                            <table style="margin: auto; margin-left: 20px;"><tr><td><h4><a href="security.html">Security</a></h4><a class="footer" href="security.html#sas">Security Assessments</a><br>
+                            <a class="footer" href="security.html#tm">Threat Management</a><br>
+                            <a class="footer" href="security.html#eps">End Point Security</a><br>
+                            <a class="footer" href="security.html#va">Vulnerability&nbsp;Assessments</a></td></tr></table>
+                        </td>
+
+                        <td class="span_1_of_6">
+                            <table style="margin: auto;"><tr><td><h4><a href="data-protection.html">Data Protection</a></h4><a class="footer" href="data-protection.html#rb">Remote Backup</a><br>
+                            <a class="footer" href="data-protection.html#dr">Disaster Recovery</a><br></td></tr></table>
+                        </td>
+
+                        <td class="span_1_of_6">
+                            <table style="margin: auto;"><tr><td><h4><a class="footer" href="company.html">Company</a></h4><a class="footer" href="company.html#cu">About Us</a><br><a class="footer" href="company.html#cu">Contact Us</a><br></td></tr></table>
+                        </td>
+                </tr></table>
+                </div>
+                <hr>
+
+                <div class="copyRight">
+			    	&copy; 2016 L3Networks Inc. All Rights Reserved &reg; Privacy Policy &nbsp;&nbsp;|&nbsp;&nbsp; 17777 Center Court Dr. Suite 715 Cerritos, CA 90703</span> &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fa fa-phone"></i> 1&nbsp;(888)&nbsp;282-5353 &nbsp;&nbsp; <i class="fa fa-envelope-o"></i> <a href="mailto:info@l3networks.com">info@l3networks.com</a>
+                </div>
+            </div>
+        </div><!-- wrapper -->
+    </footer>
+    <!--
+<script type="text/javascript">
+jQuery("#layerslider").layerSlider({
+            responsive: true,
+            responsiveUnder: 1000,
+            layersContainer: 1000,
+            skin: 'fullwidth',
+            hoverPrevNext: false,
+            skinsPath: 'layerslider/skins/',
+            hideOnMobile: false,
+            navButtons: false,
+            navPrevNext: false,
+            navStartStop: false
+        });
+    </script>
+-->
+</body>
+</html>
