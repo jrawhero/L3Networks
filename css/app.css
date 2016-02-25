@@ -2,6 +2,13 @@
 
 
 /* Header Styles */
+
+.main-header-container {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
 .logo-container {
   margin-top: 2.5rem;
 }
@@ -41,4 +48,39 @@
   border: 2px solid #000;
   font-size: .9rem;
   letter-spacing: .1rem;
+}
+
+.under-nav {
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  background: #333;
+  z-index: 0;
+  padding: 1rem 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.under-nav ul {
+  margin-bottom: 0;
+}
+
+.under-nav li {
+  display: inline-block;
+  padding: 0rem 1rem;
+  font-size: .9rem;
+}
+
+.under-nav li a {
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+.under-nav li a:hover {
+  color: #009cde;
+  transition: 0.2s all ease-in-out;
+}
+
+.under-nav-open {
+  top: 135px;
+  transition: 0.2s all ease-in-out;
 }

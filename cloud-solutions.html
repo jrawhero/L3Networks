@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Load in Latest jquery -->
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/app.js"></script>
 
     <!-- Load in Foundation -->
@@ -19,78 +19,97 @@
 
 <body>
   <header>
-    <div class="row">
-      <div class="logo-container small-12 large-3 columns">
-          <a href="http://www.l3networks.com">
-            <img src="img/nav/nav-graphics_01.png">
-          </a>
-      </div>
-      <div class="nav-container small-12 large-7 columns">
-        <nav>
-          <ul>
-            <li><a href="it-management.html" rel="it-management">IT Management</a></li>
-            <li><a href="cloud-solutions.html" rel="cloud-solutions">Cloud Solutions</a></li>
-            <li><a href="security.html" rel="security">Security</a></li>
-            <li><a href="data-protection.html" rel="data-protection">Data Protection</a></li>
-            <li><a href="company.html" rel="company">Company</a></li>
-          </ul>
-        </nav>
 
-        <div class="under-nav guy1" id="dood">
+    <div class="main-header-container">
+      <div class="row">
+        <div class="logo-container small-12 large-3 columns">
+            <a href="http://www.l3networks.com">
+              <img src="img/nav/nav-graphics_01.png">
+            </a>
+        </div>
+        <div class="nav-container small-12 large-7 columns">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#" rel="it-management">IT Management</a></li>
+              <li><a href="#" rel="cloud-solutions">Cloud Solutions</a></li>
+              <li><a href="#" rel="security">Security</a></li>
+              <li><a href="#" rel="data-protection">Data Protection</a></li>
+              <li><a href="#" rel="company">Company</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="client-login-btn-container small-2 columns">
+          <p>888-282-5353</p><button class="client-login-btn">Client Login</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="under-nav-container">
+
+      <!-- it-management -->
+      <div class="under-nav" id="it-management">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
             <ul>
                 <li><a href="it-management.html">IT Managed Services</a></li>
                 <li><a href="it-management.html">Service Operations</a></li>
             </ul>
+          </div>
         </div>
-
-          <ul>
-              <li>
-                  <a href="it-management.html">IT Management</a>
-                  <ul>
-                      <li><a href="it-management.html">IT Managed Services</a></li>
-                      <li><a href="it-management.html">Service Operations</a></li>
-                  </ul>
-              </li>
-
-              <li>
-                  <a href="cloud-solutions.html" class="active">Cloud Solutions</a>
-                  <ul>
-                      <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
-                      <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
-                  </ul>
-              </li>
-              <li>
-                  <a href="security.html">Security</a>
-
-                  <ul>
-                      <li><a href="security.html#sas">Security Assessments</a></li>
-                      <li><a href="security.html#tm">Threat Management</a></li>
-                      <li><a href="security.html#eps">End Point Security</a></li>
-                      <li><a href="security.html#va">Vulnerability Assessments</a></li>
-                  </ul>
-              </li>
-              <li> <a href="data-protection.html">Data Protection</a>
-                  <ul>
-                      <li><a href="data-protection.html#rb">Remote Backup</a></li>
-                      <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
-                  </ul>
-              </li>
-
-              <li> <a href="company.html">Company</a>
-
-                  <ul>
-                      <li><a href="company.html#au">About Us</a></li>
-                      <li><a href="company.html#cu">Contact Us</a></li>
-                  </ul>
-              </li>
-              </ul>
-
-        </nav>
       </div>
 
-      <div class="client-login-btn-container small-2 columns">
-        <p>888-282-5353</p><button class="client-login-btn">Client Login</button>
+      <!-- Cloud Solutions -->
+      <div class="under-nav" id="cloud-solutions">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
+              <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+
+      <!-- Security -->
+      <div class="under-nav" id="security">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="security.html#sas">Security Assessments</a></li>
+              <li><a href="security.html#tm">Threat Management</a></li>
+              <li><a href="security.html#eps">End Point Security</a></li>
+              <li><a href="security.html#va">Vulnerability Assessments</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Protection -->
+      <div class="under-nav" id="data-protection">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="data-protection.html#rb">Remote Backup</a></li>
+              <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="under-nav" id="company">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="company.html#au">About Us</a></li>
+              <li><a href="company.html#cu">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
       </div>
     </div>
