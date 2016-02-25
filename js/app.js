@@ -24,7 +24,7 @@
         var $subNavToShow = $(this).attr('rel');
         console.log($subNavToShow);
 
-        // this.$underNavContainer.find('.under-nav-open').removeClass('under-nav-open');
+        $('.under-nav-container').find('.under-nav-open').removeClass('under-nav-open');
 
         $('#'+$subNavToShow).toggleClass('under-nav-open');
       }
