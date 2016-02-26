@@ -195,3 +195,84 @@ line-height: 1.3;
 .blue-line {
   margin-top: 2rem;
 }
+
+.services h3 {
+  color: #009cde;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
+.service-block {
+  position: relative;
+  min-height: 22rem;
+}
+
+.service-link {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+}
+
+.services p {
+  font-weight: 300;
+}
+
+.grey-bg {
+  background: #eee;
+  padding: 5rem 0;
+  margin: 5rem 0 0;
+}
+
+.get-started h4 {
+  font-weight: 300;
+}
+
+.get-started .talk-button {
+  background: #009cde;
+  color: white;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+.get-started .talk-button:hover {
+  background-color: white;
+  color: #009cde;
+}
+
+.contact-us,
+.email-us {
+  font-weight: 300;
+}
+
+
+/* Footer Styles */
+footer {
+  background: #333;
+  padding: 4rem 0 0;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul li {
+  font-size: .7rem;
+}
+
+.footer-nav ul li a {
+  color: #ccc;
+}
+
+a.footer-head-link {
+  color: #fff !important;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.copyright p {
+  color: #ccc;
+  font-size: .7rem;
+  padding: 1rem 0;
+}
