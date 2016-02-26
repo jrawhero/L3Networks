@@ -25,6 +25,7 @@ body {
  .bluemain{
   background: #009cde;
  }
+<<<<<<< HEAD
  .hockey-hero {
 background:url("../img/slideshow/dataProtection/med-overlay/hockeyOverlay.png") no-repeat center center;
 background-size:cover;
@@ -43,6 +44,8 @@ height: 60%;
   margin-top:1rem;
   line-height: 1;
 }
+=======
+>>>>>>> origin/master
 
  .whitetext{
 color:white;
@@ -236,6 +239,13 @@ color:white;
 .service-block {
   position: relative;
   min-height: 22rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .service-block {
+    min-height: 18rem;
+    padding: 4rem 0;
+  }
 }
 
 .service-link {
