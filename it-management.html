@@ -13,54 +13,98 @@
 </head>
 
 <body>
-    <div>
-        <a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_01.png"></a>
+    <header>
 
-        <ul>
-            <li>
-                <a href="it-management.html">IT Management</a>
-                <ul>
-                    <li><a href="it-management.html">IT Managed Services</a></li>
-                    <li><a href="it-management.html">Service Operations</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="cloud-solutions.html" class="active">Cloud Solutions</a>
-                <ul>
-                    <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
-                    <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="security.html">Security</a>
-
-                <ul>
-                    <li><a href="security.html#sas">Security Assessments</a></li>
-                    <li><a href="security.html#tm">Threat Management</a></li>
-                    <li><a href="security.html#eps">End Point Security</a></li>
-                    <li><a href="security.html#va">Vulnerability Assessments</a></li>
-                </ul>
-            </li>
-            <li> <a href="data-protection.html">Data Protection</a>
-                <ul>
-                    <li><a href="data-protection.html#rb">Remote Backup</a></li>
-                    <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
-                </ul>
-            </li>
-
-            <li> <a href="company.html">Company</a>
-
-                <ul>
-                    <li><a href="company.html#au">About Us</a></li>
-                    <li><a href="company.html#cu">Contact Us</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <p>888-282-5353</p><img src="img/clientLoginButton.png" alt=""></li>
-        </ul>
+    <div class="main-header-container">
+      <div class="row">
+        <div class="logo-container small-12 large-3 columns">
+            <a href="http://www.l3networks.com">
+              <img src="img/nav/nav-graphics_01.png">
+            </a>
+        </div>
+        <div class="nav-container small-12 large-7 columns">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#" rel="it-management">IT Management</a></li>
+              <li><a href="#" rel="cloud-solutions">Cloud Solutions</a></li>
+              <li><a href="#" rel="security">Security</a></li>
+              <li><a href="#" rel="data-protection">Data Protection</a></li>
+              <li><a href="#" rel="company">Company</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="client-login-btn-container small-2 columns">
+          <p>888-282-5353</p><button class="client-login-btn">Client Login</button>
+        </div>
+      </div>
     </div>
+
+    <div class="under-nav-container">
+
+      <!-- it-management -->
+      <div class="under-nav" id="it-management">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+                <li><a href="it-management.html">IT Managed Services</a></li>
+                <li><a href="it-management.html">Service Operations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Solutions -->
+      <div class="under-nav" id="cloud-solutions">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
+              <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div class="under-nav" id="security">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="security.html#sas">Security Assessments</a></li>
+              <li><a href="security.html#tm">Threat Management</a></li>
+              <li><a href="security.html#eps">End Point Security</a></li>
+              <li><a href="security.html#va">Vulnerability Assessments</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Protection -->
+      <div class="under-nav" id="data-protection">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="data-protection.html#rb">Remote Backup</a></li>
+              <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="under-nav" id="company">
+        <div class="row">
+          <div class="large-12 large-offset-3 columns">
+            <ul>
+              <li><a href="company.html#au">About Us</a></li>
+              <li><a href="company.html#cu">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
 
 
     <div>
@@ -176,37 +220,76 @@
     </div>
 
 
-    <div>
-        <p>Get Started Today</p><a href="company.html">Talk with our Team</a>
-        <p>Learn More <a href="company.html#au">About Us.</p>
+     <div class="grey-bg">
+    <div class="row get-started">
+      <div class="small-5 small-centered columns text-center">
+        <h4>Get Started Today</h4>
+        <a href="company.html#au"><button class="talk-button">Talk with our Team</button></a>
+        <div class="contact-us">Contact us: <i class="fa fa-phone"></i> 888-282-5353 </div><div class="email-us">Email us: <a href="mailto:info@l3networks.com">info@l3networks.com</a></div>
+      </div>
+    </div>
+  </div>
+
+
+    <footer>
+    <div class="row footer-nav">
+
+      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+        <a href="http://www.l3networks.com">
+          <img src="img/nav/nav-graphics_02.png" style="width: 100px;">
+        </a>
+      </div>
+
+      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+        <ul>
+          <li><a class="footer-head-link" href="it-management.html">IT Management</a></li>
+          <li><a href="it-management.html#managed">Managed Services</a></li>
+          <li><a href="it-management.html#serviceOp">Service Operations</a></li>
+        </ul>
+      </div>
+
+      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+        <ul>
+          <li><a class="footer-head-link" href="cloud-solutions.html">Cloud Services</a></li>
+          <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
+          <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
+        </ul>
+      </div>
+
+      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+        <ul>
+          <li><a class="footer-head-link" href="security.html">Security</a></li>
+          <li><a href="security.html#sas">Security Assessments</a></li>
+          <li><a href="security.html#tm">Threat Management</a></li>
+          <li><a href="security.html#eps">End Point Security</a></li>
+          <li><a href="security.html#va">Vulnerability&nbsp;Assessments</a></li>
+        </ul>
+      </div>
+
+      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+        <ul>
+          <li><a class="footer-head-link" href="data-protection.html">Data Protection</a></li>
+          <li><a href="data-protection.html#rb">Remote Backup</a></li>
+          <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
+        </ul>
+      </div>
+      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+        <ul>
+          <li><a class="footer-head-link" href="company.html">Company</a></li>
+          <li><a href="company.html#cu">About Us</a></li>
+          <li><a href="company.html#cu">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
 
+    <hr class="footer-hr">
 
-    <div>
-            <a href="http://www.l3networks.com"><img src="img/nav/nav-graphics_02.png" style="width: 100px;"></a>
-
-            <a href="it-management.html">IT Management</a><a href="it-management.html#managed">Managed Services</a>
-            <a href="it-management.html#serviceOp">Service Operations</a>
-
-            <a href="cloud-solutions.html">Cloud Services</a><a href="cloud-solutions.html#privateCloud">Private Cloud</a>
-            <a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a>
-
-            <a href="security.html">Security</a><a href="security.html#sas">Security Assessments</a>
-            <a href="security.html#tm">Threat Management</a>
-            <a href="security.html#eps">End Point Security</a>
-            <a href="security.html#va">Vulnerability&nbsp;Assessments</a></td>
-
-
-            <a href="data-protection.html">Data Protection</a><a class="footer" href="data-protection.html#rb">Remote Backup</a>
-            <a href="data-protection.html#dr">Disaster Recovery</a>
-            <a href="company.html">Company</a><a href="company.html#cu">About Us</a>
-            <a href="company.html#cu">Contact Us</a>
-
-
-            <div>
-                &copy; 2016 L3Networks Inc. All Rights Reserved &reg; Privacy Policy |17777 Center Court Dr. Suite 715 Cerritos, CA 90703 | 1(888)282-5353 <a href="mailto:info@l3networks.com">info@l3networks.com</a>
-            </div>
+    <div class="row">
+      <div class="small-12 text-center columns copyright">
+          <p>&copy; 2016 L3Networks Inc. All Rights Reserved &reg; Privacy Policy |17777 Center Court Dr. Suite 715 Cerritos, CA 90703 | 1(888)282-5353 <a href="mailto:info@l3networks.com">info@l3networks.com</a></p>
+      </div>
     </div>
+  </footer>
 </body>
 
 </html>
