@@ -6,32 +6,36 @@ body {
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   color:#323232;
 }
-.main-container{
+
+.main-container {
   width:100%;
   min-height:50%;
   padding: 3rem 0;
 }
- .darkgrey{
+ .darkgrey {
   background: #323232;
  }
+
  .darkgrey .row img{
   margin:0;
   padding:0;
  }
- .yellowtri{
+
+ .yellowtri {
   display: inline;
   position:relative;
  }
- .bluemain{
+
+ .bluemain {
   background: #009cde;
  }
-<<<<<<< HEAD
- .hockey-hero {
+
+.hockey-hero {
 background:url("../img/slideshow/dataProtection/med-overlay/hockeyOverlay.png") no-repeat center center;
 background-size:cover;
 height: 60%;
  }
- .hero-text h1{
+ .hero-text h1 {
   font-size:35px;
   margin:0;
 }
@@ -39,16 +43,15 @@ height: 60%;
  font-size: 20px;
  margin:0;
  }
+
 .hero-text h3 {
   font-size: 16px;
-  margin-top:1rem;
+  margin-top: 1rem;
   line-height: 1;
 }
-=======
->>>>>>> origin/master
 
- .whitetext{
-color:white;
+ .whitetext {
+color: white;
 line-height: 1.3;
  }
  p{
