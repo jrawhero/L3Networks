@@ -3,11 +3,14 @@
 
   $(document).ready(function(){
     var interactive = {
+
+      // Intitialize the program
       init: function() {
         this.cacheDom();
         this.bindEvents();
       },
 
+      // Cache Dome
       cacheDom: function() {
         this.$mainNavItem = $('.main-nav ul li a');
         this.$underNavContainer = $('.under-nav-container');
@@ -15,9 +18,12 @@
         this.$document = $(document);
       },
 
+      //Bind Events
       bindEvents: function() {
         this.$mainNavItem.on('click', this.subNavShow);
         this.$document.on('click', this.hideSubNav);
+        this.$window.scroll(this.navShrinkOnScroll);
+
         console.log('binding');
       },
 
@@ -36,6 +42,16 @@
       hideSubNav: function(e) {
         e.stopPropagation();
         $('.under-nav').removeClass('under-nav-open');
+      },
+
+      // Fixed and Skrink Nav
+      navShrinkOnScroll: function() {
+
+        if($(window).scrollTop() > 2) {
+          $('.main-header-container').addClass('scrolled');
+        } else {
+          $('.main-header-container').removeClass('scrolled');
+        }
       }
     };
 
