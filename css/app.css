@@ -289,6 +289,40 @@ color:white;
   font-weight: 300;
 }
 
+/* IT Management Styles */
+
+.it-management-header-img {
+  background: url('../img/slideshow/itManagement/med-overlay/racecarOverlay.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+.it-management-header-img h1 {
+  color: white;
+  padding-top: 10rem;
+}
+
+.it-management-header-img h3 {
+  color: white;
+}
+
+.it-management-header-img p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.it-management-blocks {
+  padding: 6rem 0;
+}
+
+.it-management-blocks h3 {
+  color: #009cde;
+  font-size: 1.5rem;
+}
+
 
 /* Footer Styles */
 footer {

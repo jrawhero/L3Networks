@@ -5,24 +5,39 @@
 <head>
     <meta charset="utf-8">
 
-    <title>IT Management | L3 Networks</title>
+    <title>Home | L3 Networks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript">
-    </script>
+    <!-- Load in Latest jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Load in Flickity Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+    <!-- Load in our JS -->
+    <script src="js/app.js"></script>
+
+    <!-- Load in Foundation -->
+    <link rel="stylesheet" href="css/foundation/foundation.css">
+    <!-- Load in Flickity Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.min.css">
+    <!-- Load Font Awesome Icons CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Load in App CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+
 </head>
 
 <body>
-    <header>
+  <header>
 
     <div class="main-header-container">
       <div class="row">
-        <div class="logo-container small-12 large-3 columns">
+        <div class="logo-container small-12 large-2 columns">
             <a href="http://www.l3networks.com">
-              <img src="img/nav/nav-graphics_01.png">
+              <img style="max-width: 200px;" src="img/nav/nav-graphics_01.png">
             </a>
         </div>
-        <div class="nav-container small-12 large-7 columns">
+        <div class="nav-container small-12 large-8 columns">
           <nav class="main-nav">
             <ul>
               <li><a href="#" rel="it-management">IT Management</a></li>
@@ -44,7 +59,7 @@
       <!-- it-management -->
       <div class="under-nav" id="it-management">
         <div class="row">
-          <div class="large-12 large-offset-3 columns">
+          <div class="large-12 large-offset-2 columns">
             <ul>
                 <li><a href="it-management.html">IT Managed Services</a></li>
                 <li><a href="it-management.html">Service Operations</a></li>
@@ -56,7 +71,7 @@
       <!-- Cloud Solutions -->
       <div class="under-nav" id="cloud-solutions">
         <div class="row">
-          <div class="large-12 large-offset-3 columns">
+          <div class="large-12 large-offset-2 columns">
             <ul>
               <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
               <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
@@ -68,7 +83,7 @@
       <!-- Security -->
       <div class="under-nav" id="security">
         <div class="row">
-          <div class="large-12 large-offset-3 columns">
+          <div class="large-12 large-offset-2 columns">
             <ul>
               <li><a href="security.html#sas">Security Assessments</a></li>
               <li><a href="security.html#tm">Threat Management</a></li>
@@ -82,7 +97,7 @@
       <!-- Data Protection -->
       <div class="under-nav" id="data-protection">
         <div class="row">
-          <div class="large-12 large-offset-3 columns">
+          <div class="large-12 large-offset-2 columns">
             <ul>
               <li><a href="data-protection.html#rb">Remote Backup</a></li>
               <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
@@ -94,7 +109,7 @@
       <!-- Company -->
       <div class="under-nav" id="company">
         <div class="row">
-          <div class="large-12 large-offset-3 columns">
+          <div class="large-12 large-offset-2 columns">
             <ul>
               <li><a href="company.html#au">About Us</a></li>
               <li><a href="company.html#cu">Contact Us</a></li>
@@ -106,32 +121,34 @@
     </div>
   </header>
 
-
-    <div>
-        <p>IT Management</p>
-        <p>Constant Coverage | Enhanced Performance</p>
-        <p>We’re experts in our industry so you can be leaders in yours</p>
+  <div class="it-management-header-img">
+    <div class="row">
+      <div class="small-12 large-5 columns">
+        <h1>It Management</h1>
+        <h3>Constant Coverage | Enhance Performance</h3>
+        <p>We're experts in our industry so you can be leaders in yours</p>
+      </div>
     </div>
+  </div>
 
-
-    <div>
-        <p>IT Managed Services</p>
-        <p>L3 offers companies a full-service worry-free way to implement a technology infrastructure that optimizes business needs with proactive support that ensures your systems are always up and running.</p>
-        <a href="#managed">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
-
-        <p>Service Operations</p>
-        <p>Free up time and resources for your IT team by utilizing L3 Networks for tasks that are tedious and time-consuming or complex and outside the scope of your existing capabilities.</p>
-        <a href="#serviceOp">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
+  <div class="row it-management-blocks">
+    <div class="small-12 large-6 columns">
+      <h3>IT Managed Services</h3>
+      <p>L3 offers companies a full-service worry-free way to implement a technology infrastructure that optimizes business needs with proactive support that ensures your systems are always up and running.</p>
+      <a href="#managed">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
     </div>
+    <div class="small-12 large-6 columns">
+      <h3>Service Operations</h3>
+      <p>Free up time and resources for your IT team by utilizing L3 Networks for tasks that are tedious and time-consuming or complex and outside the scope of your existing capabilities.</p>
+      <a href="#serviceOp">Learn More&nbsp;<img src="img/triangleLearnMore.png"></a>
+    </div>
+  </div>
 
-
-    <div>
-        <p>IT Managed Services</p>
+    <div class="small-12 large-6 columns">
+        <h3>IT Managed Services</h3>
         <p>The cornerstone of L3 Networks IT Managed Services advantage is our ability to align your business with best practice technology. We look at your entire infrastructure, identify potential problems, and provide best-ﬁt solutions to ensure every aspect of your IT Infrastructure is supporting your business needs.</p>
         <p>Our strategically designed solutions and reliable 24/7 support optimize the performance of your operation, and through diligent monitoring and response checks, incidents are remediated before impacting end-user experience.</p><img src="img/it-management-graphics_01.png" alt="it-management-graphics_01">
     </div>
-
-
 
 
     <div>
