@@ -17,7 +17,7 @@ body {
  .bluemain{
   background: #009cde;
  }
- 
+
  .whitetext{
 color:white;
 line-height: 1.3;
@@ -206,6 +206,13 @@ line-height: 1.3;
 .service-block {
   position: relative;
   min-height: 22rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .service-block {
+    min-height: 18rem;
+    padding: 4rem 0;
+  }
 }
 
 .service-link {
