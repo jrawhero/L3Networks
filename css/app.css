@@ -265,6 +265,13 @@ color:white;
 .main-content-block p {
   font-size: 1.5rem;
   font-weight: 300;
+  line-height: 2rem;
+}
+
+.why-choose {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  padding: 8rem 0;
 }
 
 .blue-line {
