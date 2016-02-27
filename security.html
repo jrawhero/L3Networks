@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-
     <title>Security | L3 Networks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Load in Latest jquery -->
+    <!-- Load in Latest jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-
     <script src="js/app.js"></script>
-
     <!-- Load in Foundation -->
     <link rel="stylesheet" href="css/foundation/foundation.css">
     <!-- Load in Flickity Slider CSS -->
@@ -26,141 +21,126 @@
 
 <body>
     <header>
-
-    <div class="main-header-container">
-      <div class="row">
-        <div class="logo-container small-12 large-3 columns">
-            <a href="http://www.l3networks.com">
-              <img style="max-width: 200px;" src="img/nav/nav-graphics_01.png">
-            </a>
+        <div class="main-header-container">
+            <div class="row">
+                <div class="logo-container small-12 large-3 columns">
+                    <a href="http://www.l3networks.com">
+                        <img style="max-width: 200px;" src="img/nav/nav-graphics_01.png">
+                    </a>
+                </div>
+                <div class="nav-container small-12 large-7 columns">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#" rel="it-management">IT Management</a></li>
+                            <li><a href="#" rel="cloud-solutions">Cloud Solutions</a></li>
+                            <li><a href="#" rel="security">Security</a></li>
+                            <li><a href="#" rel="data-protection">Data Protection</a></li>
+                            <li><a href="#" rel="company">Company</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="client-login-btn-container small-2 columns">
+                    <p class="top-number"><i class="fa fa-phone"></i>888-282-5353</p>
+                    <button class="client-login-btn">Client Login</button>
+                </div>
+            </div>
         </div>
-        <div class="nav-container small-12 large-7 columns">
-          <nav class="main-nav">
-            <ul>
-              <li><a href="#" rel="it-management">IT Management</a></li>
-              <li><a href="#" rel="cloud-solutions">Cloud Solutions</a></li>
-              <li><a href="#" rel="security">Security</a></li>
-              <li><a href="#" rel="data-protection">Data Protection</a></li>
-              <li><a href="#" rel="company">Company</a></li>
-            </ul>
-          </nav>
+        <div class="under-nav-container">
+            <!-- it-management -->
+            <div class="under-nav" id="it-management">
+                <div class="row">
+                    <div class="large-12 large-offset-3 columns">
+                        <ul>
+                            <li><a href="it-management.html">IT Managed Services</a></li>
+                            <li><a href="it-management.html">Service Operations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Cloud Solutions -->
+            <div class="under-nav" id="cloud-solutions">
+                <div class="row">
+                    <div class="large-12 large-offset-3 columns">
+                        <ul>
+                            <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
+                            <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Security -->
+            <div class="under-nav" id="security">
+                <div class="row">
+                    <div class="large-12 large-offset-3 columns">
+                        <ul>
+                            <li><a href="security.html#sas">Security Assessments</a></li>
+                            <li><a href="security.html#tm">Threat Management</a></li>
+                            <li><a href="security.html#eps">End Point Security</a></li>
+                            <li><a href="security.html#va">Vulnerability Assessments</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Data Protection -->
+            <div class="under-nav" id="data-protection">
+                <div class="row">
+                    <div class="large-12 large-offset-3 columns">
+                        <ul>
+                            <li><a href="data-protection.html#rb">Remote Backup</a></li>
+                            <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Company -->
+            <div class="under-nav" id="company">
+                <div class="row">
+                    <div class="large-12 large-offset-3 columns">
+                        <ul>
+                            <li><a href="company.html#au">About Us</a></li>
+                            <li><a href="company.html#cu">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="client-login-btn-container small-2 columns">
-          <p class="top-number">888-282-5353</p><button class="client-login-btn">Client Login</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="under-nav-container">
-
-      <!-- it-management -->
-      <div class="under-nav" id="it-management">
-        <div class="row">
-          <div class="large-12 large-offset-3 columns">
-            <ul>
-                <li><a href="it-management.html">IT Managed Services</a></li>
-                <li><a href="it-management.html">Service Operations</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cloud Solutions -->
-      <div class="under-nav" id="cloud-solutions">
-        <div class="row">
-          <div class="large-12 large-offset-3 columns">
-            <ul>
-              <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
-              <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Security -->
-      <div class="under-nav" id="security">
-        <div class="row">
-          <div class="large-12 large-offset-3 columns">
-            <ul>
-              <li><a href="security.html#sas">Security Assessments</a></li>
-              <li><a href="security.html#tm">Threat Management</a></li>
-              <li><a href="security.html#eps">End Point Security</a></li>
-              <li><a href="security.html#va">Vulnerability Assessments</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Protection -->
-      <div class="under-nav" id="data-protection">
-        <div class="row">
-          <div class="large-12 large-offset-3 columns">
-            <ul>
-              <li><a href="data-protection.html#rb">Remote Backup</a></li>
-              <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Company -->
-      <div class="under-nav" id="company">
-        <div class="row">
-          <div class="large-12 large-offset-3 columns">
-            <ul>
-              <li><a href="company.html#au">About Us</a></li>
-              <li><a href="company.html#cu">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </header>
-
+    </header>
     <div class="security-hero main-container">
-      <div class="row hero-text whitetext title-container">
-          <h1>Security</h1>
-          <h2>Assess Vulnerabilities | Protect Infrastructure</h2>
-          <h3>We’re experts in our industry <br/>so you can be leaders in yours</h3>
-      </div>
+        <div class="row hero-text whitetext title-container">
+            <h1>Security</h1>
+            <h2>Assess Vulnerabilities | Protect Infrastructure</h2>
+            <h3>We’re experts in our industry <br/>so you can be leaders in yours</h3>
+        </div>
     </div>
-
-
     <div class="main-container">
         <div class="row title-container">
             <div class="large-3 columns">
                 <h3>Security Assessments</h3>
                 <p>Establish a baseline to determine your security posture and develop policy and procedures that will better protect your business systems and data.</p>
-                <a href="#sas">Learn More <img src="img/triangleLearnMore.png"></a>
+                <a href="#sas">Learn More  <i class="fa fa-angle-right"></i></a>
             </div>
-        
             <div class="large-3 columns">
                 <h3>Threat Management</h3>
                 <p>L3’s Threat Management service guards your infrastructure by identifying suspicious activities and remediating perceived threats with rapid response.</p>
-                <a href="#tm">Learn More <img src="img/triangleLearnMore.png"></a>
+                <a href="#tm">Learn More  <i class="fa fa-angle-right"></i></a>
             </div>
-        
-        
             <div class="large-3 columns">
                 <h3>End Point Security</h3>
                 <p>Mitigating threats requires constant coverage of end point devices. L3’s solution protects your IT infrastructure by ensuring risks are instantly remediated.</p>
-                <a href="#tm">Learn More <img src="img/triangleLearnMore.png"></a>
+                <a href="#tm">Learn More  <i class="fa fa-angle-right"></i></a>
             </div>
-        
             <div class="large-3 columns">
                 <h3>Vulnerability Assessments</h3>
                 <p>L3 offers best practices for finding your security gaps through vulnerability scanning, penetration testing, and risk analysis routines.</p>
-                <a href="#tm">Learn More <img src="img/triangleLearnMore.png"></a>
+                <a href="#tm">Learn More  <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>
-
-
-<div class="main-container darkgrey whitetext">
+    <div class="main-container darkgrey whitetext">
         <div class="row">
             <div class="large-6 small-12 columns title-container">
-                <h3><img src="img/tri15.png">Security Assessments</h3>
+                <i class="fa-lg fa fa-caret-right yellowtri"></i>
+                <h3>Security Assessments</h3>
                 <p>With L3 as an independent partner, assessing your current security framework can help your organization validate its IT security posture, improve policies and procedures, and better educate employees on how to protect company data and meet regulatory compliance demands so that you’re better able to reach your goals.</p>
             </div>
             <div class="large-5 large-offset-1 small-12 columns">
@@ -168,20 +148,14 @@
             </div>
         </div>
     </div>
-
     <div class="main-container">
         <div class="row title-container">
             <div class="large-6 columns">
                 <h3>IT Focused Risk Assessment</h3>
                 <p>Identify event vulnerabilities and threats that could adversely affect your organization by conducting an annual risk assessment. L3 examines all aspects of your infrastructure and information from an independent, unbiased perspective and provides a formal written assessment so that you’re aware of the gaps that exist and can make the appropriate business decisions.</p>
             </div>
-                </div>
         </div>
-
-
-
-
-
+    </div>
     <div class="main-container whitetext bluemain">
         <div class="row title-container text-center">
             <div class="large-6 columns small-centered large-offset-3">
@@ -190,28 +164,22 @@
             </div>
         </div>
     </div>
-
-
-
-
     <div class="main-container">
         <div class="row title-container">
             <div class="large-6 columns">
                 <h3>Customized Development of Policies and Procedures</h3>
-                <p>Comprehensive policies and procedures that govern the secure management of information are vital to all organizations. Finding the time and resources to accomplish this is often overwhelming to businesses. L3 can design a customized set of documentation that satisfies compliancy regulation for PCI DSS, HIPAA, ISO 27001 & NIST/FISMA.</p>
+                <p>Comprehensive policies and procedures that govern the secure management of information are vital to all organizations. Finding the time and resources to accomplish this is often overwhelming to businesses. L3 can design a customized set of documentation that satisfies compliancy regulation for PCI DSS, HIPAA, ISO 27001 &amp; NIST/FISMA.</p>
             </div>
             <div class="large-6 columns">
                 <img src="img/it-management-graphics_11.png" alt="it-management-graphics_11" width="466px" height="">
             </div>
         </div>
     </div>
-
-
-
-<div class="main-container darkgrey whitetext">
+    <div class="main-container darkgrey whitetext">
         <div class="row">
             <div class="large-6 small-12 columns title-container">
-                <h3><img src="img/tri15.png">Threat Management</h3>
+                <i class="fa-lg fa fa-caret-right yellowtri"></i>
+                <h3>Threat Management</h3>
                 <p>Protecting your Infrastructure relies on having the right software tools and expertise on hand to manage those tools 24/7. But having that level of support ‘in house’ may not be a viable option for your organization. L3 offers 24/7 threat management services that provide clients with a global view of their security situation day or night without the massive investment of multiple solutions and additional IT staff.</p>
             </div>
             <div class="large-5 large-offset-1 small-12 columns">
@@ -219,37 +187,28 @@
             </div>
         </div>
     </div>
-
-
-
-
     <div class="main-container">
         <div class="row title-container">
             <div class="large-6 columns">
                 <h3>Detect and Respond</h3>
                 <p>L3’s suite of security tools protects your data and keeps your business operating normally. With L3 in place as an extension to your own IT team, you get the added protection of 24/7 responders who take action immediately to remediate problems in real time.</p>
             </div>
-            
             <div class="large-6 columns">
                 <h3>Expert Security Help</h3>
                 <p>Our security experts are available to provide remediation help as well as deliver best practice recommendations and guidance so that as your businesses develops and grows, security is always a topic of consideration when projects and changes are reviewed.</p>
             </div>
         </div>
-
         <div class="row">
             <div class="large-6 columns">
                 <h3>Security delivered ‘as a service’</h3>
                 <p>L3’s flexible cost model allows businesses to rapidly deploy security solutions “as a service,” which is a cost-effective way to scale security up or down as needed with little or no capital expenditures. Plus, L3 utilizes the latest software and offers 24/7 service.</p>
             </div>
-            
             <div class="large-6 columns">
                 <h3>Pay as you go cost model</h3>
                 <p>For businesses that prefer the predictable nature of a fixed monthly rate, L3 Networks offers a fixed cost model to deliver a suite of security services, which includes the most up-to-date software and 24/7 remediation support to ensure your network is protected.</p>
             </div>
         </div>
     </div>
-
-
     <div class="main-container grey-bg">
         <div class="row title-container">
             <div class="large-6 columns text-center small-centered">
@@ -257,38 +216,26 @@
             </div>
         </div>
     </div>
-
-
-
-
+    
     <div class="main-container">
         <div class="row title-container">
             <div class="large-4 columns">
-                <img src="img/security-graphics_19.png" alt="security-graphics_19">
-        
-                <p>Designed for Any Environment</p>
+                <img style="max-width: 120px;margin-bottom:1rem;" src="img/security-graphics_19.png" alt="security-graphics_19">
+                <h3 class="text-center">Designed for Any Environment</h3>
                 <p>L3’s security solutions offer the flexibility to support all site infrastructures and datacenters whether you use our private cloud, the public cloud, or a hybrid environment. Each comes with the ease of single console management.</p>
             </div>
-        
             <div class="large-4 columns">
-                <img src="img/security-graphics_20.png" alt="security-graphics_20">
-        
-                <p>Threat Signatures & Rules</p>
+                <img style="max-width: 120px;margin-bottom:1rem;" src="img/security-graphics_20.png" alt="security-graphics_20">
+                <h3 class="text-center">Threat Signatures &amp; Rules</h3>
                 <p>Our security solutions utilize a 52,000+ IDS Signature database where new signatures are added weekly as well as a consolidation rules set from multiple sources, real time signature updates, and customer rule creation and editing.</p>
             </div>
-        
             <div class="large-4 columns">
-                <img src="img/security-graphics_21.png" alt="security-graphics_21">
-        
-                <p>Analysis & Reporting</p>
+                <img style="max-width: 120px;margin-bottom:1rem;" src="img/security-graphics_21.png" alt="security-graphics_21">
+                <h3 class="text-center">Analysis &amp; Reporting</h3>
                 <p>Be assured that your data is being optimally protected. L3’s backup management protocol comes with audit-ready monthly and weekly scheduled reporting that’s compatible across all environments, and includes priority incident reports.</p>
             </div>
         </div>
     </div>
-
-
-
-
     <div class="grey-bg">
         <div class="row get-started">
             <div class="small-5 small-centered columns text-center">
@@ -301,11 +248,11 @@
             </div>
         </div>
     </div>
-
-<div class="main-container darkgrey whitetext">
+    <div class="main-container darkgrey whitetext">
         <div class="row">
             <div class="large-6 small-12 columns title-container">
-                <h3><img src="img/tri15.png">End Point Security</h3>
+            <i class="fa-lg fa fa-caret-right yellowtri"></i>
+                <h3>End Point Security</h3>
                 <p>Most security vulnerabilities are exploited through Endpoint Devices, namely workstations, laptops, smartphones and tablets. Mitigating this risk requires continuous monitoring and a level of attention that many IT department are not equipped to manage. L3’s End Point Security service provides an easy to deploy solution that fully manages this aspect of security for your organization to ensure all risks are remediated in real-time.</p>
             </div>
             <div class="large-5 large-offset-1 small-12 columns">
@@ -313,63 +260,53 @@
             </div>
         </div>
     </div>
-
-
     <div class="main-container">
         <div class="row title-container">
             <div class="large-4 columns">
                 <h3>End Point Policies &amp; Control</h3>
                 <p>Deployment and management of End Point security policies in line with Information Management Policies and Procedures to protect against malicious software and network attacks</p>
             </div>
-
             <div class="large-4 columns">
                 <h3>End Point Protection</h3>
                 <p>Industry proven signature based, proactive and cloud based detection of malware threats</p>
             </div>
-
             <div class="large-4 columns">
                 <h3>Patch Management</h3>
                 <p>Automated advanced endpoint software patching based on threat analysis and organizational policies and procedures</p>
             </div>
         </div>
-
         <div class="row">
             <div class="large-4 columns">
                 <h3>End Point Scanning</h3>
                 <p>Daily scheduled vulnerability scanning of all end points to detect software vulnerabilities that may lead to security breaches</p>
             </div>
-
             <div class="large-4 columns">
                 <h3>Active System Scans</h3>
                 <p>Weekly active system scans that search and detect the presents of end point malware instances</p>
             </div>
-
             <div class="large-4 columns">
                 <h3>Web Content Filtering</h3>
                 <p>Advanced Policy based web Filtering providing roaming endpoints secure parameters for web content access based on categories.</p>
             </div>
         </div>
     </div>
-
-
-    <div class="bluehalfs main-container whitetext">
+    <div class="bluehalfs whitetext">
         <div class="row title-container text-center">
             <div class="large-6 columns">
                 <h3>Actively Managed</h3>
                 <p>Unlimited assurance that what is detected is actively remediated.</p>
             </div>
-        
             <div class="large-6 columns">
                 <h3>Predictable Cost</h3>
                 <p>Provides a fixed price per end point and includes remediation.</p>
             </div>
         </div>
     </div>
-
-<div class="main-container darkgrey whitetext">
+    <div class="main-container darkgrey whitetext">
         <div class="row">
             <div class="large-6 small-12 columns title-container">
-                <h3><img src="img/tri15.png">Vulnerability Assessments</h3>
+            <i class="fa-lg fa fa-caret-right yellowtri"></i>
+                <h3>Vulnerability Assessments</h3>
                 <p>Whether you organizations infrastructure is large or small, the software most often used by businesses is universal. With new software releases occurring all the time, it’s important that vulnerabilities are known about and addressed so that data is not compromised and exploited. Partner with L3 ensures regular Vulnerability assessment, risk analysis and appropriate remediation.</p>
             </div>
             <div class="large-5 large-offset-1 small-12 columns">
@@ -377,107 +314,109 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-    <div class="main-container grey-bg">
+    <div class="main-container grey-bg2">
         <div class="row">
-            <p>Vulnerability Scanning</p>
-            <p>Determine your security posture through a comprehensive scanning routine using the latest, most up to date software, selected by many Enterprise clients.</p>
-            <p>Scanning and reporting can be done on-demand in response to an incident or scheduled with results that are providing contextual information relating to past incidents.</p>
-            <img src="img/grey-line2.png">
-            <img src="img/security-graphics_03.png" alt="security-graphics" width="75" />
-            <img src="img/security-graphics_06.png" alt="security-graphics" width="75" />
-            <img src="img/security-graphics_09-2.png" alt="security-graphics" width="75" />
-            <img src="img/security-graphics_12.png" alt="security-graphics" width="75" />
+            <div class="large-6 large-offset-3 columns text-center">
+                <h3>Vulnerability Scanning</h3>
+                <p>Determine your security posture through a comprehensive scanning routine using the latest, most up to date software, selected by many Enterprise clients.</p>
+                <p>Scanning and reporting can be done on-demand in response to an incident or scheduled with results that are providing contextual information relating to past incidents.</p>
+            </div>
+            </div>
+                        <img style="clear:both; margin:3rem auto;" src="img/grey-line2.png">
+
+            <div class="row">
+            <div class="large-6 large-offset-3 columns">
+
+                <div class="large-3 columns">
+                    <img class="img2" src="img/security-graphics_03.png" alt="security-graphics" width="75" />
+                </div>
+                <div class="large-3 columns">
+                    <img src="img/security-graphics_06.png" alt="security-graphics" width="75" />
+                </div>
+                <div class="large-3 columns">
+                    <img src="img/security-graphics_09-2.png" alt="security-graphics" width="75" />
+                </div>
+                <div class="large-3 columns">
+                    <img  src="img/security-graphics_12.png" alt="security-graphics" width="75" />
+                </div>
+            </div>
         </div>
     </div>
 
-
-
-
-
-    <div>
-        <p>Penetration Testing (PEN)</p>
-        <p>Scanning for vulnerabilities is only half the story, understanding when happens when vulnerabilities are exploited is key in determining risk mitigation activities and priorities for the business to secure data and prevent operational impact on the business.</p>
-        <p>L3 recommends and annual Internal and External PEN testing of all Public and Private IP addresses to accompany a vulnerability scan to provide a complete picture of how and to what extend known Vulnerabilities can be exploited.</p>
-
+    <div class="main-container">
+        <div class="row title-container">
+            <div class="large-6">
+                <h3>Penetration Testing (PEN)</h3>
+                <p>Scanning for vulnerabilities is only half the story, understanding when happens when vulnerabilities are exploited is key in determining risk mitigation activities and priorities for the business to secure data and prevent operational impact on the business.</p>
+                <p>L3 recommends and annual Internal and External PEN testing of all Public and Private IP addresses to accompany a vulnerability scan to provide a complete picture of how and to what extend known Vulnerabilities can be exploited.</p>
+            </div>
+        </div>
     </div>
-
 
     <div class="grey-bg">
-    <div class="row get-started">
-      <div class="small-5 small-centered columns text-center">
-        <h4>Get Started Today</h4>
-        <a href="company.html#au"><button class="talk-button">Talk with our Team</button></a>
-        <div class="contact-us">Contact us: <i class="fa fa-phone"></i> 888-282-5353 </div><div class="email-us">Email us: <a href="mailto:info@l3networks.com">info@l3networks.com</a></div>
-      </div>
+        <div class="row get-started">
+            <div class="small-5 small-centered columns text-center">
+                <h4>Get Started Today</h4>
+                <a href="company.html#au">
+                    <button class="talk-button">Talk with our Team</button>
+                </a>
+                <div class="contact-us">Contact us: <i class="fa fa-phone"></i> 888-282-5353 </div>
+                <div class="email-us">Email us: <a href="mailto:info@l3networks.com">info@l3networks.com</a></div>
+            </div>
+        </div>
     </div>
-  </div>
-
-
     <footer>
-    <div class="row footer-nav">
-
-      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
-        <a href="http://www.l3networks.com">
-          <img src="img/nav/nav-graphics_02.png" style="width: 100px;">
-        </a>
-      </div>
-
-      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
-        <ul>
-          <li><a class="footer-head-link" href="it-management.html">IT Management</a></li>
-          <li><a href="it-management.html#managed">Managed Services</a></li>
-          <li><a href="it-management.html#serviceOp">Service Operations</a></li>
-        </ul>
-      </div>
-
-      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
-        <ul>
-          <li><a class="footer-head-link" href="cloud-solutions.html">Cloud Services</a></li>
-          <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
-          <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
-        </ul>
-      </div>
-
-      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
-        <ul>
-          <li><a class="footer-head-link" href="security.html">Security</a></li>
-          <li><a href="security.html#sas">Security Assessments</a></li>
-          <li><a href="security.html#tm">Threat Management</a></li>
-          <li><a href="security.html#eps">End Point Security</a></li>
-          <li><a href="security.html#va">Vulnerability&nbsp;Assessments</a></li>
-        </ul>
-      </div>
-
-      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
-        <ul>
-          <li><a class="footer-head-link" href="data-protection.html">Data Protection</a></li>
-          <li><a href="data-protection.html#rb">Remote Backup</a></li>
-          <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
-        </ul>
-      </div>
-      <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
-        <ul>
-          <li><a class="footer-head-link" href="company.html">Company</a></li>
-          <li><a href="company.html#cu">About Us</a></li>
-          <li><a href="company.html#cu">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <hr class="footer-hr">
-
-    <div class="row">
-      <div class="small-12 text-center columns copyright">
-          <p>&copy; 2016 L3Networks Inc. All Rights Reserved &reg; Privacy Policy |17777 Center Court Dr. Suite 715 Cerritos, CA 90703 | 1(888)282-5353 <a href="mailto:info@l3networks.com">info@l3networks.com</a></p>
-      </div>
-    </div>
-  </footer>
+        <div class="row footer-nav">
+            <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+                <a href="http://www.l3networks.com">
+                    <img src="img/nav/nav-graphics_02.png" style="width: 100px;">
+                </a>
+            </div>
+            <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+                <ul>
+                    <li><a class="footer-head-link" href="it-management.html">IT Management</a></li>
+                    <li><a href="it-management.html#managed">Managed Services</a></li>
+                    <li><a href="it-management.html#serviceOp">Service Operations</a></li>
+                </ul>
+            </div>
+            <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+                <ul>
+                    <li><a class="footer-head-link" href="cloud-solutions.html">Cloud Services</a></li>
+                    <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
+                    <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
+                </ul>
+            </div>
+            <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+                <ul>
+                    <li><a class="footer-head-link" href="security.html">Security</a></li>
+                    <li><a href="security.html#sas">Security Assessments</a></li>
+                    <li><a href="security.html#tm">Threat Management</a></li>
+                    <li><a href="security.html#eps">End Point Security</a></li>
+                    <li><a href="security.html#va">Vulnerability&nbsp;Assessments</a></li>
+                </ul>
+            </div>
+            <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+                <ul>
+                    <li><a class="footer-head-link" href="data-protection.html">Data Protection</a></li>
+                    <li><a href="data-protection.html#rb">Remote Backup</a></li>
+                    <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
+                </ul>
+            </div>
+            <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
+                <ul>
+                    <li><a class="footer-head-link" href="company.html">Company</a></li>
+                    <li><a href="company.html#cu">About Us</a></li>
+                    <li><a href="company.html#cu">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="row">
+            <div class="small-12 text-center columns copyright">
+                <p>&copy; 2016 L3Networks Inc. All Rights Reserved &reg; Privacy Policy |17777 Center Court Dr. Suite 715 Cerritos, CA 90703 | 1(888)282-5353 <a href="mailto:info@l3networks.com">info@l3networks.com</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
