@@ -13,7 +13,7 @@ p{
   display:block;
   margin:0 auto;
  }
- 
+
 .main-container {
   width:100%;
   min-height:50%;
@@ -51,6 +51,19 @@ p{
 
  .bluemain {
   background: #009cde;
+  padding: 4rem 0;
+  margin: 3rem 0 0 0;
+ }
+
+ .bluemain p {
+   color: white;
+   font-weight: 400;
+ }
+
+ .quote-image {
+   max-width: 60px;
+   width: 100%;
+   margin-bottom: 1.5rem;
  }
 
 
@@ -272,6 +285,30 @@ color:white;
   padding: 5rem 0;
 }
 
+.it-management-benefits {
+  padding: 6rem 0 0;
+}
+
+.it-management-benefits h4 {
+  color: #009cde;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.it-management-benefits h4 {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 40em) {
+  .it-management-benefits {
+    padding: 1rem 0 0;
+  }
+
+  .it-management-benefits h4 {
+    padding: 4rem 0 0;
+  }
+}
+
 .main-content-block p {
   font-size: 1.5rem;
   font-weight: 300;
@@ -321,6 +358,11 @@ color:white;
   background: #eee;
   padding: 5rem 0;
   margin: 5rem 0 0;
+}
+
+.grey-bg-no-margin {
+  background: #eee;
+  padding: 5rem 0;
 }
 .grey-bg2 {
   background: #eee;
