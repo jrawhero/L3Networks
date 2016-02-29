@@ -457,6 +457,30 @@ color:white;
   margin-right: 1rem;
 }
 
+/* Cloud Solutions Styles */
+.cloud-solutions-header-img {
+  background: url('../img/slideshow/cloudSolutions/medOverlay/buildingOverlay.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+.cloud-solutions-header-img h1 {
+  color: white;
+  padding-top: 10rem;
+}
+
+.cloud-solutions-header-img h3 {
+  color: white;
+}
+
+.cloud-solutions-header-img p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 
 /* Footer Styles */
 footer {
