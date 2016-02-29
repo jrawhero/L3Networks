@@ -1,7 +1,7 @@
 /* Styles for the website */
 
 body {
-  max-width:100%;
+  width:100%;
   height:100%;
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   color:#323232;
@@ -10,14 +10,12 @@ p{
   line-height: 1.3rem;
  }
  img {
-  display:block;
+     display: block;
   margin:0 auto;
  }
 
 .main-container {
-  width:100%;
-  min-height:50%;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
  .darkgrey {
   background: #323232;
@@ -51,9 +49,12 @@ p{
 
  .bluemain {
   background: #009cde;
-  padding: 4rem 0;
-  margin: 3rem 0 0 0;
+  padding: 2rem 0;
  }
+
+.blue-titles h3{
+    color: #009cde;
+}
 
  .reliable-execution-box {
    padding: 6rem 0;
@@ -68,7 +69,7 @@ p{
  }
 
  .bluemain p {
-   color: white;
+   color: #ccc;
    font-weight: 400;
  }
 
@@ -89,8 +90,7 @@ p{
  .bluehalfs{
   background-color: #009cde;
   background-image: linear-gradient( 90deg, #009cde 0%, #009cde 50%, #33b0e5 50%, #33b0e5 50%);
-  height:30%;
-  padding-top: 1rem;
+  padding: 3rem 0;
 }
 .hockey-hero {
 background:url("../img/slideshow/dataProtection/med-overlay/hockeyOverlay.png") no-repeat center center;
@@ -101,7 +101,7 @@ height: 60%;
 .security-hero {
 background:url("../img/slideshow/security/med-overlay/safeOverlay.png") no-repeat center center;
 background-size:cover;
-height: 60%;
+height: 80%;
  }
   .hero-text h1 {
   font-size:35px;
@@ -122,14 +122,17 @@ height: 60%;
 color: white;
 line-height: 1.3;
  }
+.whitetext p {
+    color: #f2f2f2;
+}
  p{
-  font-size: 15px;
+  font-size: 14px;
  }
  h3{
   font-size:22px;
  }
  .title-container{
-  padding-top:5rem;
+  padding:5rem 0;
  }
 
 /* Header Styles */
@@ -360,7 +363,6 @@ color:white;
 
 .service-block {
   position: relative;
-  min-height: 22rem;
 }
 
 @media only screen and (max-width: 40em) {
@@ -383,7 +385,6 @@ color:white;
 .grey-bg {
   background: #eee;
   padding: 5rem 0;
-  margin: 5rem 0 0;
 }
 
 .grey-bg-no-margin {
@@ -498,10 +499,7 @@ color:white;
 }
 
 .box-content {
-  position: absolute;
-  top: 3rem;
-  left: 14rem;
-  width: 50%;
+  
 }
 
 .cloud-solution-graphic-images {
@@ -564,4 +562,26 @@ a.footer-head-link {
   color: #ccc;
   font-size: .7rem;
   padding: 1rem 0;
+}
+
+.centerme {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-arrow {
+    position: relative;
+    right: -1rem;
+}
+
+.hero-text {
+padding-top: 10%;
+}
+
+.services {
+    padding: 2rem 2rem 6rem 2rem;
+}
+
+.mid-row-pad {
+    padding-top: 1.5rem;
 }
