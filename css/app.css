@@ -235,6 +235,13 @@ color:white;
   transition: 0.2s all ease-in-out;
 }
 
+.under-nav-open.scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: 0;
+}
+
 /* Home Slider Styles */
 
 .home-slide-1 {

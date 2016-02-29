@@ -55,22 +55,25 @@
         }
       },
 
-      // fixedSubNav: function() {
-      //   var headerHeight = $('.main-header-container').height();
-      //   var currentURL = $(location).attr('pathname');
-      //
-      //   if($(window).scrollTop > headerHeight) {
-      //
-      //   }
-      //
-      //   if(window.location.pathname = 'Users/Garrett/Desktop/Sites/L3Networks/it-management.html') {
-      //     $('#it-management').addClass('fixed');
-      //   } else if (location.href = 'Users/Garrett/Desktop/Sites/L3Networks/cloud-solutions.html') {
-      //     $('#cloud-solutions').addClass('fixed');
-      //   } else {
-      //     return;
-      //   }
-      // }
+      fixedSubNav: function() {
+        var headerHeight = $('.main-header-container').height();
+        var currentURL = $(location).attr('pathname');
+        console.log('yes');
+
+        if($(window).scrollTop() > headerHeight && $('.under-nav').hasClass('under-nav-open')) {
+          $('.under-nav-open').addClass('scrolled');
+        } else {
+          $('.under-nav-open').removeClass('scrolled');
+        }
+
+        // if(window.location.pathname = 'Users/Garrett/Desktop/Sites/L3Networks/it-management.html') {
+        //   $('#it-management').addClass('fixed');
+        // } else if (location.href = 'Users/Garrett/Desktop/Sites/L3Networks/cloud-solutions.html') {
+        //   $('#cloud-solutions').addClass('fixed');
+        // } else {
+        //   return;
+        // }
+      }
 
 
     };
