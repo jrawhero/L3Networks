@@ -34,7 +34,7 @@ p{
  }
 
  .dark-grey-bg p {
-   color: white;
+   color: #ccc;
  }
 
  .darkgrey .row img{
@@ -45,8 +45,8 @@ p{
  .yellowtri {
   color:gold;
   position:relative;
-  left: -2rem;
-  top: 1.5rem;
+  left: -1.6rem;
+  top: 1.6rem;
  }
 
  .bluemain {
