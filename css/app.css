@@ -55,9 +55,28 @@ p{
   margin: 3rem 0 0 0;
  }
 
+ .reliable-execution-box {
+   padding: 6rem 0;
+ }
+
+ .reliable-execution {
+   margin-top: 5rem;
+ }
+
+ .bluemain h3 {
+   color: white;
+ }
+
  .bluemain p {
    color: white;
    font-weight: 400;
+ }
+
+ .complementary-capabilities-bg {
+   background: url('../img/it-management-graphics_13.png');
+   background-size: cover;
+   background-position: center;
+   padding: 12rem 0;
  }
 
  .quote-image {
