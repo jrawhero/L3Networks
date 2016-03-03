@@ -151,7 +151,7 @@ line-height: 1.3;
 .main-header-container-scroll {
   position: absolute;
   width: 100%;
-  z-index: 30;
+  z-index: 40;
   background: #fff;
   top: -10rem;
   transition: 0.35s all ease-in-out;
@@ -243,12 +243,14 @@ line-height: 1.3;
 background:#333;
 color:white;
 }
+
 .top-number{
   font-size: .7rem;
   letter-spacing: .2rem;
   margin:0;
   text-align: center;
 }
+
 .under-nav {
   width: 100%;
   position: absolute;
@@ -256,6 +258,58 @@ color:white;
   background: #333;
   z-index: 0;
   padding: 1rem 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.under-nav-container-scroll {
+  background: #333;
+  width: 100%;
+}
+
+.under-nav-container-scroll .under-nav-scroll li {
+  display: inline-block;
+  padding: 0rem 1rem;
+  font-size: .9rem;
+}
+
+.under-nav-container-scroll .under-nav-scroll li a {
+  color: white;
+  transition: 0.35s all ease-in-out;
+}
+
+
+.under-nav-scroll {
+  width: 100%;
+  position: fixed;
+  top: -65px;
+  background: #333;
+  z-index: 0;
+  padding: 1rem 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.under-nav-scroll.scrolled {
+  top: 56px;
+  transition: 0.35s all ease-in-out;
+}
+
+.under-nav-scroll ul {
+  margin-bottom: 0;
+}
+
+.under-nav-scroll li {
+  display: inline-block;
+  padding: 0rem 1rem;
+  font-size: .9rem;
+}
+
+.under-nav-scroll li a {
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+.under-nav-scroll li a:hover {
+  color: #009cde;
   transition: 0.2s all ease-in-out;
 }
 

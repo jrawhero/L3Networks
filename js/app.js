@@ -18,6 +18,7 @@
         this.$window = $(window);
         this.$document = $(document);
         this.$underNavLink = $('.under-nav ul li a');
+        this.$underNavScrollLink = $('.under-nav-scroll ul li a');
       },
 
       //Bind Events
@@ -27,6 +28,7 @@
         this.$window.scroll(this.showScrollNav);
         this.$window.scroll(this.fixedSubNav);
         this.$underNavLink.on('click', this.scrollToClickedNav);
+        this.$underNavScrollLink.on('click', this.scrollToClickedNav);
         console.log(this.$underNavLink);
 
 
@@ -71,8 +73,10 @@
       showScrollNav: function() {
         if($(window).scrollTop() > 30) {
           $('.main-header-container-scroll').addClass('scrolled');
+          $('.under-nav-scroll').addClass('scrolled');
         } else {
           $('.main-header-container-scroll').removeClass('scrolled');
+          $('.under-nav-scroll').removeClass('scrolled');
         }
       },
 
@@ -83,12 +87,12 @@
       },
 
       scrollToClickedNav: function() {
-        // The scroll animation
+         //The scroll animation
       			var menuLink = $(this).attr('href');
             console.log(menuLink);
       			$('html, body').animate({
       				'scrollTop': $(menuLink).offset().top - 50
-            }, 2000, 'easeOutExpo');
+            }, 1500, 'easeOutExpo');
       }
 
 
