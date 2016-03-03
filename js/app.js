@@ -16,6 +16,7 @@
         this.$underNavContainer = $('.under-nav-container');
         this.$window = $(window);
         this.$document = $(document);
+        this.$underNavLink = $('.under-nav ul li a');
       },
 
       //Bind Events
@@ -24,6 +25,9 @@
         this.$document.on('click', this.hideSubNav);
         this.$window.scroll(this.showScrollNav);
         this.$window.scroll(this.fixedSubNav);
+        this.$underNavLink.on('click', this.scrollToClickedNav);
+        console.log(this.$underNavLink);
+
 
         console.log('binding');
       },
@@ -62,6 +66,14 @@
         var headerHeight = $('.main-header-container').height();
         var currentURL = $(location).attr('pathname');
         console.log(currentURL);
+      },
+
+      scrollToClickedNav: function() {
+        // The scroll animation
+    			var menuLink = $(this).attr('href');
+    			$('html, body').animate({
+    				'scrollTop': $(menuLink).offset().top - 220
+    					}, 1000, 'easeOutExpo');
       }
 
 
