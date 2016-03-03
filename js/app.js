@@ -8,6 +8,7 @@
       init: function() {
         this.cacheDom();
         this.bindEvents();
+        this.mainSlider();
       },
 
       // Cache Dome
@@ -30,6 +31,19 @@
 
 
         console.log('binding');
+      },
+
+      mainSlider: function() {
+        $('.gallery').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true,
+          wrapAround: true,
+          freeScroll: true,
+          autoPlay: 4000,
+          prevNextButtons: false,
+          pageDots: false
+        });
       },
 
       // Show sub nav
@@ -81,16 +95,6 @@
 
     interactive.init();
 
-    $('.gallery').flickity({
-      // options
-      cellAlign: 'left',
-      contain: true,
-      wrapAround: true,
-      freeScroll: true,
-      autoPlay: 4000,
-      prevNextButtons: false,
-      pageDots: false
-    });
   });
 
 })();
