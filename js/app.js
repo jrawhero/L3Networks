@@ -84,10 +84,11 @@
 
       scrollToClickedNav: function() {
         // The scroll animation
-    			var menuLink = $(this).attr('href');
-    			$('html, body').animate({
-    				'scrollTop': $(menuLink).offset().top - 220
-    					}, 1000, 'easeOutExpo');
+      			var menuLink = $(this).attr('href');
+            console.log(menuLink);
+      			$('html, body').animate({
+      				'scrollTop': $(menuLink).offset().top - 50
+            }, 2000, 'easeOutExpo');
       }
 
 

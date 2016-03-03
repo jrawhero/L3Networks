@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Data Protection | L3 Networks</title>
+
+    <title>Home | L3 Networks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Load in Latest jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Load in Flickity Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+    <!-- Load Jquery UI  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js?ver=2.1.1"></script>
+    <!-- Load in our JS -->
     <script src="js/app.js"></script>
+
     <!-- Load in Foundation -->
     <link rel="stylesheet" href="css/foundation/foundation.css">
     <!-- Load in Flickity Slider CSS -->
@@ -17,6 +24,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Load in App CSS -->
     <link rel="stylesheet" href="css/app.css">
+
+
 </head>
 
 <body>
@@ -111,8 +120,8 @@
                 <div class="row">
                     <div class="large-12 large-offset-3 columns">
                         <ul>
-                            <li><a href="data-protection.html#rb">Remote Backup</a></li>
-                            <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
+                            <li><a href="#rb">Remote Backup</a></li>
+                            <li><a href="#dr">Disaster Recovery</a></li>
                         </ul>
                     </div>
                 </div>
@@ -154,7 +163,7 @@
         </div>
     </div>
 
-    <div class="dark-grey-bg">
+    <div class="dark-grey-bg" id="rb">
         <div class="row">
             <div class="large-6 small-8 columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
@@ -221,7 +230,7 @@
         </div>
     </div>
 
-    <div class="dark-grey-bg">
+    <div class="dark-grey-bg" id="dr">
         <div class="row">
             <div class="large-6 small-12 columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
