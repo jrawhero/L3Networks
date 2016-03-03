@@ -49,7 +49,16 @@ p{
 
  .bluemain {
   background: #009cde;
-  padding: 2rem 0;
+  padding: 4rem 0;
+ }
+
+ .bluemain h4 {
+   color: white;
+   font-size: 1.5rem;
+ }
+
+ .bluemain p {
+   color: white;
  }
 
 .blue-titles h3{
@@ -69,7 +78,6 @@ p{
  }
 
  .bluemain p {
-   color: #ccc;
    font-weight: 400;
  }
 
@@ -288,7 +296,7 @@ color:white;
   transition: 0.2s all ease-in-out;
 }
 
-.under-nav-scroll.scrolled {
+.under-nav-scroll.scrolled.under-nav-scroll {
   top: 56px;
   transition: 0.35s all ease-in-out;
 }
@@ -629,6 +637,50 @@ color:white;
   margin-left: ;
 }
 
+.comprehensive-management {
+  padding: 4rem 0;
+}
+
+.comprehensive-management h4 {
+  color: #009cde;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.build-support-bg {
+  background: url('../img/cloud-solutions-graphics_06.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  min-height: 380px;
+}
+
+.build-support {
+  padding: 6rem 0;
+}
+
+.build-support h4 {
+  margin-bottom: 2rem;
+}
+
+.optimizing-bg {
+  background: url('../img/cloud-server.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-width: 380px;
+}
+
+/* Company Styles */
+
+.company-header {
+  background: url('../img/slideshow/company/companySlide.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.header-title {
+  padding: 4rem 0;
+}
 
 /* Footer Styles */
 footer {

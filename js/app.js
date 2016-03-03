@@ -31,7 +31,6 @@
         this.$underNavScrollLink.on('click', this.scrollToClickedNav);
         console.log(this.$underNavLink);
 
-
         console.log('binding');
       },
 
@@ -55,6 +54,7 @@
         console.log($subNavToShow);
 
         $('.under-nav-container').find('.under-nav-open').removeClass('under-nav-open');
+        // $('.under-nav-container-scroll').find('.under-nav-open').removeClass('under-nav-open');
 
         $('#'+$subNavToShow).toggleClass('under-nav-open');
       },
@@ -74,6 +74,7 @@
         if($(window).scrollTop() > 30) {
           $('.main-header-container-scroll').addClass('scrolled');
           $('.under-nav-scroll').addClass('scrolled');
+          $('under-nav-scroll').addClass('under-nav-open');
         } else {
           $('.main-header-container-scroll').removeClass('scrolled');
           $('.under-nav-scroll').removeClass('scrolled');
@@ -94,7 +95,6 @@
       				'scrollTop': $(menuLink).offset().top - 50
             }, 1500, 'easeOutExpo');
       }
-
 
     };
 
