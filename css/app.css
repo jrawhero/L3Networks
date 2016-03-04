@@ -497,7 +497,7 @@ color:white;
 
 .grey-bg-no-margin {
   background: #eee;
-  padding: 5rem 0;
+  padding: 5rem 0;overflow: hidden;
 }
 .grey-bg2 {
   background: #eee;
