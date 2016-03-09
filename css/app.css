@@ -738,3 +738,20 @@ padding-top: 10%;
 .mid-row-pad {
     padding-top: 1.5rem;
 }
+
+.subnav-item{
+ position:relative;
+}
+
+ul>.subnav-item:hover:before {
+    content: ' ';
+border: 10px solid #FFFFFF;
+border-left-color: transparent;
+border-right-color: transparent;
+border-bottom: 0;
+position:absolute;
+left: 50%;
+  transform: translate(-50%,0);
+    top:-11px;
+
+}
