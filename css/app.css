@@ -244,31 +244,69 @@ h3 {
     transition: 0.2s all ease-in-out;
 }
 
+
 .client-login-btn-container {
     margin-top: 2.7rem;
 }
 
 .client-login-btn {
-    margin-top: .5rem;
-    text-transform: uppercase;
-    padding: .8rem 1.2rem;
-    border-radius: .8rem;
-    border: 1px solid #333;
-    font-size: .7rem;
-    letter-spacing: .2rem;
+    margin-top: 0;
+    text-transform: none;
+padding: 0.7em 1em;
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    letter-spacing:0;
     font-weight: 300;
 }
 
 .client-login-btn:hover {
-    background: #333;
-    color: white;
+    background: #fff;
+    color: cornflowerblue;
 }
 
+
+
+@media screen and (min-width: 40em) {
+    .client-login-btn-container {
+        margin-top: 2.7rem;
+    }
+    .client-login-btn {
+        margin-top: .5rem;
+        text-transform: uppercase;
+        padding: .8rem 1.2rem;
+        border-radius: .8rem;
+        border: 1px solid #333;
+        font-size: .7rem;
+        letter-spacing: .2rem;
+        font-weight: 300;
+    }
+    .client-login-btn:hover {
+        background: #333;
+        color: white;
+    }
+}
+
+
+.top-number {
+    
+    font-size: 16px;
+    letter-spacing: .1rem;
+    margin: 0;
+    text-align: Left;
+    position: relative;
+    display:none;
+}
+
+@media screen and (min-width:40em){
 .top-number {
     font-size: .7rem;
     letter-spacing: .2rem;
     margin: 0;
     text-align: center;
+    display:block;
+    
+}
 }
 
 .under-nav {
@@ -824,31 +862,22 @@ div .slider-content .index-img-fix {
         display: inline;
     }
     .get-started .talk-button {
-    background: #009cde;
-    color: white;
-    padding: 1rem 8rem;
-    margin: 1rem 0;
-    border-radius: 1rem;
-}
+        background: #009cde;
+        color: white;
+        padding: 1rem 8rem;
+        margin: 1rem 0;
+        border-radius: 1rem;
+    }
     .bluehalfs {
-    background-color: #009cde;
-    background-image: linear-gradient( 180deg, #009cde 0%, #009cde 50%, #33b0e5 50%, #33b0e5 50%);
-    padding: 3rem 0;
-}
+        background-color: #009cde;
+        background-image: linear-gradient( 180deg, #009cde 0%, #009cde 50%, #33b0e5 50%, #33b0e5 50%);
+        padding: 3rem 0;
+    }
     .bluehalfs div div {
         padding-bottom: 2rem;
     }
-    .test-class-1{
+    .test-class-1 {
         position: relative;
-        top:3rem;
+        top: 3rem;
     }
-    
-    
-    
-    
-    
-    
-   
-    
-    
 }

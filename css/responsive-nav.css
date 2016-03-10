@@ -54,7 +54,8 @@
 
 
 header {
-  background: #323232;
+    height: auto;
+  background: #fff;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -65,13 +66,30 @@ header {
 .logo {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
 header div div .logo img {
     float:left;
     display:block;
     padding-top: 1rem;
     padding-left: 1rem;
+    width: 100px;
     
 }
+
+@media screen and (min-width: 40em) {
+header div div .logo img {
+    float:left;
+    display:block;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 200px;
+    
+}
+    
+}
+
+
+
 /* ------------------------------------------
   NAVIGATION STYLES
 --------------------------------------------- */
@@ -102,6 +120,8 @@ header div div .logo img {
     float: right;
     width: auto;
   }
+    
+    
 }
 
 .nav-collapse li {
@@ -117,16 +137,15 @@ header div div .logo img {
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  border-top: 1px solid #222;
   text-decoration: none;
-  background: #323232;
+  background: #fff;
   padding: 0.7em 1em;
-  color: #fff;
+  color: #333;
   width: 100%;
   float: left;
 }
 .nav-collapse a:hover {
-    background: #222;
+color:cornflowerblue;
 }
 
 .nav-collapse a:active,
@@ -136,19 +155,29 @@ header div div .logo img {
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    border-left: 1px solid #222;
     padding: 1.02em 2em;
     text-align: center;
     border-top: 0;
     float: left;
-    margin: 0;
-  }
+    padding-top:2rem;
+      position: relative;
+      top: 1rem;
+    }
+    .nav-collapse .btnbtn{
+         padding: 1.02em 2em;
+    border-top: 0;
+    float: left;
+    padding-top:1rem;
+        text-align: left;
+    }
+    
 }
 
 .nav-collapse ul ul a {
   background: #333;
   padding-left: 2em;
 }
+  
 
 @media screen and (min-width: 40em) {
   .nav-collapse ul ul a {
@@ -185,7 +214,7 @@ header div div .logo img {
 }
 
 .nav-toggle:before {
-  color: #fff; /* Edit this to change the icon color */
+  color: #333; /* Edit this to change the icon color */
   font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
