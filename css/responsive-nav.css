@@ -155,13 +155,14 @@ color:cornflowerblue;
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    padding: 1.02em 2em;
+    padding: 0 2em;
     text-align: center;
     border-top: 0;
     float: left;
     padding-top:2rem;
       position: relative;
       top: 1rem;
+      font-size: .9rem;
     }
     .nav-collapse .btnbtn{
          padding: 1.02em 2em;
