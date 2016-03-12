@@ -881,3 +881,57 @@ div .slider-content .index-img-fix {
         top: 3rem;
     }
 }
+
+
+/* Company */
+
+
+.bluetri2 {
+    position: relative;
+    color: #009cde;
+    right: -20px;
+}
+
+.cclogin-addon {
+    color: #fff;
+    float: left;
+    padding: 9.6px;
+    width: 8%;
+    background: #009cde;
+    text-align: center;
+    border: none;
+        border-radius:10px 0 0 10px;
+    font-size: 14px;
+
+}
+
+.cclogin input[type=text] {
+    padding: 10px;
+    width: 92%;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+.cclogin textarea {
+    padding: 10px;
+    height: 100px;
+    width: 92%;
+    color: #666;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.cclogin .bluesubmit {
+    width: 100%;
+    color:white;
+    background: #009cde;
+    border: none;
+    padding: 10px;
+    border-radius:10px;
+}
+.grey-bg-no-margin h3 {
+    padding: 0px;
+    margin: 0px;
+ }
