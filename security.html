@@ -22,18 +22,18 @@
     <!-- Load in App CSS -->
     <link rel="stylesheet" href="css/app.css">
     <!-- Load in Mobile Nav Test -->
-    <link rel="stylesheet" href="css/responsive-nav.css">
-    <script src="js/responsive-nav.js"></script>
+    <!--<link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script> -->
 
 </head>
 
 <body>
 
-    <header>
+    <!--<header>
         <div class="">
             <div class="">
                 <a href="#home" class="logo" data-scroll>
-                         <img src="img/nav/nav-graphics_01.png">
+                    <img src="img/nav/nav-graphics_01.png">
                 </a>
                 <nav class="nav-collapse main-nav fixed-nav-bar">
                     <ul>
@@ -42,33 +42,37 @@
                         <li><a class="active" href="security.html" rel="security">Security</a></li>
                         <li><a href="data-protection.html" rel="data-protection">Data Protection</a></li>
                         <li><a href="company.html" rel="company">Company</a></li>
-                        <li><div class="btnbtn"><p class="top-number"><i class="fa fa-phone"></i>888-282-5353</p>
-                    <button class="client-login-btn">Client Login</button></div></li>
+                        <li>
+                            <div class="btnbtn">
+                                <p class="top-number"><i class="fa fa-phone"></i>888-282-5353</p>
+                                <button class="client-login-btn">Client Login</button>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </header>
 
-    <!--<header>
+
+
+
+
+
+
+
+
+    </header> -->
+
+    <header>
         <div class="main-header-container">
             <div class="row">
-                <div class="logo-container small-3 large-3 columns">
+                <div class="logo-container small-12 large-2 columns">
                     <a href="http://www.l3networks.com">
-                        <img style="max-width: 200px;min-width:75px;" src="img/nav/nav-graphics_01.png">
+                        <img style="max-width: 200px;" src="img/nav/nav-graphics_01.png">
                     </a>
                 </div>
-                <div class="nav-container small-7 large-7 columns">
-                    <nav class="main-nav nav-collapse">
+                <div class="nav-container small-12 large-8 columns">
+                    <nav class="main-nav">
                         <ul>
                             <li><a href="it-management.html" rel="it-management">IT Management</a></li>
                             <li><a href="cloud-solutions.html" rel="cloud-solutions">Cloud Solutions</a></li>
@@ -78,15 +82,15 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="client-login-btn-container medium-2 small-12 columns">
-                    <p class="top-number"><i class="fa fa-phone"></i>888-282-5353</p>
+                <div class="client-login-btn-container small-2 columns">
+                    <p class="top-number">888-282-5353</p>
                     <button class="client-login-btn">Client Login</button>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
-    <!-- <div class="main-header-container-scroll">
+        <div class="main-header-container-scroll">
             <div class="row">
                 <div class="logo-container small-12 large-2 columns">
                     <a href="http://www.l3networks.com">
@@ -109,9 +113,9 @@
                     <button class="client-login-btn">Client Login</button>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-    <!-- <div class="under-nav-container-scroll">
+        <div class="under-nav-container-scroll">
             <div class="under-nav-scroll" id="security">
                 <div class="row">
                     <div class="large-12 large-offset-3 columns">
@@ -128,19 +132,23 @@
 
 
         <div class="under-nav-container">
+
+            <!-- it-management -->
             <div class="under-nav" id="it-management">
                 <div class="row">
-                    <div class="large-12 large-offset-3 columns">
+                    <div class="large-12 large-offset-2 columns">
                         <ul>
-                            <li><a href="it-management.html">IT Managed Services</a></li>
-                            <li><a href="it-management.html">Service Operations</a></li>
+                            <li><a href="#it-management-section">IT Managed Services</a></li>
+                            <li><a href="#service-operations">Service Operations</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+            <!-- Cloud Solutions -->
             <div class="under-nav" id="cloud-solutions">
                 <div class="row">
-                    <div class="large-12 large-offset-3 columns">
+                    <div class="large-12 large-offset-2 columns">
                         <ul>
                             <li><a href="cloud-solutions.html#privateCloud">Private Cloud</a></li>
                             <li><a href="cloud-solutions.html#cloudIntegration">Cloud Integration</a></li>
@@ -148,21 +156,25 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Security -->
             <div class="under-nav" id="security">
                 <div class="row">
-                    <div class="large-12 large-offset-3 columns">
+                    <div class="large-12 large-offset-2 columns">
                         <ul>
-                            <li><a href="#sas">Security Assessments</a></li>
-                            <li><a href="#tm">Threat Management</a></li>
-                            <li><a href="#eps">End Point Security</a></li>
-                            <li><a href="#va">Vulnerability Assessments</a></li>
+                            <li><a href="security.html#sas">Security Assessments</a></li>
+                            <li><a href="security.html#tm">Threat Management</a></li>
+                            <li><a href="security.html#eps">End Point Security</a></li>
+                            <li><a href="security.html#va">Vulnerability Assessments</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+            <!-- Data Protection -->
             <div class="under-nav" id="data-protection">
                 <div class="row">
-                    <div class="large-12 large-offset-3 columns">
+                    <div class="large-12 large-offset-2 columns">
                         <ul>
                             <li><a href="data-protection.html#rb">Remote Backup</a></li>
                             <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
@@ -170,9 +182,11 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Company -->
             <div class="under-nav" id="company">
                 <div class="row">
-                    <div class="large-12 large-offset-3 columns">
+                    <div class="large-12 large-offset-2 columns">
                         <ul>
                             <li><a href="company.html#au">About Us</a></li>
                             <li><a href="company.html#cu">Contact Us</a></li>
@@ -180,8 +194,9 @@
                     </div>
                 </div>
             </div>
+
         </div>
-    </header> -->
+    </header>
 
 
     <div class="security-hero main-container">

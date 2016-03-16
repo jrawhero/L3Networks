@@ -617,7 +617,7 @@ img {
 /* 	padding-right:25px; */
 }
 
-.cssmenu.small-screen > ul > li.has-sub > a::after {
+/*.cssmenu.small-screen > ul > li.has-sub > a::after {
 	position:absolute;
 	right:10px;
 	bottom:8px;
@@ -636,7 +636,7 @@ img {
 	-ms-transition:border-color .2s ease;
 	-o-transition:border-color .2s ease;
 	transition:border-color .2s ease;
-}
+} */
 
 .cssmenu > ul > li.has-sub:hover > a::after {
 	border-color:#009ae1;
@@ -1529,7 +1529,7 @@ img {
 	}
 	
 	#itManDrop,#itCloudDrop,#itSecurityDrop,#itDataDrop,#itCompanyDrop {
-		display:none!important;
+		display:none;
 	}
 	
 	.spacerAboveSlider {

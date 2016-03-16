@@ -107,7 +107,24 @@ img {
 .hockey-hero {
     background: url("../img/slideshow/dataProtection/med-overlay/hockeyOverlay.png") no-repeat center center;
     background-size: cover;
-    height: 60%;
+    background-position: center;
+    min-height: 600px;
+    width: 100%;
+}
+
+.hockey-hero h1 {
+    color: white;
+    padding-top: 10rem;
+}
+
+.hockey-hero h3 {
+    color: white;
+}
+
+.hockey-hero p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .security-hero {
@@ -159,28 +176,15 @@ h3 {
 .main-header-container {
     position: relative;
     width: 100%;
-    z-index: 1;
     background: #fff;
+}
+
+.main-header-container img {
+    width: 100px;
 }
 
 .main-header-container.scrolled {
     z-index: 40;
-}
-
-.main-header-container-scroll {
-    position: absolute;
-    width: 100%;
-    z-index: 40;
-    background: #fff;
-    top: -10rem;
-    transition: 0.35s all ease-in-out;
-    box-shadow: 0px 0px 3px #aaa;
-}
-
-.main-header-container-scroll.scrolled {
-    top: 0;
-    position: fixed;
-    transition: 0.35s all ease-in-out;
 }
 
 .logo-container {
@@ -189,7 +193,51 @@ h3 {
 }
 
 .nav-container {
-    margin-top: 5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+    .main-header-container.scrolled {
+        z-index: 40;
+    }
+    .main-header-container-scroll {
+        position: absolute;
+        width: 100%;
+        z-index: 40;
+        background: #fff;
+        top: -10rem;
+        transition: 0.35s all ease-in-out;
+        box-shadow: 0px 0px 3px #aaa;
+    }
+    .main-header-container-scroll.scrolled {
+        top: 0;
+        position: fixed;
+        transition: 0.35s all ease-in-out;
+    }
+    .main-header-container {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        background: #fff;
+        transition: all 0.3s;
+    }
+    .main-header-container img {
+        width: 200px;
+        transition: all 0.3s;
+    }
+    .main-header-container a {
+        color: #333;
+        transition: all 0.3s;
+    }
+    .logo-container {
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        transition: all 0.3s;
+    }
+    .nav-container {
+        margin-top: 4.5rem;
+        transition: all 0.3s;
+    }
 }
 
 .main-header-container-scroll .logo-container {
@@ -228,48 +276,47 @@ h3 {
 }
 
 .nav-container nav ul li {
-    display: inline-block;
-    padding: 0 1rem;
+    display: block;
+    padding: 1rem 2rem;
 }
 
 .nav-container nav ul li a {
     color: #000;
     font-weight: 300;
-    font-size: .9rem;
-    transition: 0.2s all ease-in-out;
+    font-size: 1.2rem;
+    transition: 0.05s all ease-in-out;
+    padding: 1rem 0;
 }
 
 .nav-container nav ul li a:hover {
     color: #009cde;
-    transition: 0.2s all ease-in-out;
 }
 
+@media screen and (min-width: 40em) {
+    .nav-container nav ul {
+        list-style: none;
+    }
+    .nav-container nav ul li {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+    .nav-container nav ul li a {
+        color: #000;
+        font-weight: 300;
+        font-size: .9rem;
+        transition: 0.05s all ease-in-out;
+            padding:0;
 
-.client-login-btn-container {
-    margin-top: 2.7rem;
+    }
+    .nav-container nav ul li a:hover {
+        color: #009cde;
+    }
 }
-
-.client-login-btn {
-    margin-top: 0;
-    text-transform: none;
-padding: 0.7em 1em;
-    border-radius: 0;
-    border: none;
-    font-size: 16px;
-    letter-spacing:0;
-    font-weight: 300;
-}
-
-.client-login-btn:hover {
-    background: #fff;
-    color: cornflowerblue;
-}
-
-
 
 @media screen and (min-width: 40em) {
     .client-login-btn-container {
         margin-top: 2.7rem;
+        transition: all 0.3s;
     }
     .client-login-btn {
         margin-top: .5rem;
@@ -280,6 +327,7 @@ padding: 0.7em 1em;
         font-size: .7rem;
         letter-spacing: .2rem;
         font-weight: 300;
+        transition: all 0.3s;
     }
     .client-login-btn:hover {
         background: #333;
@@ -287,26 +335,23 @@ padding: 0.7em 1em;
     }
 }
 
-
 .top-number {
-    
     font-size: 16px;
     letter-spacing: .1rem;
     margin: 0;
     text-align: Left;
     position: relative;
-    display:none;
+    display: none;
 }
 
-@media screen and (min-width:40em){
-.top-number {
-    font-size: .7rem;
-    letter-spacing: .2rem;
-    margin: 0;
-    text-align: center;
-    display:block;
-    
-}
+@media screen and (min-width:40em) {
+    .top-number {
+        font-size: .7rem;
+        letter-spacing: .2rem;
+        margin: 0;
+        text-align: center;
+        display: block;
+    }
 }
 
 .under-nav {
@@ -464,6 +509,14 @@ padding: 0.7em 1em;
     z-index: -10;
 }
 
+@media screen and (min-width:40em) {
+    .gallery {
+        position: relative;
+        margin-top: 100px;
+        z-index: -10;
+    }
+}
+
 .gallery-cell {
     width: 100%;
 }
@@ -520,6 +573,7 @@ padding: 0.7em 1em;
 
 .service-block {
     position: relative;
+    vertical-align: bottom;
 }
 
 @media only screen and (max-width: 40em) {
@@ -885,7 +939,6 @@ div .slider-content .index-img-fix {
 
 /* Company */
 
-
 .bluetri2 {
     position: relative;
     color: #009cde;
@@ -900,9 +953,8 @@ div .slider-content .index-img-fix {
     background: #009cde;
     text-align: center;
     border: none;
-        border-radius:10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
     font-size: 14px;
-
 }
 
 .cclogin input[type=text] {
@@ -925,17 +977,86 @@ div .slider-content .index-img-fix {
 
 .cclogin .bluesubmit {
     width: 100%;
-    color:white;
+    color: white;
     background: #009cde;
     border: none;
     padding: 10px;
-    border-radius:10px;
+    border-radius: 10px;
 }
+
 .grey-bg-no-margin h3 {
     padding: 0px;
     margin: 0px;
- }
+}
+
 .active {
     padding-bottom: 5px;
-    border-bottom:1px solid #009cde;
+    border-bottom: 1px solid #009cde;
+}
+
+
+
+header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    height: auto;
+    top:auto;
+    left:auto;
+    transition: all 0.3s;
+}
+
+
+@media only screen and (min-width: 40em) {
+header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    height: auto;
+    top:0;
+    left:0;
+    transition: all 0.3s;
+}
+}
+header.smaller {
+    height: 60px;
+    top:0;
+    left:0;
+}
+
+header.smaller .main-header-container {
+    background: #fff;
+    color: #333;
+}
+
+header.smaller .nav-container {
+    margin-top: 1rem;
+}
+
+header.smaller .logo-container {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header.smaller .main-header-container img {
+    width: 100px;
+}
+
+header.smaller .main-header-container .top-number {
+    display: none;
+}
+
+header.smaller .client-login-btn-container {
+    margin-top: 0.5rem;
+}
+
+header.smaller .client-login-btn {
+    margin-top: .3rem;
+    text-transform: uppercase;
+    padding: .5rem 0.8rem;
+    border-radius: .8rem;
+    border: 1px solid #333;
+    font-size: .7rem;
+    letter-spacing: .2rem;
+    font-weight: 300;
 }
