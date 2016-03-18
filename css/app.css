@@ -187,7 +187,6 @@ h3 {
     z-index: 40;
 }
 
-
 @media screen and (min-width: 40em) {
     .main-header-container.scrolled {
         z-index: 40;
@@ -232,6 +231,8 @@ h3 {
     }
 }
 
+
+/*
 .main-header-container-scroll .logo-container {
     margin: 0.5rem 0;
 }
@@ -262,27 +263,7 @@ h3 {
     letter-spacing: .2rem;
     font-weight: 300;
 }
-
-.nav-container nav ul {
-    list-style: none;
-}
-
-.nav-container nav ul li {
-    display: block;
-    padding: 1rem 2rem;
-}
-
-.nav-container nav ul li a {
-    color: #000;
-    font-weight: 300;
-    font-size: 1.2rem;
-    transition: 0.05s all ease-in-out;
-    padding: 1rem 0;
-}
-
-.nav-container nav ul li a:hover {
-    color: #009cde;
-}
+ */
 
 @media screen and (min-width: 40em) {
     .nav-container nav ul {
@@ -297,21 +278,45 @@ h3 {
         font-weight: 300;
         font-size: .9rem;
         transition: 0.05s all ease-in-out;
-            padding:0;
-
+        padding: 0;
     }
     .nav-container nav ul li a:hover {
         color: #009cde;
     }
 }
 
-@media screen and (min-width: 40em) {
+.client-login-btn-container {
+    margin-top: 2rem;
+    transition: all 0.3s;
+    display: none;
+  
+}
+
+.client-login-btn {
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    border: 1px solid #333;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    font-weight: 300;
+    transition: all 0.3s;
+}
+
+.client-login-btn:hover {
+    background: #333;
+    color: white;
+}
+
+@media screen and (min-width:40em) {
     .client-login-btn-container {
-        margin-top: 2.7rem;
+        margin-top: 2rem;
         transition: all 0.3s;
+   
+            display:block;
+
     }
     .client-login-btn {
-        margin-top: .5rem;
         text-transform: uppercase;
         padding: .8rem 1.2rem;
         border-radius: .8rem;
@@ -504,7 +509,6 @@ h3 {
 @media screen and (min-width:40em) {
     .gallery {
         position: relative;
-        margin-top: 100px;
         z-index: -10;
     }
 }
@@ -987,7 +991,6 @@ div .slider-content .index-img-fix {
 }
 
 
-
 /*header {
     width: 100%;
     overflow: hidden;
@@ -1053,3 +1056,79 @@ header.smaller .client-login-btn {
     letter-spacing: .2rem;
     font-weight: 300;
 }*/
+
+
+/* New Nav Styling */
+
+.medium-horizontal .is-dropdown-submenu {
+    top: 100%;
+    left: 0;
+}
+
+.medium-horizontal .is-dropdown-submenu-parent.opens-left .is-dropdown-submenu {
+    right: 0;
+}
+
+.top-bar {
+    background: #fff;
+}
+
+.top-bar,
+.top-bar ul {
+    background: #fff;
+}
+
+.top-bar-right {
+    /*float: left;*/
+}
+
+@media only screen and (min-width: 40em) {
+    .top-bar-right {
+        margin-right: 3rem;
+        /*float: right; */
+    }
+}
+
+.top-bar-left {
+    margin-left: 3rem;
+}
+
+.menu .nav-text-1 {
+    margin-top: 2rem;
+    color: #333;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 40em) {
+    .menu .nav-text-1 {
+        margin-top: 2rem;
+        color: #333;
+        padding-bottom: 0;
+        font-size: 1rem;
+    }
+}
+
+.menu li ul .sub-nav-text-1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    color: #555;
+}
+
+@media only screen and (min-width: 40em) {
+    .menu li ul .sub-nav-text-1 {
+        font-size: .9rem;
+        color: #555;
+            margin-top: 1rem;
+max-width:25rem;
+        padding-top: 0;
+        letter-spacing: .05rem;
+    }
+}
+
+.darkgreyframe {
+    width: 100%;
+    height: 2.5rem;
+    background: #333;
+}
