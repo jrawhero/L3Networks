@@ -5,15 +5,19 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Home | L3 Networks</title>
+    <title>Cloud Solutions | L3 Networks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Load in Latest jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Load in Flickity Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
     <!-- Load Jquery UI  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js?ver=2.1.1"></script>
+
+    <!-- Load in Foundation 6 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.js"></script>
+
     <!-- Load in our JS -->
     <script src="js/app.js"></script>
 
@@ -31,137 +35,74 @@
 
 <body>
     <header>
-
-        <div class="main-header-container">
-            <div class="row">
-                <div class="logo-container small-12 large-2 columns">
-                    <a href="http://www.l3networks.com">
-                        <img style="max-width: 200px;" src="img/nav/nav-graphics_01.png">
-                    </a>
-                </div>
-                <div class="nav-container small-12 large-8 columns">
-                    <nav class="main-nav">
-                      <ul>
-                        <li><a href="it-management.html" rel="it-management">IT Management</a></li>
-                        <li><a href="cloud-solutions.html" rel="cloud-solutions">Cloud Solutions</a></li>
-                        <li><a href="security.html" rel="security">Security</a></li>
-                        <li><a href="data-protection.html" rel="data-protection">Data Protection</a></li>
-                        <li><a href="company.html" rel="company">Company</a></li>
-                      </ul>
-                    </nav>
-                </div>
-                <div class="client-login-btn-container small-2 columns">
-                    <p class="top-number">888-282-5353</p>
-                    <button class="client-login-btn">Client Login</button>
-                </div>
-            </div>
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">Menu</div>
         </div>
 
-        <div class="main-header-container-scroll">
-          <div class="row">
-            <div class="logo-container small-12 large-2 columns">
-                <a href="http://www.l3networks.com">
-                  <img style="max-width: 200px;" src="img/nav/nav-graphics_01.png">
-                </a>
-            </div>
-            <div class="nav-container small-12 large-8 columns">
-              <nav class="main-nav">
-                <ul>
-                  <li><a href="it-management.html" rel="it-management">IT Management</a></li>
-                  <li><a href="cloud-solutions.html" rel="cloud-solutions">Cloud Solutions</a></li>
-                  <li><a href="security.html" rel="security">Security</a></li>
-                  <li><a href="data-protection.html" rel="data-protection">Data Protection</a></li>
-                  <li><a href="company.html" rel="company">Company</a></li>
+
+        <div class="top-bar" id="example-menu">
+            <div class="top-bar-left">
+                <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="small-drilldown medium-dropdown">
+                    <li class="menu-text">
+                        <a href="index.html">
+                            <img width="200px" src="img/nav/nav-graphics_01.png">
+                        </a>
+                        <li>
+                            <a class="nav-text-1" href="#">It Management</a>
+                            <ul class="menu vertical">
+                                <li><a class="sub-nav-text-1" href="#">It Management Services</a></li>
+                                <li><a class="sub-nav-text-1" href="#">Service Operations</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-text-1" href="#">Cloud Solutions</a>
+                            <ul class="menu vertical">
+                                <li><a class="sub-nav-text-1" href="#">Private Cloud</a></li>
+                                <li><a class="sub-nav-text-1" href="#">Cloud Intergration</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-text-1" href="#">Security</a>
+                            <ul class="menu vertical">
+                                <li><a class="sub-nav-text-1" href="#">Security Assesments</a></li>
+                                <li><a class="sub-nav-text-1" href="#">Threat Management</a></li>
+                                <li><a class="sub-nav-text-1" href="#">End Point Security</a></li>
+                                <li><a class="sub-nav-text-1" href="#">Vulnerability Assets</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-text-1" href="#">Data Protection</a>
+                            <ul class="menu vertical">
+                                <li><a class="sub-nav-text-1" href="#">Remote Backup</a></li>
+                                <li><a class="sub-nav-text-1" href="#">Disaster Recovery</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-text-1" href="#">Company</a>
+                            <ul class="menu vertical">
+                                <li><a class="sub-nav-text-1" href="#">About Us</a></li>
+                                <li><a class="sub-nav-text-1" href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-text-1 show-for-small-only" href="#">Client Login</a>
+
+                        </li>
                 </ul>
-              </nav>
             </div>
-            <div class="client-login-btn-container small-2 columns">
-                    <p class="top-number">888-282-5353</p>
-                    <button class="client-login-btn">Client Login</button>
-                </div>
-          </div>
-        </div>
 
-        <div class="under-nav-container-scroll">
-          <!-- Cloud Solutions -->
-          <div class="under-nav-scroll" id="cloud-solutions">
-            <div class="row">
-              <div class="large-12 large-offset-2 columns">
-                <ul>
-                  <li><a href="#privateCloud">Private Cloud</a></li>
-                  <li><a href="#cloudIntegration">Cloud Integration</a></li>
+
+            <div class=" top-bar-right client-login-btn-container">
+                <ul class="menu vertical">
+                    <li>
+                        <p class="top-number">888-282-5353</p>
+                    </li>
+                    <li>
+                        <button class="show-for-medium-up client-login-btn">Client Login</button>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </div>
         </div>
-
-        <div class="under-nav-container">
-
-            <!-- it-management -->
-            <div class="under-nav" id="it-management">
-                <div class="row">
-                    <div class="large-12 large-offset-2 columns">
-                        <ul>
-                            <li><a href="it-management.html">IT Managed Services</a></li>
-                            <li><a href="it-management.html">Service Operations</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cloud Solutions -->
-            <div class="under-nav" id="cloud-solutions">
-                <div class="row">
-                    <div class="large-12 large-offset-2 columns">
-                        <ul>
-                            <li><a href="#privateCloud">Private Cloud</a></li>
-                            <li><a href="#cloudIntegration">Cloud Integration</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Security -->
-            <div class="under-nav" id="security">
-                <div class="row">
-                    <div class="large-12 large-offset-2 columns">
-                        <ul>
-                            <li><a href="security.html#sas">Security Assessments</a></li>
-                            <li><a href="security.html#tm">Threat Management</a></li>
-                            <li><a href="security.html#eps">End Point Security</a></li>
-                            <li><a href="security.html#va">Vulnerability Assessments</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Data Protection -->
-            <div class="under-nav" id="data-protection">
-                <div class="row">
-                    <div class="large-12 large-offset-2 columns">
-                        <ul>
-                            <li><a href="data-protection.html#rb">Remote Backup</a></li>
-                            <li><a href="data-protection.html#dr">Disaster Recovery</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Company -->
-            <div class="under-nav" id="company">
-                <div class="row">
-                    <div class="large-12 large-offset-2 columns">
-                        <ul>
-                            <li><a href="company.html#au">About Us</a></li>
-                            <li><a href="company.html#cu">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </header>
+
+    <div class="darkgreyframe"></div>
 
     <div class="cloud-solutions-header-img">
         <div class="row">
@@ -173,7 +114,7 @@
         </div>
     </div>
 
-    <div class="row it-management-blocks" >
+    <div class="row it-management-blocks">
         <div class="small-12 large-6 columns">
             <h3>Private Cloud</h3>
             <p>L3’s Private Cloud solution offers clients the most advanced capabilities for computing, storage, and security. Get a fully customized data center tailored to your company’s business needs and a dedicated team of experts to manage it. </p>
@@ -298,40 +239,43 @@
     </div>
 
     <div class="row comprehensive-management">
-      <div class="small-12 large-6 columns">
-        <h4>Comprehensive Management &amp; Reporting</h4>
-        <p>L3 Networks’ secure management tools enable clients to be as ‘hands on’ as they wish to be. Or, businesses can simply entrust L3’s IT Management team to do all of the heavy lifting and provide strategic reporting to make key business decisions.</p>
+        <div class="small-12 large-6 columns">
+            <h4>Comprehensive Management &amp; Reporting</h4>
+            <p>L3 Networks’ secure management tools enable clients to be as ‘hands on’ as they wish to be. Or, businesses can simply entrust L3’s IT Management team to do all of the heavy lifting and provide strategic reporting to make key business decisions.</p>
 
-        <h4>Determine Your Disaster Recovery Strategy</h4>
-        <p>With our ability to provide Private Cloud infrastructure across multiple U.S. states, we become an obvious choice when considering a cost effective environment for either a self-managed Disaster Recovery or L3 Managed Disaster Recovery solution.</p>
+            <h4>Determine Your Disaster Recovery Strategy</h4>
+            <p>With our ability to provide Private Cloud infrastructure across multiple U.S. states, we become an obvious choice when considering a cost effective environment for either a self-managed Disaster Recovery or L3 Managed Disaster Recovery solution.</p>
 
-      </div>
-      <div class="small-13 large-6 columns">
-        <img src="img/it-management-graphics_11.png">
-      </div>
+        </div>
+        <div class="small-13 large-6 columns">
+            <img src="img/it-management-graphics_11.png">
+        </div>
     </div>
 
     <div class="bluemain">
-      <div class="row">
-        <div class="small-12 large-6 columns">
-          <h4>Only Pay for Service you Need</h4>
-          <p>Leveraging L3’s Private Cloud options allows businesses to pay only for resources used and needed. Our ability to adopt this cost model to both the Dedicated and Virtual Cloud settings makes us uniquely placed to provide a truly flexible solution.</p>
+        <div class="row">
+            <div class="small-12 large-6 columns">
+                <h4>Only Pay for Service you Need</h4>
+                <p>Leveraging L3’s Private Cloud options allows businesses to pay only for resources used and needed. Our ability to adopt this cost model to both the Dedicated and Virtual Cloud settings makes us uniquely placed to provide a truly flexible solution.</p>
+            </div>
+            <div class="small-12 large-6 columns">
+                <h4>Get Better Backup and Restore Features</h4>
+                <p>L3’s proactive support approach to IT management guarantees virtual server backup and restore capabilities to help clients recover quickly and easily from file corruption and data loss before business operations are affected.</p>
+            </div>
         </div>
-        <div class="small-12 large-6 columns">
-          <h4>Get Better Backup and Restore Features</h4>
-          <p>L3’s proactive support approach to IT management guarantees virtual server backup and restore capabilities to help clients recover quickly and easily from file corruption and data loss before business operations are affected.</p>
-        </div>
-      </div>
     </div>
 
     <div class="grey-bg-no-margin">
-      <div class="row get-started">
-        <div class="large-5 small-12 small-centered columns text-center">
-          <h4>Want to learn more?</h4>
-          <a href="company.html#au"><button class="talk-button">Talk with our Team</button></a>
-          <div class="contact-us">Contact us: <i class="fa fa-phone"></i> 888-282-5353 </div><div class="email-us">Email us: <a href="mailto:info@l3networks.com">info@l3networks.com</a></div>
+        <div class="row get-started">
+            <div class="large-5 small-12 small-centered columns text-center">
+                <h4>Want to learn more?</h4>
+                <a href="company.html#au">
+                    <button class="talk-button">Talk with our Team</button>
+                </a>
+                <div class="contact-us">Contact us: <i class="fa fa-phone"></i> 888-282-5353 </div>
+                <div class="email-us">Email us: <a href="mailto:info@l3networks.com">info@l3networks.com</a></div>
+            </div>
         </div>
-      </div>
     </div>
 
 
@@ -350,31 +294,31 @@
 
 
     <div class="build-support-bg">
-      <div class="row build-support">
-        <div class="small-5 small-offset-6 columns">
-          <h4>Fast Reliable Build Support</h4>
-          <p>Accelerate your migration to leverage the public cloud domain with best practice design support and tried and tested templates and implementation tools.</p>
+        <div class="row build-support">
+            <div class="small-5 small-offset-6 columns">
+                <h4>Fast Reliable Build Support</h4>
+                <p>Accelerate your migration to leverage the public cloud domain with best practice design support and tried and tested templates and implementation tools.</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="bluemain">
-      <div class="row">
-        <div class="small-12 large-7 small-centered text-center">
-          <h4>Better Flexibility</h4>
-          <p>Our design framework ensures clients won’t be limited by inter-region connectivity or portability problems. Management and reporting tools as well as bundled services ensure our clients benefit from a flexible, forward-thinking solution.</p>
+        <div class="row">
+            <div class="small-12 large-7 small-centered text-center">
+                <h4>Better Flexibility</h4>
+                <p>Our design framework ensures clients won’t be limited by inter-region connectivity or portability problems. Management and reporting tools as well as bundled services ensure our clients benefit from a flexible, forward-thinking solution.</p>
+            </div>
         </div>
-      </div>
     </div>
 
 
     <div class="optimizing-bg">
-      <div class="row build-support">
-        <div class="small-5 small-offset-1 columns">
-          <h4>Optimizing Through Integration</h4>
-          <p>Relying upon a single IT partner capable of managing local systems and networks, private and public cloud environments, and the overarching security of your business data, better ensures a seamless, reliable and more robust experience.</p>
+        <div class="row build-support">
+            <div class="small-5 small-offset-1 columns">
+                <h4>Optimizing Through Integration</h4>
+                <p>Relying upon a single IT partner capable of managing local systems and networks, private and public cloud environments, and the overarching security of your business data, better ensures a seamless, reliable and more robust experience.</p>
+            </div>
         </div>
-      </div>
     </div>
 
 
@@ -454,7 +398,9 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        $(document).foundation();
+    </script>
 
 </body>
 

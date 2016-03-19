@@ -130,23 +130,25 @@ img {
 .security-hero {
     background: url("../img/slideshow/security/med-overlay/safeOverlay.png") no-repeat center center;
     background-size: cover;
-    height: 80%;
+     background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    width: 100%;
 }
 
-.hero-text h1 {
-    font-size: 35px;
-    margin: 0;
+.security-hero h1 {
+    color: white;
+    padding-top: 10rem;
 }
 
-.hero-text h2 {
-    font-size: 20px;
-    margin: 0;
+.security-hero h3 {
+    color: white;
 }
 
-.hero-text h3 {
-    font-size: 16px;
-    margin-top: 1rem;
-    line-height: 1;
+.security-hero p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .whitetext {
