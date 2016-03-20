@@ -274,23 +274,38 @@
             </div>
         </div>
     </footer>
-    <script>
-        function init() {
-            window.addEventListener('scroll', function (e) {
-                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                    shrinkOn = 50,
-                    header = document.querySelector("header");
-                if (distanceY > shrinkOn) {
-                    classie.add(header, "smaller");
-                } else {
-                    if (classie.has(header, "smaller")) {
-                        classie.remove(header, "smaller");
-                    }
-                }
-            });
-        }
-        window.onload = init();
-    </script>
+    
+    <div id="back-top">
+  <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+    
+   <script>
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top .fi-arrow-up').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
+</script>
 
     <script>
         $(document).foundation();
