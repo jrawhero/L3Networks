@@ -39,11 +39,11 @@
           // options
           cellAlign: 'left',
           contain: true,
-          wrapAround: true,
+          wrapAround: false,
           freeScroll: true,
           autoPlay: 4000,
           prevNextButtons: false,
-          pageDots: false
+          pageDots: true
         });
       },
 
