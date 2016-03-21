@@ -103,10 +103,21 @@ img {
 }
 
 .complementary-capabilities-bg {
-    background: url('../img/it-management-graphics_13.png');
+    background: url('../img/it-management-graphics_132.jpg');
     background-size: cover;
     background-position: center;
     padding: 12rem 0;
+    text-align: center;
+}
+
+@media only screen and (min-width:40em) {
+    .complementary-capabilities-bg {
+        background: url('../img/it-management-graphics_13.png');
+        background-size: cover;
+        background-position: center;
+        padding: 12rem 0;
+        text-align: left;
+    }
 }
 
 .quote-image {
@@ -307,10 +318,6 @@ h3 {
     margin-top: 2rem;
     transition: all 0.3s;
     display: none;
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 }
 
 .client-login-btn {
@@ -333,13 +340,7 @@ h3 {
     .client-login-btn-container {
         margin-top: 2rem;
         transition: all 0.3s;
-<<<<<<< HEAD
-
-            display:block;
-
-=======
         display: block;
->>>>>>> origin/master
     }
     .client-login-btn {
         text-transform: uppercase;
@@ -666,6 +667,7 @@ div .slider-content .index-img-fix {
     font-size: 2rem;
     line-height: 2.5rem;
     padding: 8rem 0;
+    z-index: -1;
 }
 
 .blue-line {
@@ -743,7 +745,6 @@ div .slider-content .index-img-fix {
     font-weight: 300;
 }
 
-
 .get-started .talk-button {
     background: #009cde;
     color: white;
@@ -753,16 +754,15 @@ div .slider-content .index-img-fix {
     min-width: 100%;
 }
 
-@media only screen and (min-width:40em){
-.get-started .talk-button {
-    background: #009cde;
-    color: white;
-    padding: 1rem 8rem;
-    margin: 1rem 0;
-    border-radius: 1rem;
+@media only screen and (min-width:40em) {
+    .get-started .talk-button {
+        background: #009cde;
+        color: white;
+        padding: 1rem 8rem;
+        margin: 1rem 0;
+        border-radius: 1rem;
+    }
 }
-}
-
 
 .get-started .talk-button:hover {
     background-color: #3ec3ff;
@@ -875,28 +875,58 @@ div .slider-content .index-img-fix {
 /* Cloud Solutions Styles */
 
 .cloud-solutions-header-img {
-    background: url('../img/slideshow/cloudSolutions/medOverlay/buildingOverlay-fast.jpg');
+    background: url('../img/slideshow/cloudSolutions/medOverlay/buildingOverlay2-fast.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 600px;
+    min-height: 300px;
     width: 100%;
 }
 
-
-
 .cloud-solutions-header-img h1 {
     color: white;
-    padding-top: 10rem;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 1.5rem;
 }
 
 .cloud-solutions-header-img h3 {
     color: white;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .cloud-solutions-header-img p {
     color: white;
-    font-size: 1.1rem;
+    font-size: .8rem;
     font-weight: 500;
+    text-align: center;
+}
+
+@media only screen and (min-width:40em) {
+    .cloud-solutions-header-img {
+        background: url('../img/slideshow/cloudSolutions/medOverlay/buildingOverlay-fast.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+        width: 100%;
+    }
+    .cloud-solutions-header-img h1 {
+        color: white;
+        padding-top: 10rem;
+        text-align: left;
+        font-size: 3rem;
+    }
+    .cloud-solutions-header-img h3 {
+        color: white;
+        text-align: left;
+        font-size: 22px;
+    }
+    .cloud-solutions-header-img p {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
+    }
 }
 
 .sideblue-left {
@@ -914,8 +944,6 @@ div .slider-content .index-img-fix {
     min-height: 450px;
     position: relative;
 }
-
-.box-content {}
 
 .cloud-solution-graphic-images {
     list-style: none;
@@ -945,7 +973,7 @@ div .slider-content .index-img-fix {
 .sideblue-right h3,
 .sideblue-right p {
     color: white;
-    margin-left: ;
+    margin-left: 0;
 }
 
 .comprehensive-management {
@@ -975,9 +1003,19 @@ div .slider-content .index-img-fix {
 
 .optimizing-bg {
     background: url('../img/cloud-server.png');
-    background-position: right center;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-width: 380px;
+    width: 100%;
+}
+
+@media only screen and (min-width:40em) {
+    .optimizing-bg {
+        background: url('../img/cloud-server.png');
+        background-position: right center;
+        background-repeat: no-repeat;
+        min-width: 380px;
+    }
 }
 
 .security-focus-bg {
@@ -1003,79 +1041,45 @@ div .slider-content .index-img-fix {
 }
 
 @media screen and (max-width: 699px) {
-  .cloud-solutions-header-img {
-      background: url('../img/slideshow/cloudSolutions/medOverlay/buildingOverlay2.png');
-      background-size: cover;
-      background-position: center;
-      min-height: 300px;
-      width: 100%;
-  }
-
-  .cloud-solutions-header-img h1 {
-      color: white;
-      padding-top: 5rem;
-      font-size: 2rem;
-  }
-
-  .cloud-solutions-header-img h3 {
-      color: white;
-      font-size: 1.2rem;
-  }
-
-  .cloud-solutions-header-img p {
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 500;
-  }
-
-  .it-management-blocks {
-    padding: 4rem 0;
-  }
-
-  .it-management-blocks h3 {
-    padding-top: 2rem;
-  }
-
-  .managed-services {
-      padding: 1rem 0;
-  }
-
-  .managed-services div div a {
-      position: relative;
-      vertical-align: bottom;
-  }
-
-  .yellow-arrow {
-      margin-right: 1rem;
-  }
-
-  .sideblue-left {
-      float: none;
-      min-height: auto;
-      padding: 2rem 0;
-      width: 100%;
-  }
-
-  .sideblue-right {
-      float: none;
-      width: 100%;
-      min-height: auto;
-      padding: 2rem 0;
-  }
-
-  .sideblue-right h3,
-  .sideblue-left h3 {
-      margin-top: 2rem;
-  }
-
-  .sideblue-left h3,
-  .sideblue-left p,
-  .sideblue-right h3,
-  .sideblue-right p {
-      color: white;
-      margin-left: ;
-  }
-
+    .it-management-blocks {
+        padding: 4rem 0;
+    }
+    .it-management-blocks h3 {
+        padding-top: 2rem;
+    }
+    .managed-services {
+        padding: 1rem 0;
+    }
+    .managed-services div div a {
+        position: relative;
+        vertical-align: bottom;
+    }
+    .yellow-arrow {
+        margin-right: 1rem;
+    }
+    .sideblue-left {
+        float: none;
+        min-height: auto;
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .sideblue-right {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    .sideblue-right h3,
+    .sideblue-left h3 {
+        margin-top: 2rem;
+    }
+    .sideblue-left h3,
+    .sideblue-left p,
+    .sideblue-right h3,
+    .sideblue-right p {
+        color: white;
+        margin-left: ;
+    }
 }
 
 
@@ -1482,7 +1486,6 @@ ul>.subnav-item:hover:before {
         right: 4%;
         z-index: 100;
         border-radius: 50%;
-        background: #333;
     }
 }
 
@@ -1502,9 +1505,4 @@ ul>.subnav-item:hover:before {
 
 .lock-img-bg h3 {
     padding-top: 10rem;
-<<<<<<< HEAD
-
 }
-=======
-}
->>>>>>> origin/master
