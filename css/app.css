@@ -1402,64 +1402,31 @@ ul>.subnav-item:hover:before {
 
 .progress-bar {
     position: relative;
-    top: -5px;
+    top: -8px;
     width: 680px;
-    height: 5px;
-    background: #0099df;
-    animation: fullexpand 26s ease-out infinite;
+    height: 8px;
+    background: gold;
+    animation: fullexpand 5s ease-in-out infinite;
 }
 
 
 /* ANIMATION BAR */
 
 @keyframes fullexpand {
-    /* In these keyframes, the progress-bar is stationary */
-    0%,
-    20%,
-    40%,
-    60%,
-    80%,
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    33% {
+        opacity: .8;
+    }
     100% {
-        width: 0%;
-        opacity: 0;
-    }
-    /* In these keyframes, the progress-bar starts to come alive */
-    4%,
-    24%,
-    44%,
-    64%,
-    84% {
-        width: 0%;
-        opacity: 0.5;
-    }
-    /* In these keyframes, the progress-bar moves forward for 3 seconds */
-    16%,
-    36%,
-    56%,
-    76%,
-    96% {
         width: 100%;
-        opacity: 0.9;
-    }
-    /* In these keyframes, the progress-bar has finished his path */
-    17%,
-    37%,
-    57%,
-    77%,
-    97% {
-        width: 100%;
-        opacity: 0.5;
-    }
-    /* In these keyframes, the progress-bar will disappear and then resume the cycle */
-    18%,
-    38%,
-    58%,
-    78%,
-    98% {
-        width: 100%;
-        opacity: 0;
+        opacity: 1;
     }
 }
+
+
 
 #back-top {
     position: fixed;
