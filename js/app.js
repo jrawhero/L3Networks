@@ -41,7 +41,7 @@
           contain: true,
           wrapAround: false,
           freeScroll: true,
-          autoPlay: 4000,
+          autoPlay: 5000,
           prevNextButtons: false,
           pageDots: true
         });
