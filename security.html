@@ -31,14 +31,14 @@
 </head>
 
 <body id="top">
- <header>
+    <header>
         <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle></button>
             <div class="title-bar-title">Menu</div>
         </div>
 
 
-<div class="top-bar" id="example-menu">
+        <div class="top-bar" id="example-menu">
             <div class="top-bar-left">
                 <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="small-drilldown medium-dropdown">
                     <li class="menu-text">
@@ -88,13 +88,16 @@
                         </li>
                 </ul>
             </div>
-        <div class=" top-bar-right client-login-btn-container">
+            <div class=" top-bar-right client-login-btn-container">
                 <ul class="menu vertical">
                     <li>
                         <p class="top-number">888-282-5353</p>
                     </li>
                     <li>
-<a href="login.html"><button class="show-for-medium-up client-login-btn">Client Login</button></a>                    </li>
+                        <a href="login.html">
+                            <button class="show-for-medium-up client-login-btn">Client Login</button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -103,42 +106,44 @@
 
     <div class="security-hero ">
         <div class="row">
-            <h1>Security</h1>
-            <h3>Assess Vulnerabilities | Protect Infrastructure</h3>
-            <p>We’re experts in our industry <br/>so you can be leaders in yours</p>
+            <div class="small-10 medium-10 small-centered large-uncentered large-5 columns">
+                <h1>Security</h1>
+                <h3>Assess Vulnerabilities | Protect Infrastructure</h3>
+                <p>We’re experts in our industry
+                    <br/>so you can be leaders in yours</p>
+            </div>
         </div>
     </div>
 
 
-
-        <div class="it-management-blocks">
-            <div class="row ">
-                <div class="large-3 medium-3 small-12  small-centered large-uncentered columns">
-                    <h3>Security Assessments</h3>
-                    <p>Establish a baseline to determine your security posture and develop policy and procedures that will better protect your business systems and data.</p>
-                    <a href="#sa">Learn More <i class="fa fa-angle-right learn-arrow"></i></a>
-                </div>
-                <div class="large-3 medium-3 small-12  small-centered large-uncentered columns">
-                    <h3>Threat Management</h3>
-                    <p>L3’s Threat Management service guards your infrastructure by identifying suspicious activities and remediating perceived threats with rapid response.</p>
-                    <a href="#tm">Learn More  <i class="fa fa-angle-right learn-arrow"></i></a>
-                </div>
-                <div class="large-3 medium-3 small-12 small-centered large-uncentered  columns">
-                    <h3>End Point Security</h3>
-                    <p>Mitigating threats requires constant coverage of end point devices. L3’s solution protects your IT infrastructure by ensuring risks are instantly remediated.</p>
-                    <a href="#eps">Learn More  <i class="fa fa-angle-right learn-arrow"></i></a>
-                </div>
-                <div class="large-3 medium-3 small-12 small-centered large-uncentered columns">
-                    <h3>Vulnerability Assessments</h3>
-                    <p>L3 offers best practices for finding your security gaps through vulnerability scanning, penetration testing, and risk analysis routines.</p>
-                    <a href="#tm">Learn More  <i class="fa fa-angle-right learn-arrow"></i></a>
-                </div>
+    <div class="it-management-blocks">
+        <div class="row ">
+            <div class="large-3 small-12 medium-6 columns block">
+                <h3>Security Assessments</h3>
+                <p>Establish a baseline to determine your security posture and develop policy and procedures that will better protect your business systems and data.</p>
+                <a href="#sa">Learn More <i class="fa fa-angle-right learn-arrow"></i></a>
+            </div>
+            <div class="large-3 small-12 medium-6 columns block">
+                <h3>Threat Management</h3>
+                <p>L3’s Threat Management service guards your infrastructure by identifying suspicious activities and remediating perceived threats with rapid response.</p>
+                <a href="#tm">Learn More  <i class="fa fa-angle-right learn-arrow"></i></a>
+            </div>
+            <div class="large-3 small-12 medium-6 columns block">
+                <h3>End Point Security</h3>
+                <p>Mitigating threats requires constant coverage of end point devices. L3’s solution protects your IT infrastructure by ensuring risks are instantly remediated.</p>
+                <a href="#eps">Learn More  <i class="fa fa-angle-right learn-arrow"></i></a>
+            </div>
+            <div class="large-3 small-12 medium-6 columns block">
+                <h3>Vulnerability Assessments</h3>
+                <p>L3 offers best practices for finding your security gaps through vulnerability scanning, penetration testing, and risk analysis routines.</p>
+                <a href="#tm">Learn More  <i class="fa fa-angle-right learn-arrow"></i></a>
             </div>
         </div>
+    </div>
 
     <div class="dark-grey-bg" id="sa">
         <div class="row">
-            <div class="large-6 small-10 small-centered large-uncentered medium-6 columns managed-services">
+            <div class="large-6 small-10 medium-10 small-centered large-uncentered columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
                 <h3>Security Assessments</h3>
                 <p>With L3 as an independent partner, assessing your current security framework can help your organization validate its IT security posture, improve policies and procedures, and better educate employees on how to protect company data and meet regulatory compliance demands so that you’re better able to reach your goals.</p>
@@ -148,6 +153,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+
     <div class="security-focus-bg">
         <div class="row">
             <div class="large-6 small-12 medium-text-left large-text-left text-center large-offset-6 columns">
@@ -177,7 +187,7 @@
     </div>
     <div class="dark-grey-bg" id="tm">
         <div class="row">
-            <div class="large-6 small-10 small-centered large-uncentered medium-6 columns managed-services">
+            <div class="large-6 small-10 medium-10 small-centered large-uncentered columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
                 <h3>Threat Management</h3>
                 <p>Protecting your Infrastructure relies on having the right software tools and expertise on hand to manage those tools 24/7. But having that level of support ‘in house’ may not be a viable option for your organization. L3 offers 24/7 threat management services that provide clients with a global view of their security situation day or night without the massive investment of multiple solutions and additional IT staff.</p>
@@ -187,6 +197,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="main-container blue-titles">
         <div class="title-container">
             <div class="row">
@@ -237,10 +251,12 @@
                 <p class="text-center">Be assured that your data is being optimally protected. L3’s backup management protocol comes with audit-ready monthly and weekly scheduled reporting that’s compatible across all environments, and includes priority incident reports.</p>
             </div>
         </div>
-    </div>
-    <div class="grey-bg">
+    </div>   
+    
+    
+    <div class="grey-bg-no-margin">
         <div class="row get-started">
-            <div class="small-12 large-5 medium-5 small-centered columns text-center">
+            <div class="large-5 small-12 small-centered columns text-center">
                 <h4>Want to learn more?</h4>
                 <a href="company.html#au">
                     <button class="talk-button">Talk with our Team</button>
@@ -250,9 +266,12 @@
             </div>
         </div>
     </div>
+    
+    
+    
     <div class="dark-grey-bg" id="eps">
         <div class="row">
-            <div class="large-6 small-10 small-centered large-uncentered medium-6 columns managed-services">
+            <div class="large-6 small-10 medium-10 small-centered large-uncentered columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
                 <h3>End Point Security</h3>
                 <p>Most security vulnerabilities are exploited through Endpoint Devices, namely workstations, laptops, smartphones and tablets. Mitigating this risk requires continuous monitoring and a level of attention that many IT department are not equipped to manage. L3’s End Point Security service provides an easy to deploy solution that fully manages this aspect of security for your organization to ensure all risks are remediated in real-time.</p>
@@ -262,6 +281,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="main-container blue-titles">
         <div class="title-container">
             <div class="row ">
@@ -308,7 +331,7 @@
     </div>
     <div class="dark-grey-bg" id="va">
         <div class="row">
-            <div class="large-6 small-10 small-centered large-uncentered medium-6 columns managed-services">
+            <div class="large-6 small-10 medium-10 small-centered large-uncentered columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
                 <h3>Vulnerability Assessments</h3>
                 <p>Whether you organizations infrastructure is large or small, the software most often used by businesses is universal. With new software releases occurring all the time, it’s important that vulnerabilities are known about and addressed so that data is not compromised and exploited. Partner with L3 ensures regular Vulnerability assessment, risk analysis and appropriate remediation.</p>
@@ -318,6 +341,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="title-container grey-bg2">
         <div class="row">
             <div class="large-6 large-offset-3 columns text-center">
@@ -357,9 +384,12 @@
         </div>
     </div>
 
-    <div class="grey-bg">
+
+    
+    
+     <div class="grey-bg-no-margin">
         <div class="row get-started">
-            <div class="small-12 large-5 medium-5 small-centered columns text-center">
+            <div class="large-5 small-12 small-centered columns text-center">
                 <h4>Get Started Today</h4>
                 <a href="company.html#au">
                     <button class="talk-button">Talk with our Team</button>
@@ -369,7 +399,9 @@
             </div>
         </div>
     </div>
-   <footer>
+    
+    
+    <footer>
         <div class="row footer-nav">
 
             <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
@@ -427,37 +459,33 @@
         </div>
     </footer>
 
-        <div id="back-top">
-  <a href="#top"><i class="fa fa-chevron-up"></i></a>
-</div>
+    <div>
+        <a id="back-top" href="#top"><i class="fa fa-chevron-up"></i></a>
+    </div>
 
-   <script>
-$(document).ready(function(){
+    <script>
+        $(document).ready(function () {
 
-  // hide #back-top first
-  $("#back-top").hide();
+            // hide #back-top first
+            $("#back-top").hide();
 
-  // fade in #back-top
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $('#back-top').fadeIn();
-      } else {
-        $('#back-top').fadeOut();
-      }
-    });
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
 
-    // scroll body to 0px on click
-    //$('#back-top .fi-arrow-up').click(function () {
-      //$('body,html').animate({
-        //scrollTop: 0
-      //}, 800);
-      //return false;
-    //});
-  });
 
-});
-</script>
+
+
+            });
+
+        });
+    </script>
 
     <script>
         $(document).foundation();

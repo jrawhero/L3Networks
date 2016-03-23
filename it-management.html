@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle></button>
             <div class="title-bar-title">Menu</div>
@@ -108,10 +108,11 @@
 
     <div class="it-management-header-img">
         <div class="row">
-            <div class="small-10 small-centered large-uncentered large-5 columns">
+            <div class="small-10 medium-10 small-centered large-uncentered large-5 columns">
                 <h1>IT Management</h1>
                 <h3>Constant Coverage | Enhance Performance</h3>
-                <p>We're experts in our industry so you can be leaders in yours</p>
+                <p>We’re experts in our industry
+                    <br/>so you can be leaders in yours</p>
             </div>
         </div>
     </div>
@@ -131,7 +132,7 @@
 
     <div id="it1" class="dark-grey-bg" id="it-management-section">
         <div class="row">
-            <div class="large-6 small-10 small-centered large-uncentered medium-6 columns managed-services">
+            <div class="large-6 small-10 medium-10 small-centered large-uncentered columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
                 <h3>Managed Services</h3>
                 <p>The cornerstone of L3 Networks' Managed Services advantage is our ability to align your business with best practice technology. We look at your entire infrastructure, identify potential problems, and provide best-ﬁt solutions to ensure every aspect of your IT Infrastructure is supporting your business needs.</p>
@@ -141,7 +142,6 @@
                 <img class="right dark-grey-bg-img"  src="img/it-management-graphics_01.png" alt="it-management-graphics_01">
             </div>
         </div>
-    </div>
     </div>
 
     <div class="row">
@@ -223,18 +223,22 @@
 
     <div id="it2" class="dark-grey-bg" id="service-operations">
         <div class="row">
-            <div class="small-12 large-6 columns managed-services">
+            <div class="large-6 small-10 medium-10 small-centered large-uncentered columns managed-services">
                 <i class="fa-lg fa fa-caret-right yellowtri"></i>
                 <h3>Service Operations</h3>
                 <p>Free up time and resources for your IT team by utilizing L3 Networks for tasks that are tedious and time-consuming or complex and outside the scope of your existing capabilities. Our fixed cost service operations save companies money by mitigating overtime costs your IT team would incur from off-hours activities or the training required for out of the ordinary tasks.</p>
             </div>
-            <div class="small-12 large-5 large-offset-1 columns">
+            <div class="large-5 large-offset-1 small-12 columns">
                 <img class="right dark-grey-bg-img" src="img/it-management-graphics_03.png" alt="it-management-graphics_03">
             </div>
         </div>
     </div>
-    </div>
-
+   
+   
+   
+   
+   
+   
     <div class="row reliable-execution-box">
         <div class="small-12 large-5 large-offset-1 columns">
             <img src="img/it-management-graphics_11.png" alt="it-management-graphics_11">
@@ -339,9 +343,8 @@
         </div>
     </footer>
 
-
-        <div id="back-top">
-  <a href="#"><i class="fa fa-chevron-up"></i></a>
+<div>
+  <a id="back-top" href="#top"><i class="fa fa-chevron-up"></i></a>
 </div>
 
    <script>
@@ -360,13 +363,8 @@ $(document).ready(function(){
       }
     });
 
-    // scroll body to 0px on click
-    $('#back-top .fi-arrow-up').click(function () {
-      $('body,html').animate({
-        scrollTop: 0
-      }, 800);
-      return false;
-    });
+  
+      
   });
 
 });
