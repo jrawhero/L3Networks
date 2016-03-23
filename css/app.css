@@ -132,7 +132,39 @@ img {
     padding: 3rem 0;
 }
 
+
+
 .hockey-hero {
+    background: url("../img/slideshow/dataProtection/med-overlay/hockeyOverlay2-fast.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    width: 100%;
+}
+
+.hockey-hero h1 {
+     color: white;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 1.5rem;
+}
+
+.hockey-hero h3 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hockey-hero p {
+    color: white;
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media only screen and (min-width:40em){
+    
+    .hockey-hero {
     background: url("../img/slideshow/dataProtection/med-overlay/hockeyOverlay-fast.png") no-repeat center center;
     background-size: cover;
     background-position: 50% 40%;
@@ -142,40 +174,82 @@ img {
 
 .hockey-hero h1 {
     color: white;
-    padding-top: 10rem;
+        padding-top: 10rem;
+        text-align: left;
+        font-size: 3rem;
 }
 
 .hockey-hero h3 {
     color: white;
+        text-align: left;
+        font-size: 22px;
 }
 
 .hockey-hero p {
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 500;
+     color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
 }
 
+}
+
+
+
+
 .security-hero {
-    background: url("../img/slideshow/security/med-overlay/safeOverlay-fast.jpg") no-repeat center center;
+    background: url("../img/slideshow/security/med-overlay/safeOverlay2-fast.jpg") no-repeat center center;
     background-size: cover;
-    background-position: 50% 60%;
-    min-height: 600px;
+    background-position: center;
+    min-height: 300px;
     width: 100%;
 }
 
 .security-hero h1 {
     color: white;
-    padding-top: 10rem;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 1.5rem;
 }
 
 .security-hero h3 {
     color: white;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .security-hero p {
     color: white;
-    font-size: 1.1rem;
+    font-size: .8rem;
     font-weight: 500;
+    text-align: center;
+}
+
+@media only screen and (min-width:40em) {
+    .security-hero {
+        background: url("../img/slideshow/security/med-overlay/safeOverlay-fast.jpg") no-repeat center center;
+        background-size: cover;
+        background-position: 50% 60%;
+        min-height: 600px;
+        width: 100%;
+    }
+    .security-hero h1 {
+        color: white;
+        padding-top: 10rem;
+        text-align: left;
+        font-size: 3rem;
+    }
+    .security-hero h3 {
+        color: white;
+        text-align: left;
+        font-size: 22px;
+    }
+    .security-hero p {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
+    }
 }
 
 .whitetext {
@@ -960,12 +1034,19 @@ div .slider-content .index-img-fix {
 
 .cloud-solution-graphic-images img {
     max-width: 100px;
-    padding: 0rem .5rem;
+    padding: 1rem .5rem;
+}
+
+@media only screen and (min-width:40em) {
+    .cloud-solution-graphic-images img {
+        max-width: 100px;
+        padding: 0rem .5rem;
+    }
 }
 
 .sideblue-right h3,
 .sideblue-left h3 {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 .sideblue-left h3,
@@ -987,10 +1068,21 @@ div .slider-content .index-img-fix {
 }
 
 .build-support-bg {
-    background: url('../img/cloud-solutions-graphics_06.png');
-    background-position: left center;
+    background: url('../img/cloud-solutions-graphics_06-2.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 380px;
+    color: #fff;
+}
+
+@media only screen and (min-width:40em) {
+    .build-support-bg {
+        background: url('../img/cloud-solutions-graphics_06.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        min-height: 380px;
+        color: #333;
+    }
 }
 
 .build-support {
@@ -1002,30 +1094,51 @@ div .slider-content .index-img-fix {
 }
 
 .optimizing-bg {
-    background: url('../img/cloud-server.png');
+    background: url('../img/cloud-server-2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    color: white;
 }
 
 @media only screen and (min-width:40em) {
     .optimizing-bg {
         background: url('../img/cloud-server.png');
-        background-position: right center;
+        background-position: center;
         background-repeat: no-repeat;
         min-width: 380px;
+        background-size:cover; 
+        color: #333;
     }
 }
 
 .security-focus-bg {
+    padding:8rem 0;
+    background: url('../img/papers-2.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+         background-color:#323232;
+        margin: 0;
+
+
+}
+
+@media only screen and (min-width:40em){
+    .security-focus-bg {
     background: url('../img/papers-small-2.png');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 380px;
-}
+        color:#323232;
+                background-color:#fff;
 
+}
+    
+}
 
 /* Company Styles */
 
@@ -1224,7 +1337,7 @@ ul>.subnav-item:hover:before {
     .yellowtri {
         color: gold;
         position: relative;
-        left: -8rem;
+        left: -8.5rem;
         top: 1.6rem;
     }
     .dark-grey-bg div div .dark-grey-bg-img {
@@ -1275,6 +1388,26 @@ ul>.subnav-item:hover:before {
 
 .cclogin input[type=text] {
     padding: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+.cclogin textarea {
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    color: #666;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+@media only screen and (min-width:40em){
+    
+    .cclogin input[type=text] {
+    padding: 10px;
     width: 92%;
     height: 40px;
     line-height: 40px;
@@ -1290,6 +1423,8 @@ ul>.subnav-item:hover:before {
     border: 1px solid #ccc;
     resize: none;
 }
+}
+
 
 .cclogin .bluesubmit,
 .cllogin .bluesubmit {
@@ -1377,8 +1512,8 @@ ul>.subnav-item:hover:before {
 
 .menu li ul .sub-nav-text-1 {
     font-size: 1rem;
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
     color: #555;
 }
 
@@ -1403,10 +1538,13 @@ ul>.subnav-item:hover:before {
 .progress-bar {
     position: relative;
     top: -8px;
-    width: 680px;
+    width: 100%;
     height: 8px;
     background: gold;
     animation: fullexpand 5s ease-in-out infinite;
+    -webkit-animation: fullexpand 5s ease-in-out infinite;
+    -moz-animation: fullexpand 5s ease-in-out infinite;
+    -o-animation: fullexpand 5s ease-in-out infinite;
 }
 
 
@@ -1425,8 +1563,6 @@ ul>.subnav-item:hover:before {
         opacity: 1;
     }
 }
-
-
 
 #back-top {
     position: fixed;
@@ -1472,4 +1608,55 @@ ul>.subnav-item:hover:before {
 
 .lock-img-bg h3 {
     padding-top: 10rem;
+}
+
+.top-bar {
+    overflow-x: hidden;
+}
+@media only screen and (min-width:40em){
+    
+    .top-bar {
+    overflow-x:visible;
+}
+}
+
+.is-drilldown-submenu-parent > a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    border-color: transparent transparent transparent #009fde;
+    border-left-style: solid;
+    border-right-width: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: 12rem;
+}
+
+.grey-bg-no-margin img {
+    padding:2rem 0;
+    margin-left: 0;
+    margin-right: 0;
+   
+    display: block;
+    
+}
+@media only screen and (min-width:40em){
+    grey-bg-no-margin img {
+    padding:2rem 0;
+     margin-left: auto;
+    margin-right: auto;  
+        display:inline;
+    
+}
+    
+}
+
+.company-panel {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
