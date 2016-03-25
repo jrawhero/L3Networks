@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Home | L3 Networks</title>
+    <title>Login | L3 Networks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Load in Latest jquery -->
@@ -42,19 +42,24 @@
 
          <div class="top-bar" id="example-menu">
             <div class="top-bar-left">
-                <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="small-drilldown medium-dropdown">
+                <ul class="dropdown vertical medium-horizontal menu" data-closing-time="200" data-responsive-menu="small-drilldown medium-dropdown" role="menubar">
                     <li class="menu-text">
                         <a href="index.html">
-                            <img width="200px" src="img/nav/nav-graphics_01.png">
+                            <img src="img/nav/nav-graphics_01.png">
                         </a>
                         <li>
-                            <a class="nav-text-1" href="it-management.html">IT Management</a>
-                            <ul class="menu vertical">
-                                <li><a class="sub-nav-text-1 show-for-small-only" href="it-management.html#"><strong>IT Management</strong></a></li>
-                                <li><a class="sub-nav-text-1" href="it-management.html#it1">Management Services</a></li>
-                                <li><a class="sub-nav-text-1" href="it-management.html#it2">Service Operations</a></li>
-                            </ul>
+                            <a class="nav-text-1" href="it-management.html">Managed Services</a>
+                            <!--<ul class="menu vertical">
+                                <li><a class="sub-nav-text-1 show-for-small-only" href="it-management.html#"><strong>Managed Services</strong></a></li> 
+                            </ul>-->
                         </li>
+                        <li>
+                            <a class="nav-text-1" href="serviceops.html">Service Operations</a>
+                           <!-- <ul class="menu vertical">
+                                <li><a class="sub-nav-text-1 show-for-small-only" href="serviceops.html"><strong>Service Operations</strong></a></li>
+                            </ul>-->
+                        </li>
+                        
                         <li><a class="nav-text-1" href="cloud-solutions.html">Cloud Solutions</a>
                             <ul class="menu vertical">
                                 <li><a class="sub-nav-text-1 show-for-small-only" href="cloud-solutions.html#"><strong>Cloud Solutions</strong></a></li>
@@ -85,19 +90,22 @@
                                 <li><a class="sub-nav-text-1" href="company.html#cu">Contact Us</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-text-1 show-for-small-only" href="login.html">Client Login</a>
+                        <li><a class="nav-text-1 show-for-small-only show-for-medium-only" href="login.html">Client Login</a>
 
                         </li>
                 </ul>
             </div>
-            
-          <div class=" top-bar-right client-login-btn-container">
+
+            <div class=" top-bar-right client-login-btn-container">
                 <ul class="menu vertical">
                     <li>
                         <p class="top-number">888-282-5353</p>
                     </li>
                     <li>
-<a href="login.html"><button class="show-for-medium-up client-login-btn">Client Login</button></a>                    </li>
+                        <a href="login.html">
+                            <button class="show-for-medium-up client-login-btn">Client Login</button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -142,6 +150,8 @@
                         <input type="button" class="bluesubmit" name="submit_value" id="submit_value" onclick="return myFunction1()" value="Log In">
                     </p>
 
+                    <input type="submit" style="display:none" />
+
                 </form>
                 <p class="text-center"><a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 fs-13  largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">Forgot your email or password?</a></p>
             </div>
@@ -183,6 +193,8 @@
                     <p>
                         <input class="bluesubmit" type="button" name="submit_value1" id="submit_value1" onclick="return myFunction2()" value="Log In">
                     </p>
+                    <input type="submit" style="display:none" />
+
                 </form>
                 <p class="text-center"><a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 fs-13  largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">Forgot your email or password?</a>
             </div>
@@ -191,7 +203,7 @@
         </div>
     </div>
 
-   <center><img style="position:relative; bottom:-10px;z-index:-25" src="img/clouds.png"/></center>
+    <center><img style="position:relative; bottom:-10px;z-index:-25" src="img/clouds.png" /></center>
 
 
     <div class="grey-bg">
@@ -207,7 +219,7 @@
         </div>
     </div>
 
-   <footer>
+    <footer>
         <div class="row footer-nav">
 
             <div class="small-12 large-2 text-center large-text-left small-centered large-uncentered columns">
