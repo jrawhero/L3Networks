@@ -1632,14 +1632,17 @@ ul>.subnav-item:hover:before {
     margin-left: 0;
     margin-right: 0;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-@media only screen and (min-width:40em) {
-    grey-bg-no-margin img {
+@media screen and (min-width: 40em)
+ {
+    .grey-bg-no-margin img {
         padding: 2rem 0;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline;
+        margin-left: 0;
+    margin-right: 0;
     }
 }
 
