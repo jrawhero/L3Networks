@@ -46,6 +46,10 @@ img {
     background: #323232;
     padding: 3rem 0;
 }
+.dark-grey-bg-none {
+    background: #333;
+    min-height: 1450px;
+}
 
 .dark-grey-bg h3 {
     color: white;
@@ -1741,13 +1745,13 @@ ul>.subnav-item:hover:before {
     font-size: 16px;
     letter-spacing: .75px;
     line-height: 1.6;
-    color: #6E6E6E;
+    color: #888;
     padding-top:1.5rem;
     
 }
 
 .why-l3 h1 {
-    color: #888;
+    color: #333;
     line-height: 1.25em;
     font-size: 32px;
     vertical-align: bottom;
@@ -1760,7 +1764,7 @@ ul>.subnav-item:hover:before {
 
 .why-l3 span {
     bottom: 0;
-    color: #6ECCFF;
+    color:  #009dfe;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 190px;
     left: 0;
@@ -1786,12 +1790,57 @@ ul>.subnav-item:hover:before {
  .why-reasons {
        letter-spacing: 2.5px;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.5rem;
     /* padding-bottom: 10px; */
     padding-top: 80px;
     color: #009dfe;
     font-weight: bold;
     line-height: 3.5rem;
 }   
+    
+}
+.why-l3 img {
+    width:350px;
+    padding-top: 4rem;
+    
+}
+
+.upside-down-clouds {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    top:-80px;
+    left:26%;
+}
+
+.router {
+    position: relative;
+    color:white;
+}
+
+.router h3 {
+    padding-top: 80%;
+    
+}
+.router p {
+    
+}
+.router-lower {
+}
+
+.router-temp {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    position: absolute;
+    width:75%;
+    top:24rem;
+    z-index: 2;
+}
+
+.router-temp-2 {
+    position: absolute;
+    width:100%;
+    z-index: 0;
     
 }
