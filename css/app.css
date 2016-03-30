@@ -1554,7 +1554,7 @@ ul>.subnav-item:hover:before {
         margin-top: 2rem;
         color: #333;
         padding-bottom: 0;
-        font-size: 1rem;
+        font-size: .9rem;
         transition: all 1s ease-out;
     }
 }
@@ -1577,7 +1577,6 @@ ul>.subnav-item:hover:before {
         margin-top: 1rem;
         max-width: 25rem;
         padding-top: 0;
-        letter-spacing: .05rem;
     }
 }
 
