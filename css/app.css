@@ -1156,10 +1156,10 @@ div .slider-content .index-img-fix {
 @media only screen and (min-width:40em) {
     .optimizing-bg {
         background: url('../img/cloud-server.png');
-        background-position: center;
+        background-position: right center;
         background-repeat: no-repeat;
         min-width: 380px;
-        background-size: cover;
+        background-size: contain;
         color: #333;
     }
 }
