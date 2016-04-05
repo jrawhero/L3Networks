@@ -46,6 +46,7 @@ img {
     background: #323232;
     padding: 3rem 0;
 }
+
 .dark-grey-bg-none {
     background: #333;
     min-height: 1450px;
@@ -1519,12 +1520,12 @@ ul>.subnav-item:hover:before {
 }
 
 .top-bar {
-    background: #fff;
+    background: white;
 }
 
 .top-bar,
 .top-bar ul {
-    background: #fff;
+    background: white;
 }
 
 .top-bar-right {
@@ -1555,7 +1556,7 @@ ul>.subnav-item:hover:before {
         color: #333;
         padding-bottom: 0;
         font-size: .9rem;
-        transition: all 1s ease-out;
+        transition: all .03s ease-out;
     }
 }
 
@@ -1740,13 +1741,13 @@ ul>.subnav-item:hover:before {
         padding: 1rem .5rem;
     }
 }
+
 .why-l3 p {
     font-size: 16px;
     letter-spacing: .75px;
     line-height: 1.6;
     color: #888;
-    padding-top:1.5rem;
-    
+    padding-top: 1.5rem;
 }
 
 .why-l3 h1 {
@@ -1755,28 +1756,29 @@ ul>.subnav-item:hover:before {
     font-size: 32px;
     vertical-align: bottom;
     bottom: 0;
-    display:inline-block;
-    width:4rem;
+    display: inline-block;
+    width: 4rem;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
 .why-l3 span {
     bottom: 0;
-    color:  #009dfe;
+    color: #009dfe;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 190px;
     left: 0;
     line-height: .825em;
     margin-top: 7rem;
-    display:inline;
+    display: inline;
 }
 
 .reason-block {
     padding-top: 7rem;
 }
+
 .why-reasons {
-       letter-spacing: 2.5px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     font-size: 2rem;
     /* padding-bottom: 10px; */
@@ -1785,23 +1787,23 @@ ul>.subnav-item:hover:before {
     font-weight: bold;
     line-height: 2.5rem;
 }
-@media screen and (min-width:40em){
- .why-reasons {
-       letter-spacing: 2.5px;
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    /* padding-bottom: 10px; */
-    padding-top: 80px;
-    color: #009dfe;
-    font-weight: bold;
-    line-height: 3.5rem;
-}   
-    
+
+@media screen and (min-width:40em) {
+    .why-reasons {
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        /* padding-bottom: 10px; */
+        padding-top: 80px;
+        color: #009dfe;
+        font-weight: bold;
+        line-height: 3.5rem;
+    }
 }
+
 .why-l3 img {
-    width:350px;
+    width: 350px;
     padding-top: 4rem;
-    
 }
 
 .upside-down-clouds {
@@ -1809,37 +1811,110 @@ ul>.subnav-item:hover:before {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    top:-80px;
-    left:26%;
+    top: -80px;
+    left: 26%;
 }
 
 .router {
     position: relative;
-    color:white;
+    color: white;
 }
 
 .router h3 {
     padding-top: 80%;
-    
 }
-.router p {
-    
-}
-.router-lower {
-}
+
+.router p {}
+
+.router-lower {}
 
 .router-temp {
     padding-top: 12rem;
     padding-bottom: 8rem;
     position: absolute;
-    width:75%;
-    top:24rem;
+    width: 75%;
+    top: 24rem;
     z-index: 2;
 }
 
 .router-temp-2 {
     position: absolute;
-    width:100%;
+    width: 100%;
     z-index: 0;
+}
+
+.login-switcher {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.login-switcher li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.tabs {
+    margin: 0;
+    list-style-type: none;
+    background: #fefefe;
+    border: 1px solid #333;
+    border-bottom: none;
+}
+.tabs-content {
+    background: #eee;
+    transition: all 0.5s ease;
+    border: 1px solid #333;
+    border-top: 0;
+}
+
+.tabs-title > a:focus,
+.tabs-title > a[aria-selected='true'] {
+    background-color: #eee;
+}
+
+.tabs-title > a {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    line-height: 1;
+    font-size: 1rem;
+    color: #333;
+}
+
+.tabs-panel {
+    display: none;
+    padding: 1rem;
+    height: 400px;
+    background-color: #eee;
+}
+
+.support-columns img {
+    width: 6rem;
+    padding-bottom:2rem;
     
 }
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    content: '';
+    /* display: block; */
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    border-color: #2199e8 transparent transparent;
+    border-top-style: solid;
+    /* border-bottom-width: 0; */
+    /* right: -5px; */
+top: 12px;
+    margin-top: -2px;
+    position: relative;
+}
+
+.is-dropdown-submenu-parent a::after {
+float:none;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.cllogin {
+    padding-top: 5rem;
+    padding-bottom:8rem;
+}
+

@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.js"></script>
 
     <!-- Load in our JS -->
-    <script src="js/app.js"></script>
+    <!--<script src="js/app.js"></script> -->
 
     <!-- Load in Foundation -->
     <link rel="stylesheet" href="css/foundation/foundation.css">
@@ -33,19 +33,22 @@
 
 <body>
 
-    <header>
+    <header class="client-header">
+       <div class="row">
         <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle></button>
             <div class="title-bar-title">Menu</div>
         </div>
 
 
-        <div class="top-bar" id="example-menu">
+        <div class="top-bar large-12" id="example-menu">
             <div class="top-bar-left">
                 <ul class="dropdown vertical medium-horizontal menu" data-closing-time="0" data-hover-delay="0" data-responsive-menu="small-drilldown medium-dropdown" role="menubar">
                     <li class="menu-text">
                         <a href="index.html">
                             <img src="img/nav/nav-graphics_01.png">
+                            <h3 style="font-size:.9rem; font-weight:bold;"><em>CUSTOMER PORTAL</em></h3>
+
                         </a>
                         <li>
                             <a class="nav-text-1" href="it-management.html">Managed Services</a>
@@ -90,13 +93,13 @@
                                 <li><a class="sub-nav-text-1" href="company.html#cu">Contact Us</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-text-1 show-for-small-only show-for-medium-only" href="login.html">Client Login</a>
-
+                        <li>
+                            <a class="nav-text-1" href="login.html">Support</a>
                         </li>
                 </ul>
             </div>
 
-            <div class=" top-bar-right client-login-btn-container">
+            <!--<div class=" top-bar-right client-login-btn-container">
                 <ul class="menu vertical">
                     <li>
                         <p class="top-number">888-282-5353</p>
@@ -107,108 +110,160 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </div> -->
+        </div></div>
     </header>
 
 
 
 
 
-    <div class="row managed-services cllogin">
-        <div class="columns small-12 medium-6">
-            <script>
-                function myFunction1() {
-
-                    var un1 = document.getElementById('fname').value;
-                    var ln1 = document.getElementById('lname').value;
-
-                    if ((un1 == "") || (ln1 == "")) {
-
-                        document.getElementById("spnFirstName").innerHTML = "Please Fill the Login Details";
-                        return false;
-                    } else {
-
-                        document.getElementById("myFormz").submit();
-                        document.getElementById('fname').value = '';
-                        document.getElementById('lname').value = '';
-                    }
-
-                }
-            </script>
-            <div class="bg-graylogin">
-
-                <form id="myFormz" name="form1" action="https://monitor.l3networks.com/Orion/Login.aspx?&" method="POST" target="_blank">
-                    <h3 class="heading-title">Manage Account</h3>
-                    <p>
-                        <input type="text" name="AccountID" placeholder="Username" id="fname">
-                    </p>
-                    <p>
-                        <input type="password" name="Password" onkeypress="handle(event)" placeholder="Password" id="lname">
-                    </p>
-                    <p><span id="spnFirstName" style="color:red;"></span></p>
-                    <p>
-                        <input type="button" class="bluesubmit" name="submit_value" id="submit_value" onclick="return myFunction1()" value="Log In">
-                    </p>
-                    <input type="submit" style="display:none" />
-                </form>
+    <div class="row cllogin">
+        <div class="large-4">
+            <ul class="tabs" data-tabs id="example-tabs">
+                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Monitoring</a></li>
+                <li class="tabs-title"><a href="#panel2">Support</a></li>
 
 
 
-
-
-                <p class="text-center"><a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 fs-13  largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">Forgot your email or password?</a></p>
-            </div>
-
-
-
-
-
+            </ul>
         </div>
-        <div class="columns small-12 medium-6">
-            <script>
-                function myFunction2() {
 
-                    var un = document.getElementById('fname1').value;
-                    var ln = document.getElementById('lname1').value;
+        <div class="tabs-content large-4 columns" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+                <div class="columns small-12">
+                    <script>
+                        function myFunction1() {
 
-                    if ((un == "") || (ln == "")) {
-                        document.getElementById("spnFirstName1").innerHTML = "Please Fill the Login Details.";
-                        return false;
-                    } else {
-                        document.getElementById("myFormz1").submit();
+                            var un1 = document.getElementById('fname').value;
+                            var ln1 = document.getElementById('lname').value;
 
-                        document.getElementById('fname1').value = '';
-                        document.getElementById('lname1').value = '';
-                    }
+                            if ((un1 == "") || (ln1 == "")) {
 
-                }
-            </script>
-            <div class="bg-graylogin">
-                <form name="form" id="myFormz1" action="https://ww5.autotask.net/clientportal/Login.aspx?ci=3336" method="POST" target="_blank">
-                    <h3 class="heading-title">Open a Service Ticket</h3>
-                    <p>
-                        <input type="text" name="username" placeholder="Username" id="fname1" required>
-                    </p>
-                    <p>
-                        <input type="password" name="password" placeholder="Password" onkeypress="handle1(event)" id="lname1" required>
-                    </p>
-                    <p><span id="spnFirstName1" style="color:red;"></span></p>
-                    <p>
-                        <input class="bluesubmit" type="button" name="submit_value1" id="submit_value1" onclick="return myFunction2()" value="Log In">
-                    </p>
-                    <input type="submit" style="display:none" />
-                </form>
+                                document.getElementById("spnFirstName").innerHTML = "Please Fill the Login Details";
+                                return false;
+                            } else {
+
+                                document.getElementById("myFormz").submit();
+                                document.getElementById('fname').value = '';
+                                document.getElementById('lname').value = '';
+                            }
+                        }
+                    </script>
+                    <div class="bg-graylogin">
+
+                        <form id="myFormz" name="form1" action="https://monitor.l3networks.com/Orion/Login.aspx?&" method="POST" target="_blank">
+                            <h3 class="heading-title">Management Portal</h3>
+                            <p>
+                                <input type="text" name="AccountID" placeholder="Username" id="fname">
+                            </p>
+                            <p>
+                                <input type="password" name="Password" onkeypress="handle(event)" placeholder="Password" id="lname">
+                            </p>
+                            <p><span id="spnFirstName" style="color:red;"></span></p>
+                            <p>
+                                <input type="button" class="bluesubmit" name="submit_value" id="submit_value" onclick="return myFunction1()" value="Log In">
+                            </p>
+                            <input type="submit" style="display:none" />
+                        </form>
+                        <p class="text-center"><a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 fs-13  largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">Forgot your email or password?</a></p>
+                    </div>
+                </div>
 
 
 
-
-                <p class="text-center"><a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 fs-13  largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">Forgot your email or password?</a>
             </div>
+            <div class="tabs-panel" id="panel2">
+                <div class="columns small-12 ">
+                    <script>
+                        function myFunction2() {
+                            var un = document.getElementById('fname1').value;
+                            var ln = document.getElementById('lname1').value;
+                            if ((un == "") || (ln == "")) {
+                                document.getElementById("spnFirstName1").innerHTML = "Please Fill the Login Details.";
+                                return false;
+                            } else {
+                                document.getElementById("myFormz1").submit();
+                                document.getElementById('fname1').value = '';
+                                document.getElementById('lname1').value = '';
+                            }
 
+                        }
+                    </script>
+                    <div class="bg-graylogin">
+                        <form name="form" id="myFormz1" action="https://ww5.autotask.net/clientportal/Login.aspx?ci=3336" method="POST" target="_blank">
+                            <h3 class="heading-title">Open a Service Ticket</h3>
+                            <p>
+                                <input type="text" name="username" placeholder="Username" id="fname1" required>
+                            </p>
+                            <p>
+                                <input type="password" name="password" placeholder="Password" onkeypress="handle1(event)" id="lname1" required>
+                            </p>
+                            <p><span id="spnFirstName1" style="color:red;"></span></p>
+                            <p>
+                                <input class="bluesubmit" type="button" name="submit_value1" id="submit_value1" onclick="return myFunction2()" value="Log In">
+                            </p>
+                            <input type="submit" style="display:none" />
+                        </form>
+                        <p class="text-center"><a id="clientAccessUserLogin_btnResetPwd" class="linkButton smaller blue1 fs-13  largerLineHeight" href="javascript:__doPostBack('clientAccessUserLogin$btnResetPwd','')" style="text-decoration: none;">Forgot your email or password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-8 columns support-columns">
+            <div class="large-3 text-center columns">
+                <img src="img/ic_desktop_windows_black_48px.svg" alt="">
+                <h3>Monitoring</h3>
+                <p>View recent events, check status, view reports on your managed devices.</p>
+            </div>
+            <div class="large-3 text-center columns">
+                <img src="img/ic_chat_black_48px.svg" alt="">
+                <h3>Support</h3>
+                <p>Create a ticket, report issues, get support status and view status on your services.</p>
+            </div>
+            <div class="large-3 text-center columns">
+                <img src="img/ic_timeline_black_48px.svg" alt="">
+                <h3>Operations</h3>
+                <p>View inventory, configuration details, contract status and management details.</p>
+            </div>
+            <div class="large-3 text-center columns">
+                <img src="img/ic_file_download_black_48px.svg" alt="">
+                <h3>Downloads</h3>
+                <p>Download and manage files for your services and equipment.</p>
+            </div>
 
         </div>
     </div>
+
+
+
+
+    <div class="row">
+        <div class="large-4 columns">
+            <h2>How do I...?</h2>
+            <ul>
+                <li>Question ?</li>
+                <li>Question ?</li>
+                <li>Question ?</li>
+                <li>Question ?</li>
+                <li>Question ?</li>
+                <li>Question ?</li>
+                <li>Question ?</li>
+                <li>Question ?</li>
+            </ul>
+
+        </div>
+        <div class="large-4 columns">
+            <h2>Support Feature</h2>
+            <p>Nulla id mi molestie, tincidunt dolor non, rhoncus ipsum. Donec elementum odio erat, sed tempor turpis pretium eget. Ut aliquet arcu eget quam sagittis venenatis. Maecenas efficitur ligula ligula. Sed sagittis urna sit amet ligula rutrum, non ultricies ipsum hendrerit. Mauris imperdiet libero nibh, sollicitudin maximus elit consectetur gravida. Proin rutrum, massa ac volutpat elementum, ligula lacus lacinia lorem, eu pulvinar erat erat ut justo. Quisque et purus in diam maximus fringilla vel et nulla. Donec id ultrices erat.</p>
+        </div>
+        <div class="large-4 columns">
+            <h2>Systanium</h2>
+            <p>Nulla id mi molestie, tincidunt dolor non, rhoncus ipsum. Donec elementum odio erat, sed tempor turpis pretium eget. Ut aliquet arcu eget quam sagittis venenatis. Maecenas efficitur ligula ligula. Sed sagittis urna sit amet ligula rutrum, non ultricies ipsum hendrerit. Mauris imperdiet libero nibh, sollicitudin maximus elit consectetur gravida. Proin rutrum, massa ac volutpat elementum, ligula lacus lacinia lorem, eu pulvinar erat erat ut justo. Quisque et purus in diam maximus fringilla vel et nulla. Donec id ultrices erat.</p>
+        </div>
+    </div>
+
 
     <center><img style="position:relative; bottom:-10px;z-index:-25" src="img/clouds.png" /></center>
 
@@ -322,8 +377,10 @@
         }
     </script>
 
-    <script>
-        $(document).foundation();
+    <script type="text/javascript">
+        $(function () {
+            $(document).foundation();
+        });
     </script>
 
 </body>

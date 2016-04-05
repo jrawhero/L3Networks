@@ -32,7 +32,7 @@
     <!-- Load in Latest jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Load in Flickity Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
     <!-- Load Jquery UI  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js?ver=2.1.1"></script>
 
@@ -134,7 +134,8 @@
         </div>
     </header>
 
-    <div class="gallery">
+
+<div class="gallery">
         <div class="gallery-cell">
             <div class="home-slide-1">
                 <div class="row">
@@ -197,9 +198,9 @@
             </div>
         </div>
     </div>
+
+
     <div class="progress-bar"></div>
-
-
 
 
     <div class="row">
@@ -339,11 +340,37 @@
 
         });
     </script>
+<script>
+        // external js: flickity.pkgd.js
 
-    <script>
-        
+
+
+        var flkty = new Flickity('.gallery', {
+          cellAlign: 'left',
+          contain: true,
+          wrapAround: false,
+          freeScroll: true,
+          autoPlay: 5000,
+          prevNextButtons: false,
+          pageDots: true
+            
+        });
+        var progressBar = document.querySelector('.progress-bar')
+
+        // duck punch
+        var _positionSlider = flkty.positionSlider;
+        flkty.positionSlider = function () {
+            _positionSlider.apply(flkty, arguments);
+
+            var firstCell = flkty.cells[0];
+            var cellsWidth = flkty.getLastCell().target - firstCell.target;
+            var progress = (-flkty.x + -firstCell.target) / cellsWidth;
+            progress = Math.max(0, Math.min(1, progress));
+            progressBar.style.width = progress * 100 + '%';
+        };
     </script>
-
+   
+   
     <script>
         $(document).foundation();
     </script>
