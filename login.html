@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.js"></script>
 
     <!-- Load in our JS -->
-    <!--<script src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
 
     <!-- Load in Foundation -->
     <link rel="stylesheet" href="css/foundation/foundation.css">
@@ -33,36 +33,28 @@
 
 <body>
 
-    <header class="client-header">
-       <div class="row">
+    <header>
         <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle></button>
             <div class="title-bar-title">Menu</div>
         </div>
 
 
-        <div class="top-bar large-12" id="example-menu">
+        <div class="top-bar" id="example-menu">
             <div class="top-bar-left">
                 <ul class="dropdown vertical medium-horizontal menu" data-closing-time="0" data-hover-delay="0" data-responsive-menu="small-drilldown medium-dropdown" role="menubar">
                     <li class="menu-text">
                         <a href="index.html">
-                            <img src="img/nav/nav-graphics_01.png">
-                            <h3 style="font-size:.9rem; font-weight:bold;"><em>CUSTOMER PORTAL</em></h3>
-
+                            <img width="200px" src="img/nav/nav-graphics_01.png">
                         </a>
                         <li>
-                            <a class="nav-text-1" href="it-management.html">Managed Services</a>
-                            <!--<ul class="menu vertical">
-                                <li><a class="sub-nav-text-1 show-for-small-only" href="it-management.html#"><strong>Managed Services</strong></a></li> 
-                            </ul>-->
+                            <a class="nav-text-1" href="it-management.html">IT Management</a>
+                            <ul class="menu vertical">
+                                <li><a class="sub-nav-text-1 show-for-small-only" href="it-management.html#"><strong>IT Management</strong></a></li>
+                                <li><a class="sub-nav-text-1" href="it-management.html#it1">Managed Services</a></li>
+                                <li><a class="sub-nav-text-1" href="it-management.html#it2">Service Operations</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a class="nav-text-1" href="serviceops.html">Service Operations</a>
-                            <!-- <ul class="menu vertical">
-                                <li><a class="sub-nav-text-1 show-for-small-only" href="serviceops.html"><strong>Service Operations</strong></a></li>
-                            </ul>-->
-                        </li>
-
                         <li><a class="nav-text-1" href="cloud-solutions.html">Cloud Solutions</a>
                             <ul class="menu vertical">
                                 <li><a class="sub-nav-text-1 show-for-small-only" href="cloud-solutions.html#"><strong>Cloud Solutions</strong></a></li>
@@ -70,9 +62,9 @@
                                 <li><a class="sub-nav-text-1" href="cloud-solutions.html#ci">Cloud Intergration</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-text-1" href="security.html">Security Solutions</a>
+                        <li><a class="nav-text-1" href="security.html">Security</a>
                             <ul class="menu vertical">
-                                <li><a class="sub-nav-text-1 show-for-small-only" href="security.html"><strong>Security Solutions</strong></a></li>
+                                <li><a class="sub-nav-text-1 show-for-small-only" href="security.html"><strong>Security</strong></a></li>
                                 <li><a class="sub-nav-text-1" href="security.html#sa">Security Assesments</a></li>
                                 <li><a class="sub-nav-text-1" href="security.html#tm">Threat Management</a></li>
                                 <li><a class="sub-nav-text-1" href="security.html#eps">End Point Security</a></li>
@@ -86,20 +78,20 @@
                                 <li><a class="sub-nav-text-1" href="data-protection.html#dr">Disaster Recovery</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-text-1" href="company.html">Why L3 Networks</a>
+                        <li><a class="nav-text-1" href="company.html">Company</a>
                             <ul class="menu vertical">
-                                <li><a class="sub-nav-text-1 show-for-small-only" href="company.html"><strong>Why L3 Networks</strong></a></li>
+                                <li><a class="sub-nav-text-1 show-for-small-only" href="company.html"><strong>Company</strong></a></li>
                                 <li><a class="sub-nav-text-1" href="company.html#au">About Us</a></li>
                                 <li><a class="sub-nav-text-1" href="company.html#cu">Contact Us</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a class="nav-text-1" href="login.html">Support</a>
+                        <li><a class="nav-text-1 show-for-small-only" href="login.html">Client Login</a>
+
                         </li>
                 </ul>
             </div>
 
-            <!--<div class=" top-bar-right client-login-btn-container">
+            <div class=" top-bar-right client-login-btn-container">
                 <ul class="menu vertical">
                     <li>
                         <p class="top-number">888-282-5353</p>
@@ -110,15 +102,13 @@
                         </a>
                     </li>
                 </ul>
-            </div> -->
-        </div></div>
+            </div>
+        </div>
     </header>
 
 
 
-
-
-    <div class="row cllogin">
+<div class="row cllogin">
         <div class="large-4">
             <ul class="tabs" data-tabs id="example-tabs">
                 <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Monitoring</a></li>
@@ -236,36 +226,7 @@
         </div>
     </div>
 
-
-
-
-    <div class="row">
-        <div class="large-4 columns">
-            <h2>How do I...?</h2>
-            <ul>
-                <li>Question ?</li>
-                <li>Question ?</li>
-                <li>Question ?</li>
-                <li>Question ?</li>
-                <li>Question ?</li>
-                <li>Question ?</li>
-                <li>Question ?</li>
-                <li>Question ?</li>
-            </ul>
-
-        </div>
-        <div class="large-4 columns">
-            <h2>Support Feature</h2>
-            <p>Nulla id mi molestie, tincidunt dolor non, rhoncus ipsum. Donec elementum odio erat, sed tempor turpis pretium eget. Ut aliquet arcu eget quam sagittis venenatis. Maecenas efficitur ligula ligula. Sed sagittis urna sit amet ligula rutrum, non ultricies ipsum hendrerit. Mauris imperdiet libero nibh, sollicitudin maximus elit consectetur gravida. Proin rutrum, massa ac volutpat elementum, ligula lacus lacinia lorem, eu pulvinar erat erat ut justo. Quisque et purus in diam maximus fringilla vel et nulla. Donec id ultrices erat.</p>
-        </div>
-        <div class="large-4 columns">
-            <h2>Systanium</h2>
-            <p>Nulla id mi molestie, tincidunt dolor non, rhoncus ipsum. Donec elementum odio erat, sed tempor turpis pretium eget. Ut aliquet arcu eget quam sagittis venenatis. Maecenas efficitur ligula ligula. Sed sagittis urna sit amet ligula rutrum, non ultricies ipsum hendrerit. Mauris imperdiet libero nibh, sollicitudin maximus elit consectetur gravida. Proin rutrum, massa ac volutpat elementum, ligula lacus lacinia lorem, eu pulvinar erat erat ut justo. Quisque et purus in diam maximus fringilla vel et nulla. Donec id ultrices erat.</p>
-        </div>
-    </div>
-
-
-    <center><img style="position:relative; bottom:-10px;z-index:-25" src="img/clouds.png" /></center>
+<center><img style="position:relative; bottom:-10px;z-index:-25" src="img/clouds.png" /></center>
 
 
     <div class="grey-bg">
@@ -357,30 +318,9 @@
         }
         window.onload = init();
     </script>
+
     <script>
-        function submitForm() {
-            // Get the first form with the name
-            // Hopefully there is only one, but there are more, select the correct index
-            var frm = document.getElementsByName('form1')[0];
-            frm.submit(); // Submit
-            frm.reset(); // Reset
-            return false; // Prevent page refresh
-        }
-
-        function submitForm() {
-            // Get the first form with the name
-            // Hopefully there is only one, but there are more, select the correct index
-            var frm = document.getElementsByName('form')[0];
-            frm.submit(); // Submit
-            frm.reset(); // Reset
-            return false; // Prevent page refresh
-        }
-    </script>
-
-    <script type="text/javascript">
-        $(function () {
-            $(document).foundation();
-        });
+        $(document).foundation();
     </script>
 
 </body>

@@ -26,7 +26,8 @@ body {
 }
 
 p {
-    line-height: 1.3rem;
+    line-height: 1.5rem;
+    font-size: 16px;
 }
 
 img {
@@ -255,11 +256,6 @@ img {
 .whitetext p {
     color: #f2f2f2;
 }
-
-p {
-    font-size: 14px;
-}
-
 h3 {
     font-size: 22px;
 }
@@ -1074,6 +1070,7 @@ div .slider-content .index-img-fix {
 .cloud-solution-graphic-images {
     list-style: none;
     margin: 8rem 0;
+    text-align: justify;
 }
 
 .cloud-solution-graphic-images li {
@@ -1091,8 +1088,8 @@ div .slider-content .index-img-fix {
 
 @media only screen and (min-width:40em) {
     .cloud-solution-graphic-images img {
-        max-width: 100px;
-        padding: 0rem .5rem;
+        max-width: 120px;
+        padding: 0rem 1rem;
     }
 }
 
@@ -1580,36 +1577,6 @@ ul>.subnav-item:hover:before {
         padding-top: 0;
     }
 }
-
-.progressbar{
-    height: 7px;
-    background-color: blue;
-    border: 1px solid #7b1b1b;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    
-  }
-
-.progressbar::before{
-      content: '';
-      display: block;
-      height: 100%;
-      animation: progressBar 4s;
-      background-color: #7b1b1b;
-    }
-  @keyframes progressBar {
-
-  0%  {width: 0%;}
-  100%{width: 100%;}
-}
-
-
 
 
 /* PROGRESS BAR */
